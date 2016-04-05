@@ -1,0 +1,16 @@
+
+#flex-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#flex-title{
+  height: 30%;
+  background: red;
+}
+
+#flex-carousel{
+  height:50%;
+  background: blue;
+}
