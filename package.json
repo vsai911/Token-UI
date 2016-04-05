@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vsai911/Token-UI/issues"
   },
-  "homepage": "https://github.com/vsai911/Token-UI#readme"
+  "homepage": "https://github.com/vsai911/Token-UI#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
