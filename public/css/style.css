@@ -1,11 +1,12 @@
 
-#flex-wrapper{
+#flex-wrapper {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-#flex-title{
+#flex-title {
+  margin-top: -20px;
   height: 30%;
   background: red;
 }
