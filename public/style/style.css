@@ -6,11 +6,18 @@
 }
 
 #flex-title{
+  margin-top: -20px;
   height: 30%;
   background: red;
 }
 
 #flex-carousel{
+  display: flex;
   height:50%;
   background: blue;
+}
+
+img{
+  flex: 1 1 auto;
+  width: 100%;
 }
