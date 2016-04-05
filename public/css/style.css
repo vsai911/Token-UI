@@ -1,3 +1,9 @@
+#home-nav {
+  background-color: #F5CD5E;
+  font-size: 20px;
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+}
 
 #flex-wrapper {
   display: flex;
