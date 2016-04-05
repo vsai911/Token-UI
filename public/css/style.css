@@ -1,7 +1,7 @@
 #home-nav {
-  background-color: #F5CD5E;
+  background-color: #03607F;
   font-size: 20px;
-  color: #7c795d;
+  color: blue;
   font-family: 'Trocchi', serif;
 }
 
@@ -15,7 +15,7 @@
 #flex-title {
   margin-top: -20px;
   height: 30%;
-  background: red;
+  background: #1E8BAF;
 }
 
 #flex-carousel{
