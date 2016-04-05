@@ -1,10 +1,15 @@
+#home-nav {
+  background-color: #F5CD5E;
+  font-size: 20px;
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+}
 
-#flex-wrapper {
+#flex-wrapper{
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
-
 
 
 #flex-title {
