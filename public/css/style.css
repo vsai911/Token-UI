@@ -36,7 +36,7 @@ body {
 
 #flex-carousel {
   display: flex;
-  height:50%;
+  height: 50%;
   background: blue;
 }
 
