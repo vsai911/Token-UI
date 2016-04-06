@@ -108,7 +108,7 @@ jQuery(document).ready(function () {
       .attr("class", "link")
       .style("stroke-width", '2px')
       .style('stroke', 'black')
-      .style('stroke-opacity', '0');
+      .style('stroke-opacity', '0')
 
   node.append("circle")
       .attr("r", 8)
@@ -122,7 +122,8 @@ jQuery(document).ready(function () {
         .attr("dy", ".35em")
         .text(function(d) { return d.word })
         .style("stroke", "white")
-        .style('text-shadow', '2px 2px black');
+        .style('text-shadow', '2px 2px black')
+        .style('font-family','Hoefler Text');
 
   // svg.append("defs").selectAll("marker")
   //   .data(["suit", "licensing", "resolved"])
