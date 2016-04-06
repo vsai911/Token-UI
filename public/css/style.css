@@ -21,7 +21,7 @@
   text-shadow: 2px 2px black;
 }
 
-#flex-title {
+#flex-title > svg {
   margin-top: -20px;
   height: 30%;
   background: #1E8BAF;
