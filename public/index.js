@@ -90,13 +90,11 @@ jQuery(document).ready(function () {
 
 
   var force = d3.layout.force()
-    .charge(-150)
+    .charge(-250)
     .linkDistance(70)
     .size([width, height])
     .nodes(data.nodes)
     .links(data.links);
-
-  console.log(force);
 
   var node = svg.selectAll(".node")
       .data(data.nodes)
@@ -110,13 +108,15 @@ jQuery(document).ready(function () {
       .attr("class", "link")
       .style("stroke-width", '2px')
       .style('stroke', 'black')
-      .style('stroke-opacity', '.2');
+      .style('stroke-opacity', '0');
 
   node.append("circle")
       .attr("r", 8)
       .style("fill", function (d) {
         return '#01394B';
       })
+      .style('opacity', '0');
+
   node.append("text")
         .attr("dx", 10)
         .attr("dy", ".35em")
