@@ -123,7 +123,9 @@ jQuery(document).ready(function () {
         .text(function(d) { return d.word })
         .style("stroke", "white")
         .style('text-shadow', '2px 2px black')
-        .style('font-family','Hoefler Text');
+        .style('font-family','Hoefler Text')
+        .style('font-size', '24px')
+        .style("stroke-width", '2px');
 
   // svg.append("defs").selectAll("marker")
   //   .data(["suit", "licensing", "resolved"])
