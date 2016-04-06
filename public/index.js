@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
     height = 100;
 
   var svg = d3.select('#flex-title').append('svg')
-    .attr('width', '110%')
+    .attr('width', '100%')
     .attr('height', '100%')
     .attr('viewBox','0 0 '+(width+100)+' '+(height+100))
     .append("g")
