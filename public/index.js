@@ -90,8 +90,8 @@ jQuery(document).ready(function () {
 
 
   var force = d3.layout.force()
-    .charge(-250)
-    .linkDistance(70)
+    .charge(-300)
+    .linkDistance(100)
     .size([width, height])
     .nodes(data.nodes)
     .links(data.links);
