@@ -83,7 +83,7 @@ jQuery(document).ready(function () {
       { source: 2, target: 3, value: 1 },
       { source: 3, target: 4, value: 1 },
       { source: 4, target: 5, value: 1 },
-      { source: 5, target: 0, value: 1 } 
+      { source: 5, target: 5, value: 1 } 
     ]
   }
 
@@ -106,9 +106,11 @@ jQuery(document).ready(function () {
 
   var link = svg.selectAll(".link")
       .data(data.links)
-    .enter().append("line")
+      .enter().append("line")
       .attr("class", "link")
-      .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+      .style("stroke-width", '2px')
+      .style('stroke', 'black')
+      .style('stroke-opacity', '.2');
 
   node.append("circle")
       .attr("r", 8)
@@ -121,6 +123,21 @@ jQuery(document).ready(function () {
         .text(function(d) { return d.word })
         .style("stroke", "white")
         .style('text-shadow', '2px 2px black');
+
+  // svg.append("defs").selectAll("marker")
+  //   .data(["suit", "licensing", "resolved"])
+  // .enter().append("marker")
+  //   .attr("id", function(d) { return d; })
+  //   .attr("viewBox", "0 -5 10 10")
+  //   .attr("refX", 25)
+  //   .attr("refY", 0)
+  //   .attr("markerWidth", 6)
+  //   .attr("markerHeight", 6)
+  //   .attr("orient", "auto")
+  //   .append("path")
+  //   .attr("d", "M0,-5L10,0L0,5 L10,0 L0, -5")
+  //   .style("stroke", "#4679BD")
+  //   .style("opacity", "0.6");
 
     force.start();
   //Now we are giving the SVGs co-ordinates - the force layout is generating the co-ordinates which this code is using to update the attributes of the SVG elements
