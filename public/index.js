@@ -11,7 +11,7 @@ jQuery(document).ready(function () {
     .attr("transform", "translate(0," + (height / 2) + ")");
 
   // var data = 'Welcome to Shell Shock Developers'.split(' ');
-  var data = 'WelcometoShellShockDevelopers'.split('');
+  var data = 'WelcometoTokenWhiteGuyDevelopers'.split('');
 
   console.log('data is: ', data);
 
@@ -46,9 +46,11 @@ jQuery(document).ready(function () {
     text.enter().append("text")
         .attr("dy", ".35em")
         .attr("y", -60)
-        .attr("x", function(d, i) { return i * 16; })
+        .attr("x", function(d, i) { return i * 24; })
         .style("fill-opacity", 1e-6)
-        .style('fill', 'black')
+        .style('fill', 'white')
+        .style('text-shadow', '2px 2px black')
+        .style('font-size', '20px')
         .text(function(d) {console.log('d is :', d); return d; })
         .transition(t)
         .attr("y", 0)
