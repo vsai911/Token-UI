@@ -1,13 +1,14 @@
 jQuery(document).ready(function () {
   
-  var width = 1800,
+  var width = 500,
     height = 100;
 
   var svg = d3.select('#flex-title').append('svg')
-    .attr("width", width)
-    .attr("height", height)
+    .attr('width', '110%')
+    .attr('height', '100%')
+    .attr('viewBox','0 0 '+(width+100)+' '+(height+100))
     .append("g")
-    .attr("transform", "translate(32," + (height / 2) + ")");
+    .attr("transform", "translate(0," + (height / 2) + ")");
 
   // var data = 'Welcome to Shell Shock Developers'.split(' ');
   var data = 'WelcometoShellShockDevelopers'.split('');
