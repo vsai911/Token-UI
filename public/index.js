@@ -113,7 +113,7 @@ jQuery(document).ready(function () {
   node.append("circle")
       .attr("r", 8)
       .style("fill", function (d) {
-        return 'orangered';
+        return '#01394B';
       })
   node.append("text")
         .attr("dx", 10)
