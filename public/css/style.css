@@ -1,0 +1,46 @@
+body {
+  background-color: #03607F;
+}
+
+#home-nav {
+  background-color: #03607F;
+  font-size: 20px;
+  color: blue;
+  font-family: 'Trocchi', serif;
+  border: 2px solid #03607F;
+}
+
+
+#flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar-default .navbar-nav > li > a {
+  background-color: #03607F;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: orangered;
+  text-shadow: 2px 2px black;
+}
+
+#flex-title > svg {
+  margin-top: -20px;
+  height: 30%;
+  background: #1E8BAF;
+}
+
+#flex-carousel {
+  display: flex;
+  height: 50%;
+  background: blue;
+}
+
+img {
+  flex: 1 1 auto;
+  width: 100%;
+}
