@@ -1,13 +1,12 @@
 body {
-  background-color: #03607F;
+  background-color: #024E67;
 }
 
 #home-nav {
-  background-color: #03607F;
+  background: linear-gradient(#01394B, #024E67);
   font-size: 20px;
   color: blue;
   font-family: 'Trocchi', serif;
-  border: 2px solid #03607F;
 }
 
 
@@ -17,8 +16,11 @@ body {
   height: 100vh;
 }
 
+nav.navbar.navbar-default  {
+  border: #04769C 1px solid;
+}
 .navbar-default .navbar-nav > li > a {
-  background-color: #03607F;
+  background: linear-gradient(#01394B, #024E67);
   color: white;
   text-shadow: 2px 2px black;
 }
@@ -31,7 +33,7 @@ body {
 #flex-title > svg {
   margin-top: -20px;
   height: 30%;
-  background: #1E8BAF;
+  background: #024E67;
 }
 
 #flex-carousel {
