@@ -30,6 +30,10 @@ nav.navbar.navbar-default  {
   text: white;
 }
 
+.navbar-default .navbar-nav > li > a:focus {
+  color: violet;
+}
+
 #flex-title > svg {
   margin-top: -20px;
   height: 15%;
@@ -53,5 +57,5 @@ img {
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
   background: linear-gradient(#01394B, #024E67);
-  color: white;
+  color: violet;
 }
