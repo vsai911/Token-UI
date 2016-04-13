@@ -27,12 +27,12 @@ nav.navbar.navbar-default  {
 
 .navbar-default .navbar-nav > li > a:hover {
   color: orangered;
-  text-shadow: 2px 2px black;
+  text: white;
 }
 
 #flex-title > svg {
   margin-top: -20px;
-  height: 30%;
+  height: 15%;
   background: #024E67;
 }
 
@@ -45,4 +45,13 @@ nav.navbar.navbar-default  {
 img {
   flex: 1 1 auto;
   width: 100%;
+}
+
+.item > img.rayna {
+  height:100%;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  background: linear-gradient(#01394B, #024E67);
+  color: white;
 }
