@@ -55,6 +55,13 @@ img {
   height:100%;
 }
 
+.carousel-caption {
+  position: absolute;
+  top: 33%;
+/* Affects the div containing the h3 tag for captions */
+
+}
+
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
   background: linear-gradient(#01394B, #024E67);
   color: violet;
