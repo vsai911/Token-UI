@@ -55,6 +55,20 @@ img {
   height:100%;
 }
 
+.dropdown-menu {
+  background: #024E67;
+}
+
+.dropdown-menu > li> a {
+  background: #024E67;
+  color: white;
+}
+
+.dropdown-menu > li > a:hover {
+  background: violet;
+  color: white;
+}
+
 .carousel-caption {
   position: absolute;
   top: 33%;
