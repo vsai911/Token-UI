@@ -24,6 +24,7 @@ body {
 nav.navbar.navbar-default  {
   margin: 0;
   border: none;
+  margin: 0px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -81,6 +82,15 @@ img {
   top: 33%;
 /* Affects the div containing the h3 tag for captions */
 
+}
+
+.row {
+  height: 40%;
+}
+
+.row > .col-md-4.separator {
+  height: 100%;
+  border: 1px solid white;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
