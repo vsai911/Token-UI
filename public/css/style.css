@@ -4,11 +4,15 @@
 }
 
 body {
-  background-color: #024E67;
+  background-color: #002532;
+}
+
+a.navbar-brand{
+ color: green !important;
 }
 
 #home-nav {
-  background: linear-gradient(#01394B, #024E67);
+  background: linear-gradient(#01394B, #002532);
   font-size: 20px;
   color: blue;
   font-family: 'lato', serif;
@@ -28,14 +32,14 @@ nav.navbar.navbar-default  {
 }
 
 .navbar-default .navbar-nav > li > a {
-  background: linear-gradient(#01394B, #024E67);
-  color: white;
-  text-shadow: 2px 2px black;
+  background: linear-gradient(#01394B, #002532);
+  color: green;
+  font-size: 17px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: orangered;
-  text: white;
+  text: green;
 }
 
 .navbar-default .navbar-nav > li > a:focus {
@@ -64,12 +68,13 @@ img {
 }
 
 .dropdown-menu {
-  background: #024E67;
+  background: #002532;
 }
 
+
 .dropdown-menu > li> a {
-  background: #024E67;
-  color: white;
+  background: #002532;
+  color: green;
 }
 
 .dropdown-menu > li > a:hover {
@@ -94,6 +99,6 @@ img {
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
-  background: linear-gradient(#01394B, #024E67);
+  background: linear-gradient(#01394B, #002632);
   color: violet;
 }
