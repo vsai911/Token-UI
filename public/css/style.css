@@ -17,7 +17,7 @@ body {
 }
 
 nav.navbar.navbar-default  {
-  border: #04769C 1px solid;
+  border: none;
 }
 .navbar-default .navbar-nav > li > a {
   background: linear-gradient(#01394B, #024E67);
