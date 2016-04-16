@@ -1,13 +1,12 @@
 body {
-  background-color: #03607F;
+  background-color: #024E67;
 }
 
 #home-nav {
-  background-color: #03607F;
+  background: linear-gradient(#01394B, #024E67);
   font-size: 20px;
   color: blue;
   font-family: 'Trocchi', serif;
-  border: 2px solid #03607F;
 }
 
 
@@ -17,21 +16,28 @@ body {
   height: 100vh;
 }
 
+nav.navbar.navbar-default  {
+  border: #04769C 1px solid;
+}
 .navbar-default .navbar-nav > li > a {
-  background-color: #03607F;
+  background: linear-gradient(#01394B, #024E67);
   color: white;
   text-shadow: 2px 2px black;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: orangered;
-  text-shadow: 2px 2px black;
+  text: white;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: violet;
 }
 
 #flex-title > svg {
   margin-top: -20px;
-  height: 30%;
-  background: #1E8BAF;
+  height: 15%;
+  background: #024E67;
 }
 
 #flex-carousel {
@@ -43,4 +49,34 @@ body {
 img {
   flex: 1 1 auto;
   width: 100%;
+}
+
+.item > img.rayna {
+  height:100%;
+}
+
+.dropdown-menu {
+  background: #024E67;
+}
+
+.dropdown-menu > li> a {
+  background: #024E67;
+  color: white;
+}
+
+.dropdown-menu > li > a:hover {
+  background: violet;
+  color: white;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 33%;
+/* Affects the div containing the h3 tag for captions */
+
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  background: linear-gradient(#01394B, #024E67);
+  color: violet;
 }
