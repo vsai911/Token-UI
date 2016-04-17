@@ -2,13 +2,17 @@ body {
   background-color: #002532;
 }
 
-.flex-table{
+.flex-team{
   display: flex;
-  direction: row;
-  height: 100%
+  direction: column;
+  width: 100%;
 }
 
 .flex-column{
   max-width: 50%;
   border: 1px solid black;
+}
+
+.personempty{
+  height:100px;
 }
