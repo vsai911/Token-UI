@@ -1,7 +1,11 @@
 
 #project-jumbotron {
   display: flex;
-  height: 60%;
+  min-height: 60%;
+  max-height: 60%;
+  background-image: url("../img/sakthi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container-project {
@@ -133,4 +137,9 @@
   max-width: 340px;
   min-height: 340px;
   max-height: 340px;
+}
+
+.sakthi{
+  height: 100%;
+  width: 100%;
 }
