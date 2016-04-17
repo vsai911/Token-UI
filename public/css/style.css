@@ -117,17 +117,11 @@ img {
   right: 10px;
 }
 
-html {
-  font-size: 10px;
-}
-
 .container-project {
   width: 100%;
   max-width: 1180px;
-  min-width: 1180px;
   margin: 0 auto;
-  padding: 20px 40px;
-  background: #fefefe;
+  padding: 40px 40px;
 }
 
 .img-project {
@@ -137,6 +131,7 @@ html {
 }
 
 .h1-project {
+  text-align: center;
   font-size: 40px;
   padding-left: 20px;
   margin-bottom: 20px;
@@ -238,12 +233,13 @@ html {
 
 .grid {
   float: left;
-  overflow: hidden;
+  overflow: auto;
   padding-right: 10px;
   padding-left: 10px;
   min-height: 1px;
+  margin: 10px auto;
 }
 
 .one-third {
-  width: 33.33333%;
+  min-width: 240px;
 }
