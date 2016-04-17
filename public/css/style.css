@@ -112,7 +112,138 @@ img {
 }
 
 #contact{
-  position: fixed;
+  position: absolute;
+  bottom: -45px;
+  right: 10px;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container-project {
+  width: 100%;
+  max-width: 1180px;
+  min-width: 1180px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background: #fefefe;
+}
+
+.img-project {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.h1-project {
+  font-size: 40px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #74c0ca;
+}
+
+.read-more:after {
+  content: " >>";
+}
+
+.rollover-blocks .grid {
+  position: relative;
+}
+.rollover-blocks .no-roll {
+  color: white;
+  padding: 20px 30px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.rollover-blocks + .rollover-blocks {
+  margin-top: 20px;
+}
+.rollover-blocks .roll-up {
+  position: absolute;
+  bottom: -50%;
+  color: white;
+  padding: 0 10px 0 0;
+  width:350px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.rollover-blocks .roll-up p, .rollover-blocks .roll-up a {
+  display: block;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 0px;
+}
+.rollover-blocks .roll-up a {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+  color: white;
+}
+.rollover-blocks > div {
+  overflow: hidden;
+  position: relative;
+}
+.rollover-blocks > div.highlight:before {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  content: "Catchy Text";
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 24px;
+  font-size: 2.4rem;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.rollover-blocks > div:hover > .roll-up, .rollover-blocks > div:focus > .roll-up {
   bottom: 0;
-  right: 0;
+  display: block;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.rollover-blocks > div:hover:before, .rollover-blocks > div:focus:before {
+  bottom: 150px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.row {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.grid {
+  float: left;
+  overflow: hidden;
+  padding-right: 10px;
+  padding-left: 10px;
+  min-height: 1px;
+}
+
+.one-third {
+  width: 33.33333%;
 }
