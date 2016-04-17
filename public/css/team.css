@@ -1,0 +1,14 @@
+body {
+  background-color: #002532;
+}
+
+.flex-table{
+  display: flex;
+  direction: row;
+  height: 100%
+}
+
+.flex-column{
+  width: 50%;
+  border: 1px solid black;
+}

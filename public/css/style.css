@@ -124,6 +124,15 @@ img {
   padding: 40px 40px;
 }
 
+.project-header{
+  height: 60%;
+}
+
+.sakthi{
+  height: 100%;
+  width: 100%;
+
+}
 .img-project {
   max-width: 100%;
   width: auto;
@@ -242,4 +251,9 @@ img {
 
 .one-third {
   min-width: 240px;
+}
+
+.one-half{
+  min-width: 50%;
+  border: 1px solid black;
 }
