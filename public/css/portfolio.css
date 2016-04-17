@@ -22,12 +22,12 @@
   height: auto;
 }
 
-.h1-project {
+#h1-project{
   text-align: center;
   font-size: 40px;
-  padding-left: 20px;
-  margin-bottom: 20px;
-  color: #74c0ca;
+  top: 5%;
+  right:80%;
+  margin-left: -200px;
 }
 
 .read-more:after {
@@ -133,10 +133,7 @@
 }
 
 .one-third {
-  min-width: 340px;
-  max-width: 340px;
-  min-height: 340px;
-  max-height: 340px;
+  width:33%;
 }
 
 .sakthi{
