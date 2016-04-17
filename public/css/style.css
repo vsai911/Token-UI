@@ -25,6 +25,14 @@ a.navbar-brand{
   height: 100vh;
 }
 
+.flex-content{
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+  border: 1px solid white;
+}
+
+
 nav.navbar.navbar-default  {
   margin: 0;
   border: none;
@@ -101,4 +109,10 @@ img {
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
   background: linear-gradient(#01394B, #002632);
   color: violet;
+}
+
+#contact{
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
