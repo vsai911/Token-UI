@@ -19,19 +19,19 @@ body {
 
 #team-jumbotron {
   display: flex;
-  min-height: 60%;
-  max-height: 60%;
+  min-height: 25%;
+  max-height: 25%;
   background-image: url("../img/sakthi.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#h1-team{
+#h1-team {
   text-align: center;
   font-size: 40px;
   top: 5%;
   right:80%;
-  margin-left: -200px;
+  margin-left: 20px;
 }
 
 .personimage{
