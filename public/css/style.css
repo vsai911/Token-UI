@@ -165,9 +165,11 @@ nav.navbar.navbar-default  {
   display: block;
   /*background-color: #003D51 */
 }
+
 #partners > h4 {
   margin-left: 12.5%;
 }
+
 #partners > h5 {
   margin-left: 12.5%;
   float: left;
@@ -175,6 +177,10 @@ nav.navbar.navbar-default  {
   width: 60%;
   min-width: 200px;
   color: #fff;
+}
+
+#partners-section {
+  background-color: #003D51;
 }
 
 .row {
