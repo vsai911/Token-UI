@@ -73,7 +73,7 @@ body {
 
 #flex-carousel {
   display: flex;
-  height: 40%;
+  height: t0%;
 }
 
 .footer-lists {
@@ -163,15 +163,16 @@ nav.navbar.navbar-default  {
 }
 
 #partners > h4 {
-/*  margin-left: 12.5%;
-*/  width: 100%;
+  margin-left: 12.5%;
+  width: 100%;
 }
 
 .partners-lists {
+  margin-left: 12.5%;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
+/*  margin-right: 2.35765%; 
+*/  width: 23.23176%;
   min-width: 200px;
   color: #fff;
 }
