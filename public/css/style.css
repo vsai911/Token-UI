@@ -20,7 +20,6 @@ body {
 }
 
 #contact-buttons {
-  position: relative;
 /*  bottom: -45px;
   right: 10px;*/
 }
@@ -28,13 +27,12 @@ body {
 #contact-blurb {
   font-family: 'lato', serif;
   color: white;
-  position: absolute;
-  width: 100%;
-  text-align: center;
 }
 
 #contact-container {
-
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dropdown-menu {
