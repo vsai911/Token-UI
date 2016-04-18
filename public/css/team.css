@@ -33,3 +33,13 @@ body {
   right:80%;
   margin-left: -200px;
 }
+
+.personimage{
+  height: 250px;
+  width: 250px;
+}
+
+img{
+  height: inherit;
+  width: inherit;
+}
