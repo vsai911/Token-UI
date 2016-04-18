@@ -35,8 +35,30 @@ body {
 }
 
 .personimage{
+  position: relative;
   height: 250px;
   width: 250px;
+}
+
+.personimage > .links {
+  display: none;
+  text-align: center;
+}
+
+.personimage > .links > .social-icons {
+  position: absolute;
+  top: 40%;
+  left: 33%;
+}
+
+.personimage:hover > .links {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
 }
 
 img{
