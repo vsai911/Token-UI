@@ -10,7 +10,9 @@ a.navbar-brand{
 }
 
 body {
-  background-color: #002532;
+/*  background-color: #002532;
+*/
+  background-color: #00526D
 }
 
 /* Affects the div containing the h3 tag for captions */
@@ -121,7 +123,9 @@ img {
 
 #main-footer {
   width: 100%;
-  background-color: #002532;
+/*  background-color: #002532;
+*/  
+  background-color: #00526D;
   color: #fff;
   padding: 5%;
 }
@@ -155,12 +159,17 @@ nav.navbar.navbar-default  {
 
 #partners {
   max-width: 68em;
+  /*width: 100%;*/
   margin-left: auto;
   margin-right: auto;
   display: block;
+  /*background-color: #003D51 */
 }
-
+#partners > h4 {
+  margin-left: 12.5%;
+}
 #partners > h5 {
+  margin-left: 12.5%;
   float: left;
   margin-right: 2.35765%;
   width: 60%;
