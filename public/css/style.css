@@ -1,16 +1,109 @@
-@font-face {
-  font-family: 'Prociono';
-  src: url(../lib/Prociono/Prociono-Regular.otf) format("opentype");
-}
-
-body {
-  background-color: #002532;
-}
+/* The CSS selectors are in roughly alphabetical order. */
 
 a.navbar-brand{
  color: green !important;
 }
 
+/* This is for the hover on the social icon hover. */
+.btn-social-icon>:first-child:hover {
+
+}
+
+body {
+/*  background-color: #002532;
+*/
+  background-color: #00526D
+}
+
+/* Affects the div containing the h3 tag for captions */
+.carousel-caption {
+  position: absolute;
+  top: 33%;
+}
+
+#contact-buttons {
+  position: relative;
+}
+
+#contact-blurb {
+  font-family: 'lato', serif;
+  color: white;
+}
+
+#contact-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdown-menu {
+  background: #002532;
+}
+
+
+.dropdown-menu > li> a {
+  background: #002532;
+  color: green;
+}
+
+.dropdown-menu > li > a:hover {
+  background: violet;
+  color: white;
+}
+
+.flex-content{
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+  /* uncomment below if you want to see the borders around the flex divs. */
+/*  border: 1px solid white;
+*/}
+
+#flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 150vh;
+}
+
+#flex-title > svg {
+  margin-top: -20px;
+  height: 15%;
+  background: #024E67;
+}
+
+#flex-carousel {
+  display: flex;
+  height: 40%;
+}
+
+.footer-lists {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  min-width: 200px;
+}
+
+@font-face {
+  font-family: 'Prociono';
+  src: url(../lib/Prociono/Prociono-Regular.otf) format("opentype");
+}
+
+
+h4 {
+  width: 100%;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1.313em;
+  line-height: 30px;
+  font-weight: 800;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  -webkit-margin-before: 1.33em;
+  -webkit-margin-after: 1.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
 #home-nav {
   background: linear-gradient(#01394B, #002532);
   font-size: 20px;
@@ -18,20 +111,23 @@ a.navbar-brand{
   font-family: 'lato', serif;
 }
 
-
-#flex-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+img {
+  flex: 1 1 auto;
+  width: 100%;
 }
 
-.flex-content{
-  display: flex;
-  flex-direction: row;
-  height: 15%;
-  border: 1px solid white;
+.item > img.rayna {
+  height:100%;
 }
 
+#main-footer {
+  width: 100%;
+/*  background-color: #002532;
+*/  
+  background-color: #00526D;
+  color: #fff;
+  padding: 5%;
+}
 
 nav.navbar.navbar-default  {
   margin: 0;
@@ -54,47 +150,36 @@ nav.navbar.navbar-default  {
   color: violet;
 }
 
-#flex-title > svg {
-  margin-top: -20px;
-  height: 15%;
-  background: #024E67;
+/* This selector is for the navbar open / hover / focus in the navbar */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  background: linear-gradient(#01394B, #002632);
+  color: violet;
 }
 
-#flex-carousel {
-  display: flex;
-  height: 60%;
+#partners {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-img {
-  flex: 1 1 auto;
-  width: 100%;
+#partners > h4 {
+/*  margin-left: 12.5%;
+*/  width: 100%;
 }
 
-.item > img.rayna {
-  height:100%;
+.partners-lists {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  min-width: 200px;
+  color: #fff;
 }
 
-.dropdown-menu {
-  background: #002532;
-}
-
-
-.dropdown-menu > li> a {
-  background: #002532;
-  color: green;
-}
-
-.dropdown-menu > li > a:hover {
-  background: violet;
-  color: white;
-}
-
-.carousel-caption {
-  position: absolute;
-  top: 33%;
-/* Affects the div containing the h3 tag for captions */
-
-}
+#partners-section {
+  background-color: #003D51;
+/*  padding-bottom: 1%;
+*/}
 
 .row {
   height: 40%;
@@ -102,16 +187,5 @@ img {
 
 .row > .col-md-4.separator {
   height: 100%;
-  border: 1px solid white;
-}
-
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
-  background: linear-gradient(#01394B, #002632);
-  color: violet;
-}
-
-#contact{
-  position: absolute;
-  bottom: -45px;
-  right: 10px;
-}
+/*  border: 1px solid white;
+*/}
