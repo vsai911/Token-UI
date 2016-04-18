@@ -23,7 +23,6 @@ body {
 
 #contact-buttons {
   position: relative;
-  top: -1%;
 }
 
 #contact-blurb {
@@ -63,7 +62,7 @@ body {
 #flex-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 150vh;
 }
 
 #flex-title > svg {
@@ -74,7 +73,7 @@ body {
 
 #flex-carousel {
   display: flex;
-  height: 60%;
+  height: 40%;
 }
 
 .footer-lists {
@@ -179,7 +178,8 @@ nav.navbar.navbar-default  {
 
 #partners-section {
   background-color: #003D51;
-}
+/*  padding-bottom: 1%;
+*/}
 
 .row {
   height: 40%;
