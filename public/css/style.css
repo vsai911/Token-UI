@@ -20,8 +20,8 @@ body {
 }
 
 #contact-buttons {
-/*  bottom: -45px;
-  right: 10px;*/
+  position: relative;
+  top: -1%;
 }
 
 #contact-blurb {
@@ -75,13 +75,35 @@ body {
   height: 60%;
 }
 
+.footer-lists {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    min-width: 200px;
+  }
+}
+
 @font-face {
   font-family: 'Prociono';
   src: url(../lib/Prociono/Prociono-Regular.otf) format("opentype");
 }
 
 
-
+h4 {
+  width: 100%;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1.313em;
+  line-height: 30px;
+  font-weight: 800;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  -webkit-margin-before: 1.33em;
+  -webkit-margin-after: 1.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
 #home-nav {
   background: linear-gradient(#01394B, #002532);
   font-size: 20px;
@@ -96,6 +118,13 @@ img {
 
 .item > img.rayna {
   height:100%;
+}
+
+#main-footer {
+  width: 100%;
+  background-color: #002532;
+  color: #fff;
+  padding: 5%;
 }
 
 nav.navbar.navbar-default  {
