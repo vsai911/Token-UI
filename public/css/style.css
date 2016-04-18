@@ -4,6 +4,11 @@ a.navbar-brand{
  color: green !important;
 }
 
+/* This is for the hover on the social icon hover. */
+.btn-social-icon>:first-child:hover {
+
+}
+
 body {
   background-color: #002532;
 }
@@ -15,19 +20,21 @@ body {
 }
 
 #contact-buttons {
-  position: absolute;
-  bottom: -45px;
-  left: 50%;
+  position: relative;
+/*  bottom: -45px;
+  right: 10px;*/
 }
 
 #contact-blurb {
   font-family: 'lato', serif;
   color: white;
   position: absolute;
+  width: 100%;
+  text-align: center;
 }
 
 #contact-container {
-  margin-left: 4%;
+
 }
 
 .dropdown-menu {
@@ -49,8 +56,9 @@ body {
   display: flex;
   flex-direction: row;
   height: 15%;
-  border: 1px solid white;
-}
+  /* uncomment below if you want to see the borders around the flex divs. */
+/*  border: 1px solid white;
+*/}
 
 #flex-wrapper {
   display: flex;
@@ -73,6 +81,8 @@ body {
   font-family: 'Prociono';
   src: url(../lib/Prociono/Prociono-Regular.otf) format("opentype");
 }
+
+
 
 #home-nav {
   background: linear-gradient(#01394B, #002532);
