@@ -89,7 +89,7 @@ img{
   cursor: default;
 }
 
-.hovereffect .overlay {
+.hovereffect .overlay-container p {
   width: 100%;
   height: 100%;
   position: relative;
@@ -103,7 +103,7 @@ img{
   -ms-transform: translate(460px, -100px) rotate(180deg);
   transform: translate(460px, -100px) rotate(180deg);
   -webkit-transition: all 0.2s 0.4s ease-in-out;
-  transition: all 0.2s 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .hovereffect img {
@@ -141,7 +141,16 @@ img{
   box-shadow: 0 0 5px #fff;
 }
 
-.hovereffect:hover .overlay {
+.overlay-container:hover img {
+  display: none;
+}
+
+.overlay-container > img {
+  width: 250px;
+  height: 250px;
+}
+
+.overlay-container:hover p {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transition-delay: 0s;
