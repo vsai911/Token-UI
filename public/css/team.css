@@ -27,6 +27,21 @@ body {
   margin-left: 20px;
 }
 
+p {
+  width: 100%;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1.05em;
+  line-height: 30px;
+  font-weight: 800;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  -webkit-margin-before: 1.33em;
+  -webkit-margin-after: 1.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
 .personimage{
   position: relative;
   height: 250px;
