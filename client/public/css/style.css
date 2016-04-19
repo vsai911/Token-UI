@@ -1,0 +1,27 @@
+.logo{
+	text-align:center;
+	display:block;
+	flex: 1;
+}
+
+.landing-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-component-body{
+	background: rgba(0,0,0,0.4);
+}
+
+.carousel{
+	flex: 1;
+	width: 100%;
+}
+
+.carousel-image{
+	height: 300px;
+	width: 100%;
+}

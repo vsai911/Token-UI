@@ -1,0 +1,16 @@
+{
+  "name": "zenkara",
+  "version": "1.0.0",
+  "description": "homepage for zenkara",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " node index.js"
+  },
+  "author": "zenkara - Vaibhav",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
