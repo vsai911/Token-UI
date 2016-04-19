@@ -114,7 +114,6 @@ img{
 }
 
 .hovereffect td {
-  text-transform: uppercase;
   color: #fff;
   text-align: center;
   position: relative;
@@ -127,7 +126,6 @@ img{
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
-  text-transform: uppercase;
   color: #fff;
   border: 1px solid #fff;
   margin: 50px 0 0 0;
