@@ -188,47 +188,6 @@ main {
     text-decoration: underline;
   }
 
-/* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/rayna1.jpg')}
-#slide-1 .hsContent {
-  bottom: 200px;
-  top: auto;
-}
-
-/* Slide 2 */
-#slide-2 .bcg {background-image:url('../img/rayna4.jpg')}
-#slide-2 .hsContent {
-  margin-left: -450px;
-  top: auto;
-}
-#slide-2 h2 {
-  position: fixed;
-  top: 10%;
-
-}
-
-/* Slide 3 */
-#slide-3 .bcg {background-image:url('../img/rayna5.jpg')}
-#slide-3 .hsContent {
-  margin-left: -239px;
-}
-  #slide-3 h2 {
-    color: #f2ead6;
-    background-color: rgba(0,0,0,0.6);
-  }
-
-/* Slide 4 */
-#slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
-#slide-4 .hsContent {
-  margin-left: -450px;
-  position: fixed;
-  top: 250px;
-}
-  #slide-4 h2 {
-    background: none;
-    padding-left: 0;
-    padding-right: 0;
-  }
 
 /* ==========================================================================
    Helper classes
@@ -455,4 +414,52 @@ nav.navbar.navbar-default  {
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
   background: linear-gradient(#01394B, #002632);
   color: violet;
+}
+
+/* Following are the individual slides. They are used above, but I will define them here for
+sake of keeping MY modded code separate. */
+
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('../img/rayna1.jpg')}
+
+#slide-1 .hsContent {
+  bottom: 200px;
+  top: auto;
+}
+
+#slide-1 h2 {
+  position: fixed;
+  top: 10%;
+  background: black;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('../img/rayna4.jpg')}
+
+#slide-2 .hsContent {
+  top: auto;
+}
+#slide-2 h2 {
+  position: fixed;
+  top: 10%;
+  color: #fff;
+  background: (0,0,0,6);
+  font-weight: bold;
+}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('../img/rayna5.jpg')}
+
+#slide-3 .hsContent {
+/*  margin-left: -239px;
+*/}
+
+#slide-3 h2 {
+  position: fixed;
+  top: 10%;
+  color: #fff;
+  font-weight: bold;
+  background: (0,0,0,6);
 }
