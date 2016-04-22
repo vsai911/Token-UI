@@ -138,7 +138,8 @@ section {
   transition: opacity 300ms ease-out;
 }
 main {
-  overflow-x: hidden;
+/*  overflow-x: hidden;
+*/
 }
 #preload {
   width: 1px;
@@ -418,3 +419,9 @@ main {
     }
 }
 
+/* Additional CSS */
+
+.index-header {
+  z-index: 2;
+  margin-bottom: -1%;
+}

@@ -50,5 +50,25 @@
       s.refresh($('.homeSlide'));
       
   }
-    
+
+  // This is here to attempt to keep the navbar at the top.
+  var initialPos = $('#index-header-start').offset().top;
+
+  $(window).scroll(function() {
+      var scrolled = $(window).scrollTop();
+    if ( scrolled > initialPos ) {
+        $('.index-header').css({
+           position:"fixed",
+           top:'0px',
+           width: "100%"
+        });
+    } else {
+
+        $('.index-header').css({
+            position:"absolute",
+            top:initialPos+"px",
+            width: "100%"
+        });
+    }
+  });
 } )( jQuery );
