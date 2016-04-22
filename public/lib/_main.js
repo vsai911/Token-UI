@@ -52,19 +52,19 @@
   }
 
   // This is here to attempt to keep the navbar at the top.
-  var initialPos = $('#index-header-start').offset().top;
+  var initialPos = $('#index-header').offset().top;
 
   $(window).scroll(function() {
       var scrolled = $(window).scrollTop();
     if ( scrolled > initialPos ) {
-        $('.index-header').css({
+        $('#index-header').css({
            position:"fixed",
            top:'0px',
            width: "100%"
         });
     } else {
 
-        $('.index-header').css({
+        $('#index-header').css({
             position:"absolute",
             top:initialPos+"px",
             width: "100%"

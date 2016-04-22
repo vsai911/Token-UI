@@ -203,7 +203,8 @@ main {
 }
 #slide-2 h2 {
   position: fixed;
-  top: 70%;
+  top: 10%;
+
 }
 
 /* Slide 3 */
@@ -421,7 +422,37 @@ main {
 
 /* Additional CSS */
 
-.index-header {
-  z-index: 2;
+#index-header {
   margin-bottom: -1%;
+  background: linear-gradient(#01394B, #002532);
+  font-size: 20px;
+  color: blue;
+  font-family: 'lato', serif;
+}
+
+nav.navbar.navbar-default  {
+  margin: 0;
+  border: none;
+  margin: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  background: linear-gradient(#01394B, #002532);
+  color: green;
+  font-size: 17px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: orangered;
+  text: green;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: violet;
+}
+
+/* This selector is for the navbar open / hover / focus in the navbar */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  background: linear-gradient(#01394B, #002632);
+  color: violet;
 }
