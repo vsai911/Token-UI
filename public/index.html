@@ -29,7 +29,11 @@
       <!--[if lt IE 7]>
           <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
       <![endif]-->
-    <nav id='index-header' class="navbar navbar-default">
+    <nav id='index-header' class="navbar navbar-default"
+     data-anchor-target="#content"
+     data-200-top="opacity:0;"
+     data-150-top="visibility:visible; top: -55px; opacity: 0.3;"
+     data-100-top="opacity: 1; position: fixed; top: 0;">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -55,8 +59,7 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <main>
-     
+    <main id=content>
       <section id="slide-1" class="homeSlide">
         <div class="bcg" 
           data-center="background-position: 50% 0px;" 
