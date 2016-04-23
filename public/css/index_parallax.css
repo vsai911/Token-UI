@@ -429,9 +429,10 @@ sake of keeping MY modded code separate. */
 
 #slide-1 h2 {
   position: fixed;
-  top: 10%;
-  background: black;
-  color: #fff;
+  top: auto;
+  bottom: 50%;
+  background-color: (0,0,0,0.5);
+  color: #fff8de;
   font-weight: bold;
 }
 
@@ -443,9 +444,10 @@ sake of keeping MY modded code separate. */
 }
 #slide-2 h2 {
   position: fixed;
-  top: 10%;
-  color: #fff;
-  background: (0,0,0,6);
+  top: auto;
+  bottom: 50%;
+  color: #fff8de;
+  background-color: (0,0,0,0.5);
   font-weight: bold;
 }
 
@@ -458,8 +460,9 @@ sake of keeping MY modded code separate. */
 
 #slide-3 h2 {
   position: fixed;
-  top: 10%;
-  color: #fff;
+  top: auto;
+  bottom: 50%;
+  color: #fff8de;
   font-weight: bold;
-  background: (0,0,0,6);
+  background-color: (0,0,0,0.5);
 }
