@@ -440,6 +440,7 @@ sake of keeping MY modded code separate. */
 #slide-2 .bcg {background-image:url('../img/rayna4.jpg')}
 
 #slide-2 .hsContent {
+  bottom: 200px;
   top: auto;
 }
 #slide-2 h2 {
@@ -455,8 +456,9 @@ sake of keeping MY modded code separate. */
 #slide-3 .bcg {background-image:url('../img/rayna5.jpg')}
 
 #slide-3 .hsContent {
-/*  margin-left: -239px;
-*/}
+  bottom: 200px;
+  top: auto;
+}
 
 #slide-3 h2 {
   position: fixed;
@@ -465,4 +467,70 @@ sake of keeping MY modded code separate. */
   color: #fff8de;
   font-weight: bold;
   background-color: (0,0,0,0.5);
+}
+
+#slide-4 .bcg {
+  background-color: #00526D
+}
+
+#slide-4 .hsContent {
+  bottom: 200px;
+  top: auto;
+}
+
+#slide-4 p {
+  font-size: 27px;
+  margin-right: 50%;
+  position: fixed;
+  top: auto;
+  bottom: 50%;
+  color: #fff8de;
+  font-weight: bold;
+  background-color: (0,0,0,0.5);
+}
+
+/* Intro css */
+
+.intro-lists {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  min-width: 200px;
+}
+
+#intro-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#intro-section {
+  width: 100%;
+  color: #fff;
+  padding: 5%;
+  float: left;
+  margin-right: auto;
+  margin-left: -50%;
+  margin-bottom: 33%;
+  background-color: #013647;
+}
+
+#contact-buttons {
+  position: relative;
+}
+
+#intro-content > h4 {
+  width: 100%;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 2em;
+  line-height: 30px;
+  font-weight: 800;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  -webkit-margin-before: 1.33em;
+  -webkit-margin-after: 1.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
 }
