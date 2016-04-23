@@ -416,11 +416,93 @@ nav.navbar.navbar-default  {
   color: violet;
 }
 
+/* Trying to fix resize issue. Works */
+
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('../img/rayna1.jpg')}
+
+#slide-1 .hsContent {
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 50%;
+  float: left;
+  left: 33%;
+}
+
+#slide-1 h2 {
+  background-color: (0,0,0,0.5);
+  color: #fff8de;
+  font-weight: bold;
+}
+
+
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('../img/rayna4.jpg')}
+
+#slide-2 .hsContent {
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 50%;
+  float: left;
+  left: 33%;
+}
+#slide-2 h2 {
+  position: fixed;
+  top: auto;
+  bottom: 50%;
+  color: #fff8de;
+  background-color: (0,0,0,0.5);
+  font-weight: bold;
+}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('../img/rayna5.jpg')}
+
+#slide-3 .hsContent {
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 50%;
+  float: left;
+  left: 33%;
+}
+
+#slide-3 h2 {
+  position: fixed;
+  top: auto;
+  bottom: 50%;
+  color: #fff8de;
+  background-color: (0,0,0,0.5);
+  font-weight: bold;
+}
+
+/* Slide 4 */
+#slide-4 .bcg {
+  background-color: #00526D
+}
+
+#slide-4 .hsContent {
+  top: 38%;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 20%;
+  position: fixed;
+}
+
+#slide-4 p {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* Following are the individual slides. They are used above, but I will define them here for
 sake of keeping MY modded code separate. */
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/rayna1.jpg')}
+/*#slide-1 .bcg {background-image:url('../img/rayna1.jpg')}
 
 #slide-1 .hsContent {
   bottom: 200px;
@@ -434,10 +516,10 @@ sake of keeping MY modded code separate. */
   background-color: (0,0,0,0.5);
   color: #fff8de;
   font-weight: bold;
-}
+}*/
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('../img/rayna4.jpg')}
+/*#slide-2 .bcg {background-image:url('../img/rayna4.jpg')}
 
 #slide-2 .hsContent {
   bottom: 200px;
@@ -450,10 +532,10 @@ sake of keeping MY modded code separate. */
   color: #fff8de;
   background-color: (0,0,0,0.5);
   font-weight: bold;
-}
+}*/
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../img/rayna5.jpg')}
+/*#slide-3 .bcg {background-image:url('../img/rayna5.jpg')}
 
 #slide-3 .hsContent {
   bottom: 200px;
@@ -487,7 +569,7 @@ sake of keeping MY modded code separate. */
   color: #fff8de;
   font-weight: bold;
   background-color: (0,0,0,0.5);
-}
+}*/
 
 /* Intro css */
 
