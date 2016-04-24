@@ -374,7 +374,7 @@ main {
 
 /* Additional CSS */
 
-#scrollbar {
+/*#scrollbar {
   position:fixed;
   right:2px;
   height:50px;
@@ -384,7 +384,7 @@ main {
   border:1px solid rgba(255,255,255,0.6);
   z-index:300;
   border-radius:3px;
-}
+}*/
 
 /*html, body {
   width:100%;
@@ -528,6 +528,17 @@ nav.navbar.navbar-default  {
   color: #fff8de;
   background-color: (0,0,0,0.5);
   font-weight: bold;
+}
+
+#section3-container {
+  width:100%;
+  height:100%;
+}
+
+#easing {
+  top:10%;
+  width:50%;
+  z-index:101;
 }
 
 /* Slide 4 */
