@@ -141,14 +141,7 @@ main {
 /*  overflow-x: hidden;
 */
 }
-#preload {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 .bcg {
   background-position: center center;
   background-repeat: no-repeat;
@@ -166,27 +159,27 @@ main {
 }
 
 .hsContent {
-  max-width: 700px;
   position: absolute;
   left: 50%;
   top: 50%;
 }
-  .hsContent h2  {
-    color: #fff8de;
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px 5px;
-    font-size: 35px;
-    line-height: 38px;
-    margin-bottom: 12px;
-  }
-  .hsContent p {
-    width: 400px;
-    color: #b2b2b2;
-  }
-  .hsContent a {
-    color: #b2b2b2;
-    text-decoration: underline;
-  }
+.hsContent h2  {
+  /*background-color: rgba(0,0,0,0.5);*/  
+  color: #fff8de;
+  padding: 10px 5px;
+  font-size: 35px;
+  line-height: 38px;
+  margin-bottom: 12px;
+}
+
+.hsContent p {
+  width: 400px;
+  color: #b2b2b2;
+}
+.hsContent a {
+  color: #b2b2b2;
+  text-decoration: underline;
+}
 
 
 /* ==========================================================================
@@ -426,14 +419,53 @@ nav.navbar.navbar-default  {
   margin-left: auto;
   margin-right: auto;
   bottom: 50%;
-  float: left;
   left: 33%;
+  width: 23.12345%;
 }
 
 #slide-1 h2 {
-  background-color: (0,0,0,0.5);
+/*  background-color: (0,0,0,0.5);*/
   color: #fff8de;
   font-weight: bold;
+  width: 100%;
+  min-width: 100%;
+}
+
+#slide-1 p {
+  font-size: 27px;
+  margin-right: 50%;
+  top: auto;
+  bottom: 50%;
+  color: #fff8de;
+  font-weight: bold;
+  background-color: (0,0,0,0.5);
+}
+
+.slide1-lists {
+  position: relative;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  min-width: 390px;
+  /*background-color: (0,0,0,0.5);*/
+}
+
+#slide1-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slide1-section {
+  width: 100%;
+  color: #fff;
+  padding: 5%;
+  /*background-color: #013647;*/
+}
+
+#section1-container {
+  bottom: 33%;
 }
 
 
@@ -489,13 +521,16 @@ nav.navbar.navbar-default  {
   margin-left: auto;
   margin-right: auto;
   bottom: 20%;
-  position: fixed;
 }
 
 #slide-4 p {
-  background: none;
-  padding-left: 0;
-  padding-right: 0;
+  font-size: 27px;
+  margin-right: 50%;
+  top: auto;
+  bottom: 50%;
+  color: #fff8de;
+  font-weight: bold;
+  background-color: (0,0,0,0.5);
 }
 
 /* Following are the individual slides. They are used above, but I will define them here for
