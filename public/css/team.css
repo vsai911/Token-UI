@@ -160,3 +160,35 @@ img{
   background: #000;
   border-radius: 50%; 
 }
+
+.team-member:hover > .img-circle {
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.5);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(33, 150, 243, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.5);
+    box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.5);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(33, 150, 243, 0);
+      box-shadow: 0 0 0 10px rgba(33, 150, 243, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+      box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+  }
+}
