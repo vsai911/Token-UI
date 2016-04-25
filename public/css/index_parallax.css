@@ -455,10 +455,13 @@ nav.navbar.navbar-default  {
 sake of keeping MY modded code separate. */
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/rayna1.jpg')}
+#slide-1 .bcg {
+  background-image:url('../img/rayna1.jpg');
+  width: 100%;
+}
 
 #slide-1 .hsContent {
-  top: 50%;
+  top: 70%;
   margin-left: auto;
   margin-right: auto;
   bottom: 50%;
@@ -467,21 +470,27 @@ sake of keeping MY modded code separate. */
 }
 
 #slide-1 h2 {
-/*  background-color: (0,0,0,0.5);*/
+  top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.25em;
+  float: left;
   color: #fff8de;
   font-weight: bold;
   width: 100%;
-  min-width: 100%;
+  bottom: 10%;
+  min-width: 20em;
 }
 
 #slide-1 p {
-  font-size: 27px;
-  margin-right: 50%;
+  font-size: 1.5em;
+  margin-right: auto;
+  margin-left: auto;
   top: auto;
   bottom: 50%;
   color: #fff8de;
   font-weight: bold;
-  background-color: (0,0,0,0.5);
+  min-width: 20em;
 }
 
 .slide1-lists {
@@ -490,8 +499,6 @@ sake of keeping MY modded code separate. */
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  min-width: 390px;
-  /*background-color: (0,0,0,0.5);*/
 }
 
 #slide1-content {
@@ -507,8 +514,11 @@ sake of keeping MY modded code separate. */
   /*background-color: #013647;*/
 }
 
-#section1-container {
-  bottom: 33%;
+#section1-container.hsContainer{
+  bottom: 25%;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -604,7 +614,6 @@ sake of keeping MY modded code separate. */
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  min-width: 200px;
 }
 
 #intro-content {

@@ -88,7 +88,7 @@
     } else {
 
         $('#index-header').css({
-            position:"absolute",
+            position:"fixed",
             top:initialPos+"px",
             width: "100%"
         });
