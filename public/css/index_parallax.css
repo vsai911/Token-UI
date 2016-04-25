@@ -413,6 +413,7 @@ nav.navbar.navbar-default  {
   background: linear-gradient(#01394B, #002532);
   color: green;
   font-size: 17px;
+  margin-top: -1%;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
