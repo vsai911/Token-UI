@@ -473,18 +473,17 @@ sake of keeping MY modded code separate. */
   top: auto;
   margin-left: auto;
   margin-right: auto;
-  font-size: 2em;
+  font-size: 1.8em;
   float: left;
   color: #fff8de;
   font-weight: bold;
-  width: 100%;
   bottom: 10%;
   width: 100%;
-  min-width: 10em;
+  min-width: 11em;
 }
 
 #slide-1 p {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-right: auto;
   margin-left: auto;
   top: auto;
@@ -593,32 +592,52 @@ sake of keeping MY modded code separate. */
   top: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 66%;
+  width: 75%;
   height: 33%;
 }
 
+#slide-4 h2 {
+  top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.4em;
+  float: left;
+  color: #fff8de;
+  font-weight: bold;
+  bottom: 10%;
+  width: 100%;
+  min-width: 10em;
+}
+
 #slide-4 p {
-  font-size: 2em;
-  margin-right: 50%;
+  font-size: 0.8em;
+  margin-right: auto;
+  margin-left: auto;
   top: auto;
   bottom: 50%;
   color: #fff8de;
   font-weight: bold;
-  background-color: (0,0,0,0.5);
+  width: 100%;
+  min-width: 10em;
 }
 
 
 
-/* Intro css */
-
-.intro-lists {
+/* footer css */
+/* margin-right is handled by jQuery for this css block. */
+.footer-lists {
   float: left;
   display: block;
-  margin-right: 2.35765%;
   width: 23.23176%;
+  margin-right: 2.35765%;
 }
 
-#intro-content {
+#buttons-container {
+  display: block;
+  float: left;
+}
+
+#footer-content {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
@@ -626,7 +645,7 @@ sake of keeping MY modded code separate. */
   right: 3%;
 }
 
-#intro-section {
+#footer-section {
   width: 100%;
   color: #fff;
   padding: 5%;
@@ -638,10 +657,12 @@ sake of keeping MY modded code separate. */
 }
 
 #contact-buttons {
+  width: 28%;
   position: relative;
+  min-width: 5em;
 }
 
-#intro-content > h4 {
+/*#intro-content > h4 {
   width: 66%;
   font-family: "proxima-nova", sans-serif;
   font-size: 2em;
@@ -654,7 +675,7 @@ sake of keeping MY modded code separate. */
   -webkit-margin-after: 1.33em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-}
+}*/
 
 nav {
   background-color: rgba(255, 255, 255, 0.9);

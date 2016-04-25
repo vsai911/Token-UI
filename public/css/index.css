@@ -80,7 +80,8 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
+/*  width: 23.23176%;*/
+  width: 20%;
   min-width: 200px;
 }
 

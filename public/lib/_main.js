@@ -36,7 +36,8 @@
   function adjustWindow(){
         
     // Get window size
-      winH = $window.height();
+    var winH = $window.height(),
+      winW = $window.width();
       
       // Keep minimum height 550
     if(winH <= 550) {
@@ -46,8 +47,27 @@
       // Resize our slides
       $slide.height(winH);
 
+    if (winW <= 941) {
+      $('#slide-4').height(winH/2.45);
+    } else {
       $('#slide-4').height(winH/3);
-      
+    }
+    // This resizes the button container so that it stacks in a box or a straight line.
+    // When you resize.
+    if (winW <= 466) {
+      $('#buttons-container').css('width', '33%');
+    } else {
+      $('#buttons-container').css('width', '23.23176%');
+    }
+
+    // This resizes the end list order to reduce margin at bigger sizes, and increases
+    // when the screen is small
+    if (winW <= 638) {
+      $('.footer-lists').css('margin-right', '20%')
+    } else {
+      $('.footer-lists').css('margin-right', '2.35765%')
+    }
+
       // Refresh Skrollr after resizing our sections
       s.refresh($('.homeSlide'));
       
@@ -55,8 +75,8 @@
 
   $(window).resize(function() {
 
-    winH = $window.height();
-    winW = $window.width();
+    var winH = $window.height(),
+      winW = $window.width();
 
     if (winH <= 550) {
       winH = 550;
@@ -69,7 +89,26 @@
     $slide.height(winH);
     $slide.width(winW);
 
-    $('#slide-4').height(winH/3);
+    if (winW <= 941) {
+      $('#slide-4').height(winH/2.45);
+    } else {
+      $('#slide-4').height(winH/3);
+    }
+    // This resizes the button container so that it stacks in a box or a straight line
+    // when you resize.
+    if (winW <= 466) {
+      $('#buttons-container').css('width', '28%');
+    } else {
+      $('#buttons-container').css('width', '23.23176%');
+    }
+
+    // This resizes the end list order to reduce margin at bigger sizes, and increases
+    // when the screen is small
+    if (winW <= 638) {
+      $('.footer-lists').css('margin-right', '20%')
+    } else {
+      $('.footer-lists').css('margin-right', '2.35765%')
+    }
 
     s.refresh($('.homeSlide'));
   })
