@@ -127,8 +127,8 @@ h2 {
 .loading {
   background: url('../img/ico_loading.gif') no-repeat center center;
 }
+
 section {
-  min-width: 960px;
   opacity: 0;
 }
 .loaded section,
@@ -461,10 +461,9 @@ sake of keeping MY modded code separate. */
 }
 
 #slide-1 .hsContent {
-  top: 70%;
   margin-left: auto;
   margin-right: auto;
-  bottom: 50%;
+  bottom: 65%;
   left: 33%;
   width: 23.12345%;
 }
@@ -473,13 +472,14 @@ sake of keeping MY modded code separate. */
   top: auto;
   margin-left: auto;
   margin-right: auto;
-  font-size: 2.25em;
+  font-size: 2em;
   float: left;
   color: #fff8de;
   font-weight: bold;
   width: 100%;
   bottom: 10%;
-  min-width: 20em;
+  width: 100%;
+  min-width: 10em;
 }
 
 #slide-1 p {
@@ -490,7 +490,8 @@ sake of keeping MY modded code separate. */
   bottom: 50%;
   color: #fff8de;
   font-weight: bold;
-  min-width: 20em;
+  width: 100%;
+  min-width: 10em;
 }
 
 .slide1-lists {
@@ -516,7 +517,7 @@ sake of keeping MY modded code separate. */
 
 #section1-container.hsContainer{
   bottom: 25%;
-  width: 66%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
