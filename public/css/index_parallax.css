@@ -431,18 +431,20 @@ nav.navbar.navbar-default  {
 }
 
 .dropdown-menu {
-  background: #002532;
+  background: black;
+  border: 2px solid green;
 }
 
 
 .dropdown-menu > li> a {
-  background: #002532;
-  color: green;
+  background: black;
+  color: white;
 }
 
 .dropdown-menu > li > a:hover {
-  background: violet;
+  text-decoration: underline;
   color: white;
+  background: black;
 }
 
 /* Following are the individual slides. They are used above, but I will define them here for
