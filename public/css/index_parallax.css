@@ -629,7 +629,6 @@ sake of keeping MY modded code separate. */
   float: left;
   display: block;
   width: 23.23176%;
-  margin-right: 2.35765%;
 }
 
 #buttons-container {
@@ -638,7 +637,8 @@ sake of keeping MY modded code separate. */
 }
 
 #footer-content {
-  max-width: 68em;
+/*  max-width: 68em;*/
+  max-width: 30em;
   margin-left: auto;
   margin-right: auto;
   margin-top: -5%;

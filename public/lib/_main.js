@@ -65,7 +65,8 @@
     if (winW <= 638) {
       $('.footer-lists').css('margin-right', '20%')
     } else {
-      $('.footer-lists').css('margin-right', '2.35765%')
+      // $('.footer-lists').css('margin-right', '2.35765%')
+      $('.footer-lists').css('margin-right', '5%')
     }
 
       // Refresh Skrollr after resizing our sections
@@ -107,7 +108,8 @@
     if (winW <= 638) {
       $('.footer-lists').css('margin-right', '20%')
     } else {
-      $('.footer-lists').css('margin-right', '2.35765%')
+      // $('.footer-lists').css('margin-right', '2.35765%')
+      $('.footer-lists').css('margin-right', '5%')
     }
 
     s.refresh($('.homeSlide'));
