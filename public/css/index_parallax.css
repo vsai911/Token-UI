@@ -417,17 +417,21 @@ nav.navbar.navbar-default  {
 
 .navbar-default .navbar-nav > li > a:hover {
   color: orangered;
-  text: green;
 }
 
 .navbar-default .navbar-nav > li > a:focus {
-  color: violet;
+  color: orangered;
+  text-decoration: underline;
 }
+
+/*.navbar-default .navbar-nav > li > a.selected {
+  text-decoration: underline;
+}*/
 
 /* This selector is for the navbar open / hover / focus in the navbar */
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
   background: linear-gradient(#01394B, #002632);
-  color: violet;
+  color: white;
 }
 
 .dropdown-menu {
