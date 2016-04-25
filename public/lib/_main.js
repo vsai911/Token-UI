@@ -56,12 +56,18 @@
   $(window).resize(function() {
 
     winH = $window.height();
+    winW = $window.width();
 
-    if(winH <= 550) {
+    if (winH <= 550) {
       winH = 550;
-    } 
+    }
+
+    if (winW <= 500) {
+      win = 550
+    }
 
     $slide.height(winH);
+    $slide.width(winW);
 
     $('#slide-4').height(winH/3);
 

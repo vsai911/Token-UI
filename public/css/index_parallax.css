@@ -32,13 +32,13 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+  color: #222;
 }
 
 body {
-   background-color: #013647
-    font-size: 1em;
-    line-height: 1.4;
+  background-color: #013647
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -160,6 +160,7 @@ main {
 }
 
 .hsContent {
+  background-color: #013647;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -544,16 +545,23 @@ sake of keeping MY modded code separate. */
 } 
 
 /* Slide 4 */
+/* Next couple of selectors makes the background divs the correct colour for slide 4. */
+
 #slide-4 .bcg {
-  background-color: #00526D;
+  background-color: #013647;
   width: 100%;
+}
+
+#slide-4-container {
+  background-color: #013647;
+  left: 10%;
 }
 
 #slide-4 .hsContent {
   top: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 66%;
   height: 33%;
 }
 
@@ -583,6 +591,8 @@ sake of keeping MY modded code separate. */
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -5%;
+  right: 3%;
 }
 
 #intro-section {
@@ -601,7 +611,7 @@ sake of keeping MY modded code separate. */
 }
 
 #intro-content > h4 {
-  width: 100%;
+  width: 66%;
   font-family: "proxima-nova", sans-serif;
   font-size: 2em;
   line-height: 30px;
