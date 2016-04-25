@@ -8,7 +8,7 @@ app.get('/portfolio', function(req,res){
 });
 
 app.get('/team', function(req,res){
-  res.sendFile(__dirname + '/public/team.html');
+  res.sendFile(__dirname + '/public/team/team.html');
 });
 
 app.get('/', function (req, res) {
