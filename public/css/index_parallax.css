@@ -36,6 +36,7 @@ textarea {
 }
 
 body {
+   background-color: #013647
     font-size: 1em;
     line-height: 1.4;
 }
@@ -428,7 +429,8 @@ nav.navbar.navbar-default  {
   color: violet;
 }
 
-/* Trying to fix resize issue. Works */
+/* Following are the individual slides. They are used above, but I will define them here for
+sake of keeping MY modded code separate. */
 
 /* Slide 1 */
 #slide-1 .bcg {background-image:url('../img/rayna1.jpg')}
@@ -539,22 +541,24 @@ nav.navbar.navbar-default  {
   top:10%;
   width:50%;
   z-index:101;
-}
+} 
 
 /* Slide 4 */
 #slide-4 .bcg {
-  background-color: #00526D
+  background-color: #00526D;
+  width: 100%;
 }
 
 #slide-4 .hsContent {
-  top: 38%;
+  top: 0;
   margin-left: auto;
   margin-right: auto;
-  bottom: 20%;
+  width: 100%;
+  height: 33%;
 }
 
 #slide-4 p {
-  font-size: 27px;
+  font-size: 2em;
   margin-right: 50%;
   top: auto;
   bottom: 50%;
@@ -563,78 +567,7 @@ nav.navbar.navbar-default  {
   background-color: (0,0,0,0.5);
 }
 
-/* Following are the individual slides. They are used above, but I will define them here for
-sake of keeping MY modded code separate. */
 
-/* Slide 1 */
-/*#slide-1 .bcg {background-image:url('../img/rayna1.jpg')}
-
-#slide-1 .hsContent {
-  bottom: 200px;
-  top: auto;
-}
-
-#slide-1 h2 {
-  position: fixed;
-  top: auto;
-  bottom: 50%;
-  background-color: (0,0,0,0.5);
-  color: #fff8de;
-  font-weight: bold;
-}*/
-
-/* Slide 2 */
-/*#slide-2 .bcg {background-image:url('../img/rayna4.jpg')}
-
-#slide-2 .hsContent {
-  bottom: 200px;
-  top: auto;
-}
-#slide-2 h2 {
-  position: fixed;
-  top: auto;
-  bottom: 50%;
-  color: #fff8de;
-  background-color: (0,0,0,0.5);
-  font-weight: bold;
-}*/
-
-/* Slide 3 */
-/*#slide-3 .bcg {background-image:url('../img/rayna5.jpg')}
-
-#slide-3 .hsContent {
-  bottom: 200px;
-  top: auto;
-}
-
-#slide-3 h2 {
-  position: fixed;
-  top: auto;
-  bottom: 50%;
-  color: #fff8de;
-  font-weight: bold;
-  background-color: (0,0,0,0.5);
-}
-
-#slide-4 .bcg {
-  background-color: #00526D
-}
-
-#slide-4 .hsContent {
-  bottom: 200px;
-  top: auto;
-}
-
-#slide-4 p {
-  font-size: 27px;
-  margin-right: 50%;
-  position: fixed;
-  top: auto;
-  bottom: 50%;
-  color: #fff8de;
-  font-weight: bold;
-  background-color: (0,0,0,0.5);
-}*/
 
 /* Intro css */
 
@@ -693,4 +626,13 @@ nav {
   /* we'll override these shortly */
   z-index: 1000;
   width: 100%;
+}
+
+.footer {
+    position: absolute;
+    margin-top: -120px;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
 }

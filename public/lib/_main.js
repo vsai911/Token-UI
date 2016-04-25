@@ -14,6 +14,11 @@
   $window = $(window);
   $slide = $('.homeSlide');
   $body = $('body');
+
+  // Init Skrollr
+  var s = skrollr.init({
+      forceHeight: false
+  });
   
     //FadeIn all sections   
   $body.imagesLoaded( function() {
@@ -29,27 +34,39 @@
   });
   
   function adjustWindow(){
-    
-    // Init Skrollr
-    var s = skrollr.init({
-        forceHeight: false
-    });
-    
+        
     // Get window size
       winH = $window.height();
       
       // Keep minimum height 550
-      if(winH <= 550) {
+    if(winH <= 550) {
       winH = 550;
     } 
       
       // Resize our slides
       $slide.height(winH);
+
+      $('#slide-4').height(winH/3);
       
       // Refresh Skrollr after resizing our sections
       s.refresh($('.homeSlide'));
       
   }
+
+  $(window).resize(function() {
+
+    winH = $window.height();
+
+    if(winH <= 550) {
+      winH = 550;
+    } 
+
+    $slide.height(winH);
+
+    $('#slide-4').height(winH/3);
+
+    s.refresh($('.homeSlide'));
+  })
 
   // This is here to attempt to keep the navbar at the top.
   var initialPos = $('#index-header').offset().top;
