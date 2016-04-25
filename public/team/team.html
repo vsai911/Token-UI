@@ -59,7 +59,7 @@
           <thead><tr></tr></thead>
           <tbody>
               <tr class='hovereffect'>
-                <td>
+                <td id="Sai" data-toggle="modal" data-target="#TeamAboutModal">
                   <div class="personimage">
                     <img src="../img/sai.jpg">
                     <div class="links">
@@ -79,7 +79,7 @@
                   <p>Sai, our CEO, has a double major in Cognitive systems and Biology. Problem solving, is his middle name, apart from the extremely long name he already has. He has experience in many frameworks, including Meteor, Rails and React,as well as working in high-paced start-up environments. A passion for building community and technology, starting zenkara was a no-brainer. On a random day, you will find sai, in his elements, cooking food, and questioning the meaning of life.   </p>
                 </td>
               </tr>
-              <tr>x
+              <!-- <tr>
                 <td class="personempty">
                 </td>
                 <td class="information">
@@ -106,13 +106,29 @@
                   <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" />
                   <p>Jason, our treasurer, has his M.A. in Economics, he has recently changed focus to web development because of the increasing need to learn web technologies and languages. Originally from Edmonton, he has fallen in love with the West Coast. Strong points are in Ruby and JavaScript frameworks, including Rails and Meteor, and has started to focus on learning React. Personally loves data visualization, so is often playing around with D3 graphs. Since moving out to Vancouver, he has started to rock climb, sail, and start his own band, the Rusty Buckets.</p>
                 </td>
-              </tr>
+              </tr> -->
           </tbody>
         </table>
     </div>
   </div>
-
-    <div class= "flex-column">
+  <div id="TeamAboutModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+    <div id="team-modal" class="modal-content">
+      <!-- <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div> -->
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
+        Sai, our CEO, has a double major in Cognitive systems and Biology. Problem solving, is his middle name, apart from the extremely long name he already has. He has experience in many frameworks, including Meteor, Rails and React,as well as working in high-paced start-up environments. A passion for building community and technology, starting zenkara was a no-brainer. On a random day, you will find sai, in his elements, cooking food, and questioning the meaning of life. 
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+   <!--  <div class= "flex-column">
       <div class="table-responsive">
         <table class="table">
           <thead><tr></tr></thead>
@@ -176,8 +192,8 @@
                 </td>
               </tr>
           </tbody>
-        </table>
-    </div>
+        </table> -->
+    <!-- </div> -->
   </div>
 </div>
 

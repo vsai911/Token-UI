@@ -49,6 +49,12 @@ p {
   width: 250px;
 }
 
+#team-modal{
+  background-color: #484848;
+  opacity:0.9;
+  color: white;
+}
+
 img{
   height: inherit;
   width: inherit;
