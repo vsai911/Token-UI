@@ -430,6 +430,21 @@ nav.navbar.navbar-default  {
   color: violet;
 }
 
+.dropdown-menu {
+  background: #002532;
+}
+
+
+.dropdown-menu > li> a {
+  background: #002532;
+  color: green;
+}
+
+.dropdown-menu > li > a:hover {
+  background: violet;
+  color: white;
+}
+
 /* Following are the individual slides. They are used above, but I will define them here for
 sake of keeping MY modded code separate. */
 
