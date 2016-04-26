@@ -1,9 +1,13 @@
 var TEAM_POLYGON_RADIUS = 250;
+var TOGGLE_DURATION = 500;
+
+// Classes
+var TEAM_MEMBER = '.team-member';
 
 function drawPolygon() {
 	//Draw the polygon
 	var radius = TEAM_POLYGON_RADIUS;
-	var fields = $('.team-member'), 
+	var fields = $(TEAM_MEMBER), 
 		container = $('#team-container'), 
 		width = container.width(), 
 		height = container.height();
@@ -22,6 +26,10 @@ function drawPolygon() {
 $(document).ready(function() {
 	particlesJS.load('particles-js', 'particles.json', function() {
   		console.log('callback - particles.js config loaded');
+	});
+	$(TEAM_MEMBER).click(function() {
+		$('#member-information').toggle(TOGGLE_DURATION);
+		$(this).toggleClass('team-member-flip');
 	});
 	drawPolygon();
 });
