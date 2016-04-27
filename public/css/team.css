@@ -49,6 +49,7 @@ p {
   width: 250px;
 }
 
+
 img{
   height: inherit;
   width: inherit;
@@ -214,4 +215,27 @@ img{
   -webkit-transition-duration: 0.75s;
   transition-duration: 0.75s;
   z-index: 100;
+}
+
+.modal {
+  text-align: center;
+}
+
+#jason-modal{
+  top:40%;
+  outline: none;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width:45%;
+  /*max-width: 768px;*/
+}
+
+#team-modal{
+  background-color: #484848;
+  opacity:0.9;
+  color: white;
 }
