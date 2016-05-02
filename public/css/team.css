@@ -222,7 +222,7 @@ img{
 }
 
 #jason-modal{
-  top:40%;
+  top:30%;
   outline: none;
 }
 
@@ -230,8 +230,7 @@ img{
   display: inline-block;
   text-align: left;
   vertical-align: middle;
-  width:45%;
-  /*max-width: 768px;*/
+  width: 300px;
 }
 
 #team-modal{
