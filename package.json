@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/vsai911/Token-UI#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
+    "emailjs": "^1.0.4",
     "express": "^4.13.4"
   }
 }
