@@ -170,7 +170,7 @@ nav.navbar.navbar-default  {
   margin-left: 12.5%;
   float: left;
   display: block;
-/*  margin-right: 2.35765%; 
+/*  margin-right: 2.35765%;
 */  width: 23.23176%;
   min-width: 200px;
   color: #fff;
@@ -189,3 +189,43 @@ nav.navbar.navbar-default  {
   height: 100%;
 /*  border: 1px solid white;
 */}
+
+/* re-doing parallax with new css */
+
+section {
+    height:600px;
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow:auto;
+}
+
+
+  #slide-1{
+	background: url('../img/pexels-photo.jpg') no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+  }
+
+  #slide-2 {
+	background: url('../img/rayna1.jpg') no-repeat top center fixed;
+    color:#fff;
+    background-size:cover;
+  }
+
+  #slide-3{
+	background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+  }
+
+  #footer {
+      height: 200px;
+      background-color:#585858;
+      margin-top:50px;
+      padding-top:20px;
+      padding-bottom:20px;
+  }
+
+  #footer a {
+    color:#efefef;
+  }

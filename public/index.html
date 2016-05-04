@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">`
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">` -->
 
 
     <script type="text/javascript" src="lib/jquery-2.2.0.min.js"></script>
@@ -22,21 +22,14 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
     <link href='../lib/bootstrap-social-gh-pages/bootstrap-social.css' rel='stylesheet' type='text/css'>
     <link href='../lib/font-awesome-4.6.1/css/font-awesome.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/index.css">
 
-    <script src='lib/d3/d3.js'></script>
-    <link rel="stylesheet" href="css/index_parallax.css">
-    <script src="lib/modernizr-2.7.1.min.js"></script>
-    <title></title>
+    <script src="index.js"></script>
+    <title>Zenkara</title>
   </head>
-  <body class="loading">
-      <!--[if lt IE 7]>
-          <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-      <![endif]-->
-    <nav id='index-header' class="navbar navbar-default"
-     data-anchor-target="#content"
-     data-200-top="opacity:0;"
-     data-150-top="visibility:visible; top: -55px; opacity: 0.3;"
-     data-100-top="opacity: 1; position: fixed; top: 0;">
+
+  <body>
+    <nav id='index-header' class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -63,133 +56,58 @@
       </div><!-- /.container-fluid -->
     </nav>
     <main id=content>
-      <section id="slide-1" class="homeSlide">
-        <div class="bcg"
-          data-center="background-position: 50% 0px;"
-          data-top-bottom="background-position: 50% -100px;"
-          data-anchor-target="#slide-1"
-        >
-          <div class="hsContainer" id='section1-container'>
-            <div class="hsContent"
-             data-5p="opacity: 1;"
-             data-25p="opacity: 0;"
-             data-anchor-target="#slide-1 h2">
-              <div id='slide1-section'>
-                <div id='slide1-content'>
-                  <div class='slide1-lists'>
-                    <h2>Welcome to Zenkara</h2>
-                  </div>
-                  <div class='slide1-lists'>
-                    <p> Placeholder text! Blurbs! Good times! Groovy! </p>
-                  </div>
-                </div>
+      <section id="slide-1" class="parallax">
+        <h1> Zenkara </h1>
+        <p> we are great </p>
+      </section>
+
+      <section id="slide-2" class="parallax">
+        <h1> test1 </h1>
+      </section>
+
+
+      <section id= "slide-3" class="parallax">
+      </section>
+
+      <section id= "footer" class = "parallax">
+            <div id='footer-content'>
+              <h2>
+                Zenkara Software Inc.
+              </h2>
+             <div class='footer-lists'>
+                <p> Welcome to Zenkara! We are a group of developers primarily out of the beautiful Vancouver, British Columbia. </p>
+              </div>
+              <div class='footer-lists'>
+                <p>
+                  Please follow us on social media, or send us an email from the contact page.
+                </p>
+              </div>
+              <div id='buttons-container'>
+                <span id='contact-buttons'>
+                  <a class="btn btn-social-icon btn-google">
+                    <span class="fa fa-google"></span>
+                  </a>
+
+                  <a class="btn btn-social-icon btn-github">
+                    <span class="fa fa-github"></span>
+                  </a>
+
+                  <a class="btn btn-social-icon btn-linkedin">
+                    <span class="fa fa-linkedin"></span>
+                  </a>
+
+                  <a class="btn btn-social-icon btn-facebook">
+                    <span class="fa fa-facebook"></span>
+                  </a>
+                </span>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="slide-2" class="homeSlide">
-        <div class="bcg"
-          data-center="background-position: 50% 10px;"
-          data-top-bottom="background-position: 50% -100px;"
-          data-bottom-top="background-position: 50% 100px;"
-          data-anchor-target="#slide-2"
-        >
-            <div class="hsContainer">
-              <div class="hsContent"
-                data-0p='opacity: 0;'
-                data-65p='opacity: 0;'
-                data-100p="opacity: 1;"
-                data-120p="opacity: 0;"
-                data-anchor-target="#slide-2"
-                id='easing'
-              >
-                <h2>Efficiency and Optimization</h2>
-              </div>
-            </div>
-        </div>
-      </section>
-
-
-      <section id="slide-3" class="homeSlide">
-        <div class="bcg"
-          data-center="background-position: 50% 50%;"
-          data-anchor-target="#slide-3"
-        >
-            <div class="hsContainer" id='section3-container'>
-              <div class="hsContent"
-                data-top="opacity:1;"
-                data-center='left:33%;'
-                data-155p="left:100%;"
-                data-170p="left:75%;"
-                data-180p='left:50%;'
-                data-190p='left:33%;'
-                data-210p='opacity:0;'
-                data-225p='opacity:0;'
-                data-240p='opacity:0;'
-                data-255p='opacity:0;'
-                data-270p='opacity:0;'
-                data-285p='opacity:0;'
-                data-300p='opacity:0;'
-                data-anchor-target="#slide-3">
-                <h2>Trustworthy and Prompt</h2>
-              </div>
-<!--               <footer class='footer'>
-                <p> Testing> </p>
-              </footer> -->
-            </div>
-        </div>
-      </section>
-      <section id='slide-4' class='homeSlide'>
-        <div class='bcg' id='slide-4-bcg' data-center='background-position: 50% 0px;' data-top-bottom='background-position: 50% -100px;' data-bottom-top='background-position: 50% 100px;' data-anchor-target='#slide-4'>
-          <div class='hsContainer' id='slide-4-container'>
-            <div class='hsContent'
-              data-210p='opacity: 1;'
-              data-anchor-target='#slide-4'>
-              <div id='footer-section'>
-                <div id='footer-content'>
-                  <h2>
-                    Zenkara Software Inc.
-                  </h2>
-                 <div class='footer-lists'>
-                    <p> Welcome to Zenkara! We are a group of developers primarily out of the beautiful Vancouver, British Columbia. </p>
-                  </div>
-                  <div class='footer-lists'>
-                    <p>
-                      Please follow us on social media, or send us an email from the contact page.
-                    </p>
-                  </div>
-                  <div id='buttons-container'>
-                    <span id='contact-buttons'>
-                      <a class="btn btn-social-icon btn-google">
-                        <span class="fa fa-google"></span>
-                      </a>
-
-                      <a class="btn btn-social-icon btn-github">
-                        <span class="fa fa-github"></span>
-                      </a>
-
-                      <a class="btn btn-social-icon btn-linkedin">
-                        <span class="fa fa-linkedin"></span>
-                      </a>
-
-                      <a class="btn btn-social-icon btn-facebook">
-                        <span class="fa fa-facebook"></span>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <!-- Above is end of intro div -->
+        </section>
+              <!-- Above is end of intro div
             </div>
           </div>
         </div>
-      </section>
     </main>
-    <script src="lib/imagesloaded.js"></script>
-    <script src="lib/skrollr/skrollr.min.js"></script>
-    <script src="lib/_main.js"></script>
-
   </body>
 </html>
