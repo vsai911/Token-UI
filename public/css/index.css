@@ -136,7 +136,7 @@ nav.navbar.navbar-default  {
 .navbar-default .navbar-nav > li > a {
   background: #2E586C;
   color: white;
-  font-family: 'Open Sans Regular'
+  font-family: 'Open Sans'
   font-size: 17px;
 }
 
@@ -152,8 +152,25 @@ nav.navbar.navbar-default  {
 
 /* This selector is for the navbar open / hover / focus in the navbar */
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
-  background: linear-gradient(#01394B, #002632);
-  color: violet;
+  background: #2E586C;
+  color: white;
+}
+
+.dropdown-menu {
+  background: black;
+  border: 2px solid green;
+}
+
+
+.dropdown-menu > li> a {
+  background: black;
+  color: white;
+}
+
+.dropdown-menu > li > a:hover {
+  text-decoration: underline;
+  color: white;
+  background: black;
 }
 
 
@@ -166,12 +183,41 @@ section {
     overflow:auto;
 }
 
+/* The tags added by the designer */
+
+h1 {
+  font-family: 'Montserat';
+  font-weight: bold;
+  font-size: 67.37px;
+}
+
+h2 {
+  font-family: 'Montserat';
+  font-size: 50.57px;
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-size: 28.43px;
+}
+
+h4 {
+  font-family: 'Open Sans';
+  font-size: 21px;
+}
+
+h5 {
+  font-family: 'Montserat';
+  font-weight: bold;
+  font-size: 16px;
+}
 
 #slide-1{
 background: url('../img/pexels-photo.jpg') no-repeat center center fixed;
   color:#fff;
   background-size:cover;
 }
+
 
 #slide-2 {
 background: url('../img/rayna1.jpg') no-repeat top center fixed;
@@ -187,7 +233,7 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
 
 #footer {
   height: 50%;
-  background-color: #013647;
+  background-color: #3D525C;
   padding-top:20px;
   padding-bottom:20px;
 }
@@ -196,11 +242,12 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
   color:#efefef;
 }
 
+
 /* Slide 4 */
 /* Next couple of selectors makes the background divs the correct colour for slide 4. */
 
 #footer-container {
-  background-color: #013647;
+  background-color: #3D525C;
 }
 
 #footer .hsContent {
@@ -218,6 +265,7 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
   font-size: 1.4em;
   float: left;
   color: #fff8de;
+/*  color: #8EA3AB;*/
   font-weight: bold;
   bottom: 10%;
   width: 100%;
@@ -231,6 +279,8 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
   top: auto;
   bottom: 50%;
   color: #fff8de;
+/*  color: #8EA3AB;*/
+  font-family: 'Open Sans';
   font-weight: bold;
   width: 100%;
   min-width: 10em;
@@ -267,7 +317,7 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
   float: left;
   margin-right: auto;
   margin-left: auto;
-  background-color: #013647;
+  background-color: #3D525C;
 }
 
 #contact-buttons {
