@@ -219,7 +219,7 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
 }
 
 #footer {
-  height: 33%;
+  height: 50%;
   background-color: #013647;
   padding-top:20px;
   padding-bottom:20px;
@@ -300,7 +300,6 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
   float: left;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 25%;
   background-color: #013647;
 }
 
