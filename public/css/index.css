@@ -232,12 +232,7 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
 /* Slide 4 */
 /* Next couple of selectors makes the background divs the correct colour for slide 4. */
 
-#footer {
-  background-color: #013647;
-  width: 100%;
-}
-
-#slide-4-container {
+#footer-container {
   background-color: #013647;
 }
 
@@ -274,6 +269,8 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
   min-width: 10em;
 }
 
+
+
 /* footer css */
 /* margin-right is handled by jQuery for this css block. */
 .footer-lists {
@@ -302,7 +299,7 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
   padding: 5%;
   float: left;
   margin-right: auto;
-  margin-left: -50%;
+  margin-left: auto;
   margin-bottom: 25%;
   background-color: #013647;
 }
@@ -313,18 +310,6 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
   min-width: 5em;
 }
 
-/*nav {
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid red;
-  height: 55px;
-  top: 0;
-  position: absolute;*/
-  /* hold tight... 
-  visibility: none;
-  /* we'll override these shortly 
-  z-index: 1000;
-  width: 100%;
-}*/
 
 .footer {
     position: absolute;
@@ -334,4 +319,5 @@ background: url('../img/rayna5.jpg') no-repeat bottom center fixed;
     height: 60px;
     background-color: #f5f5f5;
 }
+
 
