@@ -1,113 +1,192 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">` -->
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zenkara</title>
 
+<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicons/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="favicons/manifest.json">
+<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
-    <script type="text/javascript" src="lib/jquery-2.2.0.min.js"></script>
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="css/index.css">
+  <!-- endbuild -->
 
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <div class="heroone-block">
 
-    <!-- This doesn't work for some reason -->
-<!--     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
- -->
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap-theme.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
-    <link href='../lib/bootstrap-social-gh-pages/bootstrap-social.css' rel='stylesheet' type='text/css'>
-    <link href='../lib/font-awesome-4.6.1/css/font-awesome.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/index.css">
-
-    <script src="index.js"></script>
-    <title>Zenkara</title>
-  </head>
-
-  <body>
-    <nav id='index-header' class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Zenkara</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/team">Team</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
-              </ul>
-            </li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <main id=content>
-      <section id="slide-1" class="parallax">
-        <h1> Zenkara </h1>
-        <p> we are great </p>
-      </section>
-
-      <section id="slide-2" class="parallax">
-        <h1> test1 </h1>
-      </section>
-
-
-      <section id= "slide-3" class="parallax">
-      </section>
-
-      <section id= "footer" class = "parallax">
-            <div id='footer-content'>
-              <h2>
-                Zenkara Software Inc.
-              </h2>
-             <div class='footer-lists'>
-                <p> Welcome to Zenkara! We are a group of developers primarily out of the beautiful Vancouver, British Columbia. </p>
-              </div>
-              <div class='footer-lists'>
-                <p>
-                  Please follow us on social media, or send us an email from the contact page.
-                </p>
-              </div>
-              <div id='buttons-container'>
-                <span id='contact-buttons'>
-                  <a class="btn btn-social-icon btn-google">
-                    <span class="fa fa-google"></span>
-                  </a>
-
-                  <a class="btn btn-social-icon btn-github">
-                    <span class="fa fa-github"></span>
-                  </a>
-
-                  <a class="btn btn-social-icon btn-linkedin">
-                    <span class="fa fa-linkedin"></span>
-                  </a>
-
-                  <a class="btn btn-social-icon btn-facebook">
-                    <span class="fa fa-facebook"></span>
-                  </a>
-                </span>
-              </div>
-            </div>
+        <header class="scroll">
+          <div class="nav-wrapper">
+            <a href="/index.html"><div class="logo"></div></a>
+            <nav class="vertical-align-middle">
+              <span class="nav-item"><h5><a href="#">Home</a></h5></span>
+              <span class="nav-item"><h5><a href="#">Services</a></h5></span>
+              <span class="nav-item"><h5><a href="#">Our Team</a></h5></span>
+              <span class="nav-item"><h5><a href="#">Contact</a></h5></span>
+            </nav>
           </div>
-        </section>
-              <!-- Above is end of intro div
-            </div>
+        </header>
+
+        <div class="heroone-block-content">
+          <h1>We do good websites.</h1>
+          <h3>A brief description of what we do and what sets us apart. Something that introduces Zenkara.</h3>
+          <a href="#" class="button">Contact us</a>
+        </div>
+      </div>
+
+      <div class="herotwo-block">
+        <div class="herotwo-block-content">
+          <div class="service">
+            <img src="img/iphone.png"/>
+            <h5>iIOS &amp; Android Apps</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo.</p>
+          </div>
+          <div class="service">
+            <img src="img/computer_monitor.png"/>
+            <h5>Web &amp; Mobile Development</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo.</p>
+          </div>
+          <div class="service">
+            <img src="img/rocket.png"/>
+            <h5>Graphic Design</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo.</p>
           </div>
         </div>
-    </main>
-  </body>
-</html>
+      </div>
+
+      <div class="herothree-block">
+        <div class="herothree-block-content">
+          <h2>Our Team</h2>
+          <p>A brief introduction to who the team is. Where they come from. Clicking on each member will load a modal to give a more detailed writeup of each member.</p>
+          <div class="member">
+            <div class="member-content">
+              <img src="img/sai.jpg"/>
+              <h5>Saikrishna Venkatasubramanian</h5>
+              <p>Chief Exectuive Officer</p>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="member-content">
+              <img src="img/lance.jpg"/>
+              <h5>Lance Patric Barlaan</h5>
+              <p>Chief Technology Officer</p>
+              <a href="/team">See more </a>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="member-content">
+              <img src="img/michael.jpg"/>
+              <h5>Vaibhav Namburi</h5>
+              <p>Australian CEO</p>
+            </div>
+          </div>
+          <div class="member">
+            <div class="member-content">
+              <img src="img/avi.png"/>
+              <h5> Akshat Divekar</h5>
+              <p>Chief Technology Officer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="herofour-block">
+        <div class="herofour-block-content">
+          <div class="left">
+
+          <h2>Contact Us</h2>
+            <p>
+              Lorem Ipsum brief subheader here on what to do. or what you should be contaced about.
+            </p>
+            <p>
+              With an invitation to contact you guys through phone at <a href="tel://123456789">+123456789</a> or email directly at <a href="mailto:hello@zenkara.io?Subject=Hello%20Zenkara" target="_blank">hello@zenkara.io</a>
+            </p>
+
+          </div>
+          <div class="right">
+            <form action="">
+
+              <label for=""><h5>Name / Company</h5></label>
+              <input class="input" id="InputName" type="text">
+
+              <label for=""><h5>Email Address</h5></label>
+              <input class="input" id="InputEmail" type="text">
+
+              <label class="input" id="InputMessage" for=""><h5>Message</h5></label>
+              <textarea name=""></textarea>
+
+              <input type="submit" class="button" value="Contact Us">
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-content">
+          <header class="scroll">
+            <div class="nav-wrapper">
+              <a href="/index.html"><div class="logo"></div></a>
+              <nav class="vertical-align-middle">
+                <span class="nav-item"><h5><a href="#">Home</a></h5></span>
+                <span class="nav-item"><h5><a href="#">Services</a></h5></span>
+                <span class="nav-item"><h5><a href="#">Our Team</a></h5></span>
+                <span class="nav-item"><h5><a href="#">Contact</a></h5></span>
+              </nav>
+            </div>
+          </header>
+        </div>
+      </div>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
+
+      <!-- build:js scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="jquery.js"></script>
+      <script src="/form/form.js"></script>
+
+      <!-- endbower -->
+      <!-- endbuild -->
+
+      <!-- build:js scripts/main.js -->
+      <script src="index.js"></script>
+      <!-- endbuild -->
+    </body>
+    </html>

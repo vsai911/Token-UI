@@ -3,10 +3,10 @@ var app = express();
 var emailJS = require('emailjs/email')
 var bodyParser = require('body-parser');
 
-// create application/json parser 
+// create application/json parser
 var jsonParser = bodyParser.json()
- 
-// create application/x-www-form-urlencoded parser 
+
+// create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.use('/',jsonParser);
@@ -31,10 +31,10 @@ app.get('/contact', function(req,res){
 
 app.post('/contact-submit',function(req,res){
 	var requestBody = (req.body);
-	['veebuv@gmail.com'].forEach(function(email){
+	['varunsai91@gmail.com'].forEach(function(email){
 		sendEmailTo(email,requestBody.name,requestBody.email,requestBody.message,req,res)
 	})
-	
+
 })
 
 app.listen(3000, function () {
