@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("form").submit(function(event){
+    $("contact_form").submit(function(event){
     	 /* stop form from submitting normally */
       		event.preventDefault();
       	$.ajax({

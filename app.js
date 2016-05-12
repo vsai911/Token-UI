@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/contact', function(req,res){
-  res.sendFile(__dirname + '/public/form/form.html');
+  res.sendFile(__dirname + '/public/contact_form/contact_form.html');
 });
 
 app.post('/contact-submit',function(req,res){
