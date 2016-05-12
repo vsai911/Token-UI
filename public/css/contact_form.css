@@ -17,6 +17,32 @@
   padding-right: 15px;
 }
 
+.button, input, button {
+  position: relative;
+  display: inline-block;
+  background: none;
+  line-height: 1.5em;
+  padding: .75em 3em;
+  border: none;
+  font-family: Montserrat,serif;
+  color: #fff;
+  text-decoration: none;
+  background-color: #53a2bf;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+textarea {
+  width: 100%;
+  line-height: 2.25em;
+  border-radius: 5px;
+  border: none;
+  -webkit-appearance: none;
+  padding: 5px 10px;
+}
+
 label {
   font-family: Montserrat,serif;
   font-size: 16px;
