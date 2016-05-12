@@ -1,10 +1,10 @@
 #contact-container {
   margin-top: 5em;
-  background-position: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
   text-align: left;
-  background-attachment: fixed;
+}
+
+#required-field {
+  width: 100%;
 }
 
 #contact-container-content {
@@ -31,8 +31,19 @@ body {
   color: #1c3040;
   background-image: url(../img/hero-2.png);
   z-index: 100;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 div {
-    display: block;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  #contact-form {
+    width: 66%;
+    margin-left: 10%;
+  }
 }
