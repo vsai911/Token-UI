@@ -1,4 +1,4 @@
-var TEAM_POLYGON_RADIUS = 250;
+var TEAM_POLYGON_RADIUS = 300;
 // TODO: change this later
 var POLYGON_MIN_WIDTH = 700;
 // Classes
@@ -31,7 +31,7 @@ function drawLine() {
 
 	function getY(index) {
 		if (index === 0) {
-			return margin;
+			return margin * 5;
 		}
 		var $previous = $($fields[index - 1]);	
 		return $previous.position().top + $previous.height() + margin;
@@ -53,11 +53,8 @@ function getViewportWidth() {
 
 function refreshTeamView() {
 	// Determine window inner width to draw polygon
-	if (getViewportWidth() >= POLYGON_MIN_WIDTH) {
-		drawPolygon();
-	} else {
-		drawLine();
-	}
+	var drawFn = getViewportWidth() >= POLYGON_MIN_WIDTH ? drawPolygon : drawLine;
+	drawFn();
 }
 
 
