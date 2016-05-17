@@ -21,12 +21,16 @@ app.get('/team', function(req,res){
   res.sendFile(__dirname + '/public/team/team.html');
 });
 
-app.get('/', function (req, res) {
+app.get('/', function (req, res){
   res.send('root');
 });
 
 app.get('/contact', function(req,res){
   res.sendFile(__dirname + '/public/contact_form/contact_form.html');
+});
+
+app.get('/projects', function(req,res){
+  res.sendFile(__dirname + '/public/portfolio/portfolio.html');
 });
 
 app.post('/contact-submit',function(req,res){
