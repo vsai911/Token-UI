@@ -2,61 +2,73 @@
   <head>
     <script type="text/javascript" src="lib/jquery-2.2.0.min.js"></script>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zenkara</title>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <!-- build:css styles/vendor.css -->
+      <!-- bower:css -->
+      <!-- endbower -->
+      <!-- endbuild -->
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
-    <script src='lib/d3/d3.js'></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/portfolio.css">
+      <!-- build:css styles/main.css -->
+      <link rel="stylesheet" href="../css/index.css">
+      <!-- endbuild -->
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/portfolio.css">
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid" id="home-nav">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Zenkara</a>
-        </div>
+    <div id="portfolio" class="heroone-block">
+    <header class="scroll">
+      <div class="nav-wrapper">
+        <a href="/"><div class="logo"></div></a>
+        <nav class="vertical-align-middle">
+          <span class="nav-item"><h5><a href="/">Home</a></h5></span>
+          <span class="nav-item"><h5><a href="#">Services</a></h5></span>
+          <span class="nav-item"><h5><a href="/team">Our Team</a></h5></span>
+          <span class='nav-item'><h5><a href='/projects'>Portfolio</a></h5></span>
+          <span class="nav-item"><h5><a href="/contact">Contact</a></h5></span>
+        </nav>
+      </div>
+    </header>
+    </div>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/team">Team</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
     <div id="flex-wrapper">
       <div id="project-jumbotron" class="project-header">
-        <h1 id="h1-project">Portfolio</h1>
+        <h1 id="h1-project">Our Portfolio</h1>
       </div>
       <div class="container-project">
         <div class="rollover-blocks">
           <div class="grid one-third highlight">
-            <img class="img-project" src="img/Lighthouse-PT.png" alt="http://placehold.it/340x340">
+            <img class="img-project" src="../img/Lighthouse-PT.png" alt="http://placehold.it/340x340">
             <div class="roll-up">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, neque qui vero ipsam dolor recusandae commodi temporibus deserunt autem necessitatibus?</p>
               <a href="#" class="read-more">Visit Github Page</a>
             </div>
           </div>
           <div class="grid one-third highlight">
-            <img class="img-project" src="img/giddy-up.png" alt="http://placehold.it/340x340">
+            <img class="img-project" src="../img/giddy-up.png" alt="http://placehold.it/340x340">
             <div class="roll-up">
               <p>Mashup exploring Leap Motion's capabilities. The app moves through Google Streetview using Leap Motion controls, while implementing markers from Translink, Google Places, Twitter, and Instagram. The app uses Bootstrap on the frontend, with Node.js and Hapi server on the background.</p>
               <a href="https://github.com/Tulun/GiddyUp-Leap-Motion-Final-Project" class="read-more">Visit Giddy-Up Github Page</a>

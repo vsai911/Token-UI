@@ -1,11 +1,5 @@
 
 #project-jumbotron {
-  display: flex;
-  min-height: 45%;
-  max-height: 45%;
-  background-image: url("../img/sakthi.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .container-project {
@@ -21,15 +15,13 @@
   min-height: 350px;
   width: auto;
   height: auto;
+  border-radius: 2.5%;
 }
 
 #h1-project{
   text-align: center;
   font-size: 40px;
-  top: 5%;
-  right:80%;
-  margin-left: 20px;
-  color: #fff;
+  color: #1C3040;
 }
 
 .read-more:after {
@@ -53,18 +45,19 @@
 .rollover-blocks .roll-up {
   position: absolute;
   bottom: -50%;
-  color: white;
+  color: #1C3040;
   padding: 0 10px 0 0;
-  width:350px;
+  width:360px;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border-radius: 2.5%;
 }
 .rollover-blocks .roll-up p, .rollover-blocks .roll-up a {
   display: block;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.3);
+  background: white;
   margin-bottom: 0px;
 }
 .rollover-blocks .roll-up a {
@@ -142,4 +135,8 @@
 .sakthi{
   height: 100%;
   width: 100%;
+}
+
+#portfolio{
+  background-image:none;
 }
