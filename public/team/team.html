@@ -1,82 +1,113 @@
-<html>
-  <head>
-    <script type="text/javascript" src="../lib/jquery-2.2.0.min.js"></script>
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team @ Zenkara</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- build:css styles/team.css -->
+  <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/team.css">
+  <!-- endbuild -->
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    <header class="scroll">
+      <div class="nav-wrapper">
+        <a href="/"><div class="logo"></div></a>
+        <nav class="vertical-align-middle">
+          <span class="nav-item"><h5><a href="/">Home</a></h5></span>
+          <span class="nav-item"><h5><a href="#">Services</a></h5></span>
+          <span class="nav-item"><h5><a href="/team">Our Team</a></h5></span>
+          <span class='nav-item'><h5><a href='/projects'>Portfolio</a></h5></span>
+          <span class="nav-item"><h5><a href="/contact">Contact</a></h5></span>
+        </nav>
+      </div>
+    </header>
+      <div id="team-container" class="container">
+          <div class="member-hint">
+            <h2>CLICK ON A MEMBER</h2>
+            <p>to learn more about them</p>
+          </div>
+          <div class="team-member">
+            <img src="../img/jason.jpg" class="img-circle" data-toggle="modal" data-target="#jason-modal">
+            <div id="jason-modal" tabindex="-1" class="modal fade" role="dialog">
+               <div class="modal-dialog member-modal" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
+                      Sai, our CEO, has a double major in Cognitive systems and Biology. Problem solving, is his middle name, apart from the extremely long name he already has. He has experience in many frameworks, including Meteor, Rails and React,as well as working in high-paced start-up environments. A passion for building community and technology, starting zenkara was a no-brainer. On a random day, you will find sai, in his elements, cooking food, and questioning the meaning of life.
+                      </div>
+                  </div> <!-- /.modal-content -->
+                </div> <!-- /.modal-dialog -->
+            </div> <!-- /#jason-modal -->
+          </div>
+          <div class="team-member">
+            <img src="../img/avi.png" class="img-circle" data-toggle="modal" data-target="#avi-modal">
+            <div id="avi-modal" tabindex="-1" class="modal fade" role="dialog">
+               <div class="modal-dialog member-modal" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
+                      Sai, our CEO, has a double major in Cognitive systems and Biology. Problem solving, is his middle name, apart from the extremely long name he already has. He has experience in many frameworks, including Meteor, Rails and React,as well as working in high-paced start-up environments. A passion for building community and technology, starting zenkara was a no-brainer. On a random day, you will find sai, in his elements, cooking food, and questioning the meaning of life.
+                      </div>
+                  </div> <!-- /.modal-content -->
+                </div> <!-- /.modal-dialog -->
+            </div> <!-- /#avi-modal -->
+          </div>
+          <div class="team-member">
+            <img src="../img/jason.jpg" class="img-circle">
+          </div>
+          <div class="team-member">
+            <img src="../img/sai.jpg" class="img-circle">
+            <div id="sai-modal" tabindex="-1" class="modal fade" role="dialog">
+               <div class="modal-dialog member-modal" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
+                      Sai, our CEO, has a double major in Cognitive systems and Biology. Problem solving, is his middle name, apart from the extremely long name he already has. He has experience in many frameworks, including Meteor, Rails and React,as well as working in high-paced start-up environments. A passion for building community and technology, starting zenkara was a no-brainer. On a random day, you will find sai, in his elements, cooking food, and questioning the meaning of life.
+                      </div>
+                  </div> <!-- /.modal-content -->
+                </div> <!-- /.modal-dialog -->
+              </div> <!-- /#sai-modal -->
+          </div>
+          <div class="team-member">
+            <img src="../img/lance.jpg" class="img-circle">
+          </div>
+          <div class="team-member">
+            <img src="../img/akshat.jpg" class="img-circle">
+          </div>
+          <div id="particles-js"></div>
+      </div>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
 
-    <link href='../lib/bootstrap-social-gh-pages/bootstrap-social.css' rel='stylesheet' type='text/css'>
-    <link href='../lib/font-awesome-4.6.1/css/font-awesome.css' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
-    <script src='../lib/d3/d3.js'></script>
-    <link rel="stylesheet" href="../css/team.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <script src="../lib/particles/particles.js"></script>
-    <script src="team.js"></script>
-  </head>
+      <!-- build:js scripts/vendor.js -->
+      <!-- bower:js -->
+      <script type="text/javascript" src="/lib/jquery-2.2.0.min.js"></script>
+      <script type="text/javascript" src="/lib/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/lib/particles/particles.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
 
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid" id="home-nav">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header"  >
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Zenkara</a>
-        </div>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/team">Team</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
-              </ul>
-            </li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <div id="team-container">
-        <div class="team-member" data-toggle="modal" data-target="#jason-modal">
-          <img src="../img/jason.jpg" class="img-circle">
-        </div>
-        <div id="jason-modal" tabindex="-1" class="modal fade" role="dialog">
-         <div class="modal-dialog" role="document">
-              <div class="modal-content" id="team-modal">
-                <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
-                Sai, our CEO, has a double major in Cognitive systems and Biology. Problem solving, is his middle name, apart from the extremely long name he already has. He has experience in many frameworks, including Meteor, Rails and React,as well as working in high-paced start-up environments. A passion for building community and technology, starting zenkara was a no-brainer. On a random day, you will find sai, in his elements, cooking food, and questioning the meaning of life.
-                </div>
-            </div> <!-- /.modal-content -->
-          </div> <!-- /.modal-dialog -->
-        </div> <!-- /#jason-modal -->
-        <div class="team-member">
-          <img src="../img/avi.png" class="img-circle">
-        </div>
-        <div class="team-member">
-          <img src="../img/jason.jpg" class="img-circle">
-        </div>
-        <div class="team-member">
-          <img src="../img/sai.jpg" class="img-circle">
-        </div>
-        <div class="team-member">
-          <img src="../img/lance.jpg" class="img-circle">
-        </div>
-        <div class="team-member">
-          <img src="../img/akshat.jpg" class="img-circle">
-        </div>
-      <div id="particles-js"></div>
-    </div>
-  </body>
+      <!-- build:js scripts/main.js -->
+      <script src="team.js"></script>
+      <!-- endbuild -->
+    </body>
+    </html>
