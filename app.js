@@ -13,10 +13,6 @@ app.use('/',jsonParser);
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/portfolio', function(req,res){
-  res.sendFile(__dirname + '/public/portfolio.html');
-});
-
 app.get('/team', function(req,res){
   res.sendFile(__dirname + '/public/team/team.html');
 });
@@ -29,7 +25,7 @@ app.get('/contact', function(req,res){
   res.sendFile(__dirname + '/public/contact_form/contact_form.html');
 });
 
-app.get('/projects', function(req,res){
+app.get('/portfolio', function(req,res){
   res.sendFile(__dirname + '/public/portfolio/portfolio.html');
 });
 
