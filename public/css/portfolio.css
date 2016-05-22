@@ -24,10 +24,6 @@
   color: #1C3040;
 }
 
-.read-more:after {
-  content: " >>";
-}
-
 .rollover-blocks .grid {
   position: relative;
 }
@@ -54,12 +50,34 @@
   transition: all 0.3s ease;
   border-radius: 2.5%;
 }
+
+.rollover-blocks .roll-down {
+  display:none;
+  position: absolute;
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.3) 0%, rgba(255, 255, 255, 0) 95%);
+  background-image: -o-linear-gradient(rgba(0,0,0,0.3) 0%, rgba(255, 255, 255, 0) 95%);
+  background-image: linear-gradient(rgba(0,0,0,0.3) 0%, rgba(255, 255, 255, 0) 95%);
+  width:360px;
+  border-radius: 3.5%;
+  text-align:center;
+  height:200px;
+}
+
+.rollover-blocks .roll-down p, .rollover-blocks .roll-down a {
+  padding: 10px;
+  margin-top: 0px;
+  color: white;
+  text-decoration: none;
+}
+
 .rollover-blocks .roll-up p, .rollover-blocks .roll-up a {
   display: block;
   padding: 10px;
   background: white;
   margin-bottom: 0px;
+  text-align: center;
 }
+
 .rollover-blocks .roll-up a {
   margin: 0;
   padding-top: 0;
