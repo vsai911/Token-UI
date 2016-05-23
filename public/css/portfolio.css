@@ -42,13 +42,11 @@
   position: absolute;
   bottom: -50%;
   color: #1e4354;
-  padding: 0 10px 0 0;
-  width:360px;
+  width:350px;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  border-radius: 2.5%;
 }
 
 .rollover-blocks .roll-down {
@@ -165,8 +163,6 @@
   margin: 0 1% 1% 0;
   height: 360px;
   width: 360px;
-  background: linear-gradient(#969696, #DEDEDE);
-  border-radius: 25px;
 }
 
 .rollover-blocks {
@@ -185,9 +181,9 @@
 }
 
 .rollover-blocks .roll-up {
-  border-radius: 0px;
   width: 100%;
   background-color: white;
+  text-align:center;
 }
 
 h3 {
@@ -204,4 +200,10 @@ h5 {
   font-weight: 700;
   line-height: 24px;
   color: #4C5C68;
+  margin:0px;
+}
+
+p,a {
+  font-family: Montserrat,serif;
+  margin:0px;
 }

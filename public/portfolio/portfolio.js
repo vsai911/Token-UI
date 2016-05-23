@@ -16,4 +16,20 @@ $(function(){
       $('#view-leap').slideUp('fast','linear');
     }
   });
+  $('#gigg').on({
+    mouseenter: function () {
+      $('#view-gigg').slideDown('fast','linear');
+    },
+    mouseleave: function () {
+      $('#view-gigg').slideUp('fast','linear');
+    }
+  });
+  $('#konkurito').on({
+    mouseenter: function () {
+      $('#view-konkurito').slideDown('fast','linear');
+    },
+    mouseleave: function () {
+      $('#view-konkurito').slideUp('fast','linear');
+    }
+  });
 });
