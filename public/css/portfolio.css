@@ -194,7 +194,7 @@ h3 {
   color: #4C5C68;
 }
 
-h5 {
+h5.project-header{
   font-family: Montserrat,serif;
   font-size: 16px;
   font-weight: 700;
@@ -207,3 +207,5 @@ p,a {
   font-family: Montserrat,serif;
   margin:0px;
 }
+
+@media (max-width:640px){h5{font-size:16px;line-height:24px}}
