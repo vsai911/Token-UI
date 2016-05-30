@@ -13,6 +13,7 @@
   height: auto;
   border-radius: 2.5%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.26);
+    object-fit: cover;
  }
 
 #h1-project{
