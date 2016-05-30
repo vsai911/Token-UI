@@ -74,7 +74,7 @@ div {
 @media (min-width: 1200px) {
   #contact-form {
     width: 66%;
-    margin-left: 15%;
+    margin:0 auto;
   }
 }
 

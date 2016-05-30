@@ -41,8 +41,24 @@
         	});
         });
     }
+
 }(jQuery));
 
 $('.parallax').parallax({
 	speed :	0.15
 });
+
+$(document).ready(function(){
+    $('.location-contact').click(function(){
+            // Set the effect type
+        var effect = 'slide';
+
+        // Set the options for the effect type chosen
+        var options = { direction: 'right' };
+
+        // Set the duration (default: 400 milliseconds)
+        var duration = 500;
+
+        $('#contact-form').toggle(effect, options, duration);
+    });
+})
