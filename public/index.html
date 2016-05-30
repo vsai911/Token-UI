@@ -22,6 +22,7 @@
 <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="favicons/manifest.json">
 <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
@@ -95,7 +96,7 @@
 
           <div class="member">
             <div class="member-content">
-              <img src="img/lance.jpg"'/>
+              <img src="img/lance.jpg"/>
               <h5>Lance Patric Barlaan</h5>
               <p>Chief Technology Officer</p>
             </div>
@@ -120,7 +121,7 @@
 
       <div class="herofour-block">
         <div class="herofour-block-content">
-          <div class="left">
+          <div class="left contact-us">
 
           <h2>Contact Us</h2>
             <p>
@@ -131,21 +132,51 @@
             </p>
 
           </div>
-          <div class="right">
-            <form action="contact_form">
+          <div class="locations">
+            <div class="location-contact">Vancouver</div>
+            <div class="location-contact">Hong Kong</div>
+            <div class="location-contact">Sydney</div>
+          </div>
 
-              <label for=""><h5>Name / Company</h5></label>
-              <input class="input" id="InputName" type="text">
-
-              <label for=""><h5>Email Address</h5></label>
-              <input class="input" id="InputEmail" type="text">
-
-              <label class="input" id="InputMessage" for=""><h5>Message</h5></label>
-              <textarea name=""></textarea>
-
-              <input type="submit" class="button" value="Contact Us">
-
-            </form>
+          <div class="container" id='contact-container'>
+              <div class="row" id='contact-container-content'>
+                  <form role="contact_form">
+                      <div class="col-lg-6" id='contact-form'>
+                          <div class="well well-sm" id='required-field'>
+                            <strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong>
+                          </div>
+                          <div class="form-group">
+                              <label for="InputName">Name</label>
+                              <div class="input-group">
+                                  <input type="text" class="form-control" name="InputName" id="InputName" required>
+                                  <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="InputEmail">Email</label>
+                              <div class="input-group">
+                                  <input type="email" class="form-control" id="InputEmailFirst" name="InputEmail" required>
+                                  <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="InputEmail">Confirm Email</label>
+                              <div class="input-group">
+                                  <input type="email" class="form-control" id="InputEmailSecond" name="InputEmail" required>
+                                  <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="InputMessage">Message</label>
+                              <div class="input-group">
+                                  <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                                  <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                              </div>
+                          </div>
+                          <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right button">
+                      </div>
+                  </form>
+              </div>
           </div>
         </div>
       </div>
@@ -177,7 +208,9 @@
 
       <!-- build:js scripts/vendor.js -->
       <!-- bower:js -->
-      <script type="text/javascript" src="./lib/jquery-2.2.0.min.js"></script>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
       <script src="./contact_form/contact_form.js"></script>
 
       <!-- endbower -->
