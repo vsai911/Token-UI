@@ -11,6 +11,29 @@
   width: 100%;
 }
 
+p, li {
+  font-family: Open Sans, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #fff
+}
+
+li {
+  list-style: none;
+}
+
+#intro-contact-form {
+  margin-left: 20%;
+  padding-bottom: 3%;
+}
+
+@media(max-width: 1199px) {
+  #intro-contact-form {
+    margin-left: 0%;
+  }
+}
+
 #contact-container-content {
   max-width: 960px;
   margin-left: auto;
@@ -76,6 +99,11 @@ div {
     width: 66%;
     margin-left: 15%;
   }
+}
+
+span.glyphicon.glyphicon-asterisk {
+  font-family: 'Montserrat, serif';
+  font-size: 20px;
 }
 
 /* Header css */
