@@ -32,4 +32,12 @@ $(function(){
       $('#view-konkurito').slideUp('fast','linear');
     }
   });
+  $('#peerwise').on({
+    mouseenter: function () {
+      $('#view-peerwise').slideDown('fast','linear');
+    },
+    mouseleave: function () {
+      $('#view-peerwise').slideUp('fast','linear');
+    }
+  });
 });
