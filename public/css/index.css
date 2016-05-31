@@ -39,3 +39,9 @@
   width: 60%;
   margin: 0 auto;
 }
+
+.herothree-block .herothree-block-content .member .member-content img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid rgba(201,208,214,.4);
+}
