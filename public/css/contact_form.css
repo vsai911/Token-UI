@@ -2,9 +2,25 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
 
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
 #contact-container {
   margin-top: 5em;
   text-align: left;
+  padding-bottom: 4%;
 }
 
 #required-field {
@@ -173,3 +189,65 @@ a {
       float: right;
   }
 }
+
+/* Footer css */
+
+.footer {
+    background-color: #3d525c
+}
+
+.footer .footer-content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em
+}
+
+.footer .footer-content:after {
+    content: " ";
+    display: block;
+    clear: both
+}
+
+.footer .scroll {
+    border: 0
+}
+
+.footer .logo,
+.footer a {
+  opacity: .5
+}
+
+.nav-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.nav-wrapper:after {
+  content: " ";
+  display: block;
+  clear: both
+}
+
+.nav-item {
+  padding: 0 15px;
+  border: 0
+}
+
+.nav-item a {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase
+}
+
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border-bottom: 2px solid #fff
+}
+
+
