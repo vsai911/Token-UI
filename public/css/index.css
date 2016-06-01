@@ -17,7 +17,6 @@
 }
 
 .contact-us {
-  margin-left: 60px;
   width: 100%;
   padding-bottom: 0;
 }
@@ -27,17 +26,49 @@
 }
 
 #contact-container-content {
-  max-width: 960px;
+/*  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px;*/
 }
 
 #contact-form {
   display: none;
-  width: 60%;
+  /*width: 60%;*/
   margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.well, .well-sm {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.form-group label, .well-sm {
+  color: #fff;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #000;
+  -webkit-appearance: none;
+  color: #fff;
+}
+
+.input-group textarea {
+  border-radius: 10px !important;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 .herothree-block .herothree-block-content .member .member-content img {
