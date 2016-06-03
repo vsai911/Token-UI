@@ -1,3 +1,18 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
 .container-project {
   width: 100%;
   max-width: 1180px;
@@ -203,3 +218,77 @@ p,a {
 }
 
 @media (max-width:640px){h5{font-size:16px;line-height:24px}}
+
+/* Footer css */
+
+.footer {
+  background-color: #3d525c;
+  margin-top: 45em;
+}
+
+@media (max-width: 1154px) {
+  .footer {
+    margin-top: 68em; 
+  }
+}
+
+@media (max-width: 765px) {
+  .footer {
+    margin-top: 116.5em;
+  }
+}
+
+.footer .footer-content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em
+}
+
+.footer .footer-content:after {
+    content: " ";
+    display: block;
+    clear: both
+}
+
+.footer .scroll {
+    border: 0
+}
+
+.footer .logo,
+.footer a {
+  opacity: .5
+}
+
+.nav-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.nav-wrapper:after {
+  content: " ";
+  display: block;
+  clear: both
+}
+
+.nav-item {
+  padding: 0 15px;
+  border: 0
+}
+
+.nav-item a {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase
+}
+
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border-bottom: 2px solid #fff
+}
+
