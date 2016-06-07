@@ -7,11 +7,13 @@ var TEAM_MEMBER = '.team-member';
 function drawPolygon() {
 	//Draw the polygon
 	var radius = TEAM_POLYGON_RADIUS;
-	var $fields = $(TEAM_MEMBER),
-		container = $('#team-container'), 
-		width = container.width(), 
+	var container = $('#team-container');
+	var $fields = $(TEAM_MEMBER);
+	container.height(radius * 2 + ($fields.height() / 2) + 90);
+	var width = container.width(),
 		height = container.height();
 	var angle = 0, step = (2*Math.PI) / $fields.length;
+
 	$fields.each(function() {
 	    var x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/2);
 	    var y = Math.round(height/2 + radius * Math.sin(angle) - $(this).height()/2);
@@ -54,7 +56,7 @@ function getViewportWidth() {
 function refreshTeamView() {
 	// Determine window inner width to draw polygon
 	var drawFn = getViewportWidth() >= POLYGON_MIN_WIDTH ? drawPolygon : drawLine;
-	drawFn();
+	setTimeout(drawFn, 0);
 }
 
 
