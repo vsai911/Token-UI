@@ -115,7 +115,7 @@ div {
 
 @media (min-width: 1200px) {
   #contact-form {
-    width: 66%;
+    //width: 66%;
     margin:0 auto;
   }
 }
