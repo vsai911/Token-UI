@@ -7,8 +7,12 @@ const parts = require('./public/lib/webpack_config/parts');
 
 const PATHS = {
   app: path.join(__dirname, 'public/app'),
-  style: path.join(__dirname, 'public/app', 'public/app/main.css'),
-  build: path.join(__dirname, 'public/build')
+  style: [
+    path.join(__dirname, 'node_modules', 'purecss'),
+    path.join(__dirname, 'public/app', 'main.css')
+  ],
+  build: path.join(__dirname, 'public/build'),
+  images: path.join(__dirname, 'public/img');
 };
 
 const common = {
@@ -25,9 +29,28 @@ const common = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-    title: 'Zenkara'
-  })
-  ]
+      title: 'Zenkara'
+    })
+  ],
+  module: {
+    loaders: [
+      {
+        test: /\.css$/,
+        loaders: ['style', 'css', 'less'],
+        include: PATHS.style
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'file?name=[path][name].[hash].[ext]',
+        include: PATHS.images
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'url?limit=25000',
+        include: PATHS.images
+      }
+    ]
+  }
 };
 
 var config;
@@ -56,7 +79,8 @@ var config;
           entries: ['react']
         }),
         parts.minify(),
-        parts.extractCSS(PATHS.style)
+        parts.extractCSS(PATHS.style),
+        parts.purifyCSS([PATHS.app])
       );
     default:
       config = merge(

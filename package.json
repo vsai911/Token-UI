@@ -22,14 +22,17 @@
     "clean-webpack-plugin": "^0.1.9",
     "emailjs": "^1.0.4",
     "express": "^4.13.4",
+    "file-loader": "^0.8.5",
     "jquery": "2.2.3",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "url-loader": "^0.5.7"
   },
   "devDependencies": {
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.19.0",
+    "purecss": "^0.6.0",
     "purifycss-webpack-plugin": "^2.0.3",
     "style-loader": "^0.13.1",
     "webpack-dev-server": "^1.14.1",

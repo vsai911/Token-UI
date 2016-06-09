@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const PurifyCSSPlugin = require('purifycss-webpack-plugin');
 
 exports.devServer = function(options) {
   return {
@@ -118,4 +119,18 @@ exports.extractCSS = function(paths) {
       new ExtractTextPlugin('[name].[chunkhash].css')
     ]
   };
+}
+
+exports.purifyCSS = function(paths) {
+  return {
+    plugins: [
+      new PurifyCSSPlugin({
+        basePath: process.cwd(),
+        // `paths` is used to point PurifyCSS to files not
+        // visible to Webpack. You can pass glob patterns
+        // to it.
+        paths: paths
+      }),
+    ]
+  }
 }
