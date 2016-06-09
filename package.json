@@ -4,8 +4,8 @@
   "description": "<h1># Token-UI </h1>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,14 @@
     "body-parser": "^1.15.0",
     "emailjs": "^1.0.4",
     "express": "^4.13.4",
-    "jquery": "2.2.3"
+    "jquery": "2.2.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.19.0",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.0",
+    "webpack-validator": "^2.1.2"
   }
 }
