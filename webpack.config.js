@@ -7,6 +7,7 @@ const parts = require('./public/lib/webpack_config/parts');
 
 const PATHS = {
   app: path.join(__dirname, 'public/app'),
+  style: path.join(__dirname, 'public/app', 'public/app/main.css'),
   build: path.join(__dirname, 'public/build')
 };
 
@@ -15,7 +16,8 @@ const common = {
   // We'll be using the latter form given it's
   // convenient with more complex configurations.
   entry: {
-    app: PATHS.app
+    app: PATHS.app,
+    style: PATHS.style,
   },
   output: {
     path: PATHS.build,
@@ -54,7 +56,7 @@ var config;
           entries: ['react']
         }),
         parts.minify(),
-        parts.extractCSS(PATHS.app)
+        parts.extractCSS(PATHS.style)
       );
     default:
       config = merge(
@@ -63,7 +65,7 @@ var config;
         {
           devtool: 'eval-source-map'
         },
-        parts.setupCSS(PATHS.app),
+        parts.setupCSS(PATHS.style),
         parts.devServer({
           // Customize host/port here if needed
           host: process.env.HOST,
