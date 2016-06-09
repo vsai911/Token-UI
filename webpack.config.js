@@ -54,7 +54,7 @@ var config;
           entries: ['react']
         }),
         parts.minify(),
-        parts.setupCSS(PATHS.app)
+        parts.extractCSS(PATHS.app)
       );
     default:
       config = merge(
