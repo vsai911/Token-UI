@@ -23,7 +23,7 @@ const common = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-    title: 'Webpack demo'
+    title: 'Zenkara'
   })
   ]
 };
@@ -32,11 +32,30 @@ var config;
   // Detect how npm is run and branch based on that
   switch(process.env.npm_lifecycle_event) {
     case 'build':
-      config = merge(common, {});
-      break;
+      config = merge(
+        common,
+        {
+          devtool: 'source-map'
+        },
+        parts.setFreeVariable(
+          'process.env.NODE_ENV',
+          'production'
+        ),
+        parts.extractBundle({
+          name: 'vendor',
+          entries: ['react']
+        }),
+        parts.minify(),
+        parts.setupCSS(PATHS.app)
+      );
     default:
       config = merge(
         common,
+        parts.minify(),
+        {
+          devtool: 'eval-source-map'
+        },
+        parts.setupCSS(PATHS.app),
         parts.devServer({
           // Customize host/port here if needed
           host: process.env.HOST,
