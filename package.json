@@ -19,6 +19,7 @@
   "homepage": "https://github.com/vsai911/Token-UI#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "clean-webpack-plugin": "^0.1.9",
     "emailjs": "^1.0.4",
     "express": "^4.13.4",
     "jquery": "2.2.3",

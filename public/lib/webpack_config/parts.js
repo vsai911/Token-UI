@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 exports.devServer = function(options) {
   return {
@@ -82,6 +83,18 @@ exports.extractBundle = function(options) {
         names: [options.name, 'manifest'],
         // options.name modules only
         minChunks: Infinity
+      })
+    ]
+  };
+}
+
+exports.clean = function(path) {
+  return {
+    plugins: [
+      new CleanWebpackPlugin([path], {
+        // Without `root` CleanWebpackPlugin won't point to our
+        // project and will fail to work.
+        root: process.cwd()
       })
     ]
   };
