@@ -1,30 +1,103 @@
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const PurifyCSSPlugin = require('purifycss-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const NpmInstallPlugin = require('npm-install-webpack-plugin');
+
+exports.indexTemplate = function(options) {
+  return {
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: require('html-webpack-template'),
+        title: options.title,
+        appMountId: options.appMountId,
+        inject: false
+      })
+    ]
+  };
+}
+
+exports.loadJSX = function(include) {
+  return {
+    module: {
+      loaders: [
+        {
+          test: /\.(js|jsx)$/,
+          // Enable caching for extra performance
+          loaders: ['babel?cacheDirectory'],
+          include: include
+        }
+      ]
+    }
+  };
+}
+
+exports.loadIsparta = function(include) {
+  return {
+    module: {
+      preLoaders: [
+        {
+          test: /\.(js|jsx)$/,
+          loaders: ['isparta-instrumenter'],
+          include: include
+        }
+      ]
+    }
+  };
+}
+
+exports.lintJSX = function(include) {
+  return {
+    module: {
+      preLoaders: [
+        {
+          test: /\.(js|jsx)$/,
+          loaders: ['eslint'],
+          include: include
+        }
+      ]
+    }
+  };
+}
+
+exports.enableReactPerformanceTools = function() {
+  return {
+    module: {
+      loaders: [
+        {
+          test: require.resolve('react'),
+          loader: 'expose?React'
+        }
+      ]
+    }
+  };
+}
 
 exports.devServer = function(options) {
-  return {
+  const ret = {
     devServer: {
-    // Enable history API fallback so HTML5 History API based
-    // routing works. This is a good default that will come
-    // in handy in more complicated setups.
-    historyApiFallback: true,
-    // Unlike the cli flag, this doesn't set
-    // HotModuleReplacementPlugin!
-    hot: true,
-    inline: true,
-    // Display only errors to reduce the amount of output.
-    stats: 'errors-only',
-    // Parse host and port from env to allow customization.
-    //
-    // If you use Vagrant or Cloud9, set
-    // host: options.host || '0.0.0.0';
-    //
-    // 0.0.0.0 is available to all network devices
-    // unlike default `localhost`.
-    host: options.host, // Defaults to `localhost`
-    port: options.port // Defaults to 8080
+      // Enable history API fallback so HTML5 History API based
+      // routing works. This is a good default that will come
+      // in handy in more complicated setups.
+      historyApiFallback: true,
+
+      // Unlike the cli flag, this doesn't set
+      // HotModuleReplacementPlugin!
+      hot: true,
+      inline: true,
+
+      // Display only errors to reduce the amount of output.
+      stats: 'errors-only',
+
+      // Parse host and port from env to allow customization.
+      //
+      // If you use Vagrant or Cloud9, set
+      // host: options.host || '0.0.0.0';
+      //
+      // 0.0.0.0 is available to all network devices
+      // unlike default `localhost`.
+      host: options.host, // Defaults to `localhost`
+      port: options.port // Defaults to 8080
     },
     plugins: [
       // Enable multi-pass compilation for enhanced performance
@@ -34,6 +107,17 @@ exports.devServer = function(options) {
       })
     ]
   };
+
+  if(options.poll) {
+    ret.watchOptions = {
+      // Delay the rebuild after the first change
+      aggregateTimeout: 300,
+      // Poll using interval (in ms, accepts boolean too)
+      poll: 1000
+    };
+  }
+
+  return ret;
 }
 
 exports.setupCSS = function(paths) {
@@ -65,9 +149,10 @@ exports.minify = function() {
 exports.setFreeVariable = function(key, value) {
   const env = {};
   env[key] = JSON.stringify(value);
+
   return {
     plugins: [
-    new webpack.DefinePlugin(env)
+      new webpack.DefinePlugin(env)
     ]
   };
 }
@@ -75,7 +160,8 @@ exports.setFreeVariable = function(key, value) {
 exports.extractBundle = function(options) {
   const entry = {};
   entry[options.name] = options.entries;
-    return {
+
+  return {
     // Define an entry point needed for splitting.
     entry: entry,
     plugins: [
@@ -83,6 +169,7 @@ exports.extractBundle = function(options) {
       // needed for reliable caching.
       new webpack.optimize.CommonsChunkPlugin({
         names: [options.name, 'manifest'],
+
         // options.name modules only
         minChunks: Infinity
       })
@@ -94,8 +181,6 @@ exports.clean = function(path) {
   return {
     plugins: [
       new CleanWebpackPlugin([path], {
-        // Without `root` CleanWebpackPlugin won't point to our
-        // project and will fail to work.
         root: process.cwd()
       })
     ]
@@ -105,8 +190,8 @@ exports.clean = function(path) {
 exports.extractCSS = function(paths) {
   return {
     module: {
-    loaders: [
-      // Extract CSS during build
+      loaders: [
+        // Extract CSS during build
         {
           test: /\.css$/,
           loader: ExtractTextPlugin.extract('style', 'css'),
@@ -121,16 +206,12 @@ exports.extractCSS = function(paths) {
   };
 }
 
-exports.purifyCSS = function(paths) {
+exports.npmInstall = function(options) {
+  options = options || {};
+
   return {
     plugins: [
-      new PurifyCSSPlugin({
-        basePath: process.cwd(),
-        // `paths` is used to point PurifyCSS to files not
-        // visible to Webpack. You can pass glob patterns
-        // to it.
-        paths: paths
-      }),
+      new NpmInstallPlugin(options)
     ]
-  }
+  };
 }
