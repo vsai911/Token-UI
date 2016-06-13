@@ -48,6 +48,24 @@ $('.parallax').parallax({
 	speed :	0.15
 });
 
+$('#index-button').click(function() {
+  $(this).closest('button').attr('aria-expanded', function(i, attr) {
+    if (attr == 'true') {
+      $(this).removeClass('collapsed');
+      $('#index-navbar').removeClass('in');
+      console.log('button clicked ', attr);
+      console.log('this is: ', $(this).children('div'));
+      return attr = 'false';
+    } else {
+      $(this).addClass('collapsed');
+      $('#index-navbar').addClass('in');
+      console.log('button clicked ', attr);
+      console.log('this is: ', $(this).children('div'));
+      return attr = 'true';
+    }
+  });
+})
+
 $(document).ready(function(){
     $('.location-contact').click(function(){
             // Set the effect type
