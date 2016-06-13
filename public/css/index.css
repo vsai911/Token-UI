@@ -347,6 +347,10 @@ button:hover:before {
     background-color: #4397b5
 }
 
+ul.nav.navbar-nav.navbar-right {
+  padding-top: 10px;
+}
+
 .scroll {
     white-space: nowrap;
     overflow-x: auto;
@@ -360,6 +364,10 @@ button:hover:before {
 .navbar-default {
   background-color: transparent;
   border: none;
+}
+
+.collapse.in {
+  display: block;
 }
 
 header a,
@@ -696,7 +704,7 @@ header a:hover {
 }
 
 .footer .scroll {
-    border: 0
+  border: 0;
 }
 
 .footer .logo,
