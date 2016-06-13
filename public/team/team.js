@@ -3,13 +3,14 @@ var TEAM_POLYGON_RADIUS = 300;
 var POLYGON_MIN_WIDTH = 700;
 // Classes
 var TEAM_MEMBER = '.team-member';
+var TEAM_CONTAINER_OFFSET = 140;
 
 function drawPolygon() {
 	//Draw the polygon
 	var radius = TEAM_POLYGON_RADIUS;
 	var container = $('#team-container');
 	var $fields = $(TEAM_MEMBER);
-	container.height(radius * 2 + ($fields.height() / 2) + 90);
+	container.height(radius * 2 + ($fields.height() / 2) + TEAM_CONTAINER_OFFSET);
 	var width = container.width(),
 		height = container.height();
 	var angle = 0, step = (2*Math.PI) / $fields.length;
