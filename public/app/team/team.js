@@ -62,7 +62,7 @@ function refreshTeamView() {
 
 
 $(document).ready(function() {
-	particlesJS.load('particles-js', 'particles.json');
+	particlesJS.load('particles-js', 'app/team/particles.json');
 	refreshTeamView();
 });
 
