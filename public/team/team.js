@@ -66,4 +66,20 @@ $(document).ready(function() {
 	refreshTeamView();
 });
 
+$('#team-button').click(function() {
+  $(this).closest('button').attr('aria-expanded', function(i, attr) {
+    if (attr == 'true') {
+    	console.log(attr);
+      $(this).removeClass('collapsed');
+      $('#team-navbar').removeClass('in');
+      return attr = 'false';
+    } else {
+    	console.log(attr);
+      $(this).addClass('collapsed');
+      $('#team-navbar').addClass('in');
+      return attr = 'true';
+    }
+  });
+})
+
 $(window).on('resize', refreshTeamView);

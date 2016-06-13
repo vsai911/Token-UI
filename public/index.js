@@ -53,14 +53,10 @@ $('#index-button').click(function() {
     if (attr == 'true') {
       $(this).removeClass('collapsed');
       $('#index-navbar').removeClass('in');
-      console.log('button clicked ', attr);
-      console.log('this is: ', $(this).children('div'));
       return attr = 'false';
     } else {
       $(this).addClass('collapsed');
       $('#index-navbar').addClass('in');
-      console.log('button clicked ', attr);
-      console.log('this is: ', $(this).children('div'));
       return attr = 'true';
     }
   });
