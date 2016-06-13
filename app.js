@@ -39,7 +39,7 @@ app.post('/contact-submit',function(req,res){
 })
 
 app.listen(PORT, function () {
-  console.log('Example app listening on' + PORT);
+  console.log('Example app listening on: ' + PORT);
 });
 
 //************NODE EMAIL
