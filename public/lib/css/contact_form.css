@@ -1,0 +1,258 @@
+/* Contact form css */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+#contact-container {
+  margin-top: 5em;
+  text-align: left;
+  padding-bottom: 4%;
+}
+
+#required-field {
+  width: 100%;
+}
+
+p, li {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  line-height: 42px;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin-left: -4.5%;
+}
+
+#intro-contact-form {
+  margin-left: 20%;
+  padding-bottom: 3%;
+}
+
+@media(max-width: 1199px) {
+  #intro-contact-form {
+    margin-left: 0%;
+  }
+}
+
+#contact-container-content {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.button, input, button {
+  position: relative;
+  display: inline-block;
+  background: none;
+  line-height: 1.5em;
+  padding: .75em 3em;
+  border: none;
+  font-family: Montserrat;
+  color: #fff;
+  text-decoration: none;
+  background-color: #53a2bf;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+textarea {
+  width: 100%;
+  line-height: 2.25em;
+  border-radius: 5px;
+  border: none;
+  -webkit-appearance: none;
+  padding: 5px 10px;
+}
+
+label {
+  font-family: Montserrat,serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+}
+
+body {
+  font-family: Open Sans,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1c3040;
+  background-image: url(../img/hero-2.png);
+  z-index: 100;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  #contact-form {
+    //width: 66%;
+    margin:0 auto;
+  }
+}
+
+span.glyphicon.glyphicon-asterisk {
+  font-family: 'Montserrat, serif';
+  font-size: 20px;
+}
+
+/* Header css */
+
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border-bottom: 2px solid #fff;
+}
+
+.nav-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo, .nav-item, .vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 15px;
+}
+
+.nav-item {
+  padding: 0 15px;
+  border: 0;
+}
+
+.logo {
+  width: 158px;
+  height: 40px;
+  background: url(../img/logo-light.png);
+  background-size: cover;
+  margin: 15px;
+}
+
+h5 {
+  font-family: Montserrat,serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1c3040;
+}
+
+header a, header a:hover {
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.nav-item a {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: Montserrat,serif;
+}
+
+@media (min-width: 641px) {
+  .vertical-align-middle {
+      float: right;
+  }
+}
+
+/* Footer css */
+
+.footer {
+    background-color: #3d525c
+}
+
+.footer .footer-content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em
+}
+
+.footer .footer-content:after {
+    content: " ";
+    display: block;
+    clear: both
+}
+
+.footer .scroll {
+    border: 0
+}
+
+.footer .logo,
+.footer a {
+  opacity: .5
+}
+
+.nav-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.nav-wrapper:after {
+  content: " ";
+  display: block;
+  clear: both
+}
+
+.nav-item {
+  padding: 0 15px;
+  border: 0
+}
+
+.nav-item a {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase
+}
+
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border-bottom: 2px solid #fff
+}
+
+
+li.form-list{
+  font-size:18px;
+  font-weight:200;
+  list-style-type:circle;
+}

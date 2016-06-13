@@ -1,0 +1,161 @@
+/* team.css */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+
+body {
+  font-family: Open Sans,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1c3040;
+  background-image: url(../img/hero-3.png);
+  z-index: 100;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#team-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.member-hint {
+  width: 280px; /* Use POLYGON_RADIUS in team.js to determine this */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .member-hint {
+      top: 5%;
+  }
+}
+
+
+.team-member { 
+  width: 170px; 
+  height: 170px; 
+  position: absolute;
+  background: #000;
+  border-radius: 50%; 
+}
+
+.team-member > img {
+  height: inherit;
+  width: inherit;
+}
+
+.team-member:hover > .img-circle {
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.5);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(33, 150, 243, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.5);
+    box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.5);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(33, 150, 243, 0);
+      box-shadow: 0 0 0 10px rgba(33, 150, 243, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+      box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+  }
+}
+
+.team-member .member-modal {
+  opacity: 0.9;
+  width: 300px;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  text-align: center;
+  background-color: rgba(33, 150, 243, 0.5)
+}
+
+/* Header css */
+
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border-bottom: 2px solid #fff;
+}
+
+.nav-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo, .nav-item, .vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-item {
+  padding: 0 15px;
+  border: 0;
+}
+
+.logo {
+  width: 158px;
+  height: 40px;
+  background: url(../img/logo-light.png);
+  background-size: cover;
+  margin: 15px;
+}
+
+h5 {
+  font-family: Montserrat,serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1c3040;
+}
+
+header a, header a:hover {
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.nav-item a {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: Montserrat,serif;
+}
+
+@media (min-width: 641px) {
+  .vertical-align-middle {
+      float: right;
+  }
+}
