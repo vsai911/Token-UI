@@ -193,7 +193,11 @@ a {
 /* Footer css */
 
 .footer {
-    background-color: #3d525c
+  background-color: #3d525c;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .footer .footer-content {
