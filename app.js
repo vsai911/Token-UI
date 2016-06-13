@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
-var emailJS = require('emailjs/email')
+var emailJS = require('emailjs/email');
+var PORT = process.env.PORT || 3000;
 var bodyParser = require('body-parser');
 
 // create application/json parser
@@ -37,8 +38,8 @@ app.post('/contact-submit',function(req,res){
 
 })
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+app.listen(PORT, function () {
+  console.log('Example app listening on' + PORT);
 });
 
 //************NODE EMAIL
