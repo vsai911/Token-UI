@@ -228,7 +228,7 @@ p,a {
 
 @media (max-width: 1154px) {
   .footer {
-    margin-top: 68em; 
+    margin-top: 68em;
   }
 }
 
@@ -292,3 +292,8 @@ p,a {
   border-bottom: 2px solid #fff
 }
 
+
+.project-description{
+  margin: 25px;
+  text-align: center;
+}
