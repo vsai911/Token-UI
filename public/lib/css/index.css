@@ -351,6 +351,10 @@ ul.nav.navbar-nav.navbar-right {
   padding-top: 12px;
 }
 
+header {
+  background-color: #2e586c;
+}
+
 .scroll {
     white-space: nowrap;
     overflow-x: auto;
@@ -429,7 +433,6 @@ header a:hover {
 /* Body css */
 
 .heroone-block {
-    background-color: #2e586c;
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -685,6 +688,7 @@ header a:hover {
     }
 }
 
+footer,
 .footer {
     background-color: #3d525c
 }

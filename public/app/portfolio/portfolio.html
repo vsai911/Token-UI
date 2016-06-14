@@ -37,20 +37,34 @@
     <link rel="stylesheet" href="../../lib/css/portfolio.css">
   </head>
   <body>
-    <div id="portfolio" class="heroone-block">
-      <header class="scroll">
-        <div class="nav-wrapper">
-          <a href="/"><div class="logo"></div></a>
-          <nav class="vertical-align-middle">
-            <span class="nav-item"><h5><a href="/">Home</a></h5></span>
-            <span class="nav-item"><h5><a href="/team">Our Team</a></h5></span>
-            <span class='nav-item'><h5><a href='/portfolio'>Portfolio</a></h5></span>
-            <span class="nav-item"><h5><a href="/contact">Contact</a></h5></span>
-          </nav>
-        </div>
-      </header>
-    </div>
+    <header class='scroll'>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class='nav-wrapper'>
+          <div class="navbar-header">
+            <a href="/"><div class="logo"></div></a>
+            <button type="button" class="navbar-toggle collapsed" id='index-button' data-toggle="collapse" data-target="#index-navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id='index-navbar'>
+            <ul class='nav navbar-nav navbar-right'>
+              <li class="nav-item"><h5><a href="/">Home</a></h5></span>
+              <li class="nav-item"><h5><a href="/team">Our Team</a></h5></span>
+              <li class='nav-item'><h5><a href='/portfolio'>Portfolio</a></h5></span>
+              <li class="nav-item"><h5><a href="/contact">Contact</a></h5></span>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+    <div id="portfolio" class="heroone-block">
 
       <div id="project-jumbotron" class="project-header">
         <h1 id="h1-project">Our Portfolio</h1>
