@@ -62,6 +62,10 @@ header a:hover {
     text-decoration: none
 }
 
+header {
+  background-color: #2e586c;
+}
+
 .logo {
     width: 158px;
     height: 40px;
@@ -115,6 +119,7 @@ header a:hover {
 
 /* Body css */
 
+
 .container-project {
   width: 100%;
   max-width: 1180px;
@@ -125,7 +130,7 @@ header a:hover {
 .img-project {
   max-width: 100%;
   max-height: 100%;
-  min-height: 350px;
+  min-height: 330px;
   width: auto;
   height: auto;
   border-radius: 2.5%;
@@ -261,8 +266,8 @@ header a:hover {
 
 .one-third {
   width:33%;
-  max-width: 360px;
-  min-width: 360px;
+  max-width: 330px;
+  min-width: 330px;
 }
 
 .sakthi{
@@ -278,8 +283,8 @@ header a:hover {
 .grid.one-third.highlight {
   padding: 0 10px 10px 0;
   margin: 0 1% 1% 0;
-  height: 360px;
-  width: 360px;
+  height: 330px;
+  width: 330px;
 }
 
 .rollover-blocks {
@@ -333,7 +338,7 @@ footer,
   background-color: #3d525c;
 }
 
-@media (max-width: 1154px) {
+@media (max-width: 1110px) {
   .footer {
     margin-top: 68em;
   }
