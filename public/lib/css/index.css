@@ -351,10 +351,6 @@ ul.nav.navbar-nav.navbar-right {
   padding-top: 12px;
 }
 
-header {
-  background-color: #2e586c;
-}
-
 .scroll {
     white-space: nowrap;
     overflow-x: auto;
@@ -688,7 +684,6 @@ header a:hover {
     }
 }
 
-footer,
 .footer {
     background-color: #3d525c
 }
