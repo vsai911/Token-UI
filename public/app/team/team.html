@@ -11,9 +11,11 @@
   <!-- endbower -->
   <!-- endbuild -->
 
-  <!-- build:css styles/team.css -->
   <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/team.css">
+  <link rel="stylesheet" href="/lib/css/team.css">
+
+  <!-- build:css styles/team.css -->
+  <link rel="stylesheet" href="../../lib/css/team.css">
   <!-- endbuild -->
 </head>
 <body>
@@ -37,7 +39,7 @@
             <p>to learn more about them</p>
           </div>
           <div class="team-member">
-            <img src="../img/jason.jpg" class="img-circle" data-toggle="modal" data-target="#jason-modal">
+            <img src="lib/img/jason.jpg" class="img-circle" data-toggle="modal" data-target="#jason-modal">
             <div id="jason-modal" tabindex="-1" class="modal fade" role="dialog">
                <div class="modal-dialog member-modal" role="document">
                     <div class="modal-content">
@@ -50,7 +52,7 @@
             </div> <!-- /#jason-modal -->
           </div>
           <div class="team-member">
-            <img src="../img/avi.png" class="img-circle" data-toggle="modal" data-target="#avi-modal">
+            <img src="lib/img/avi.png" class="img-circle" data-toggle="modal" data-target="#avi-modal">
             <div id="avi-modal" tabindex="-1" class="modal fade" role="dialog">
                <div class="modal-dialog member-modal" role="document">
                     <div class="modal-content">
@@ -63,7 +65,7 @@
             </div> <!-- /#avi-modal -->
           </div>
           <div class="team-member">
-            <img src="../img/prabu.jpg" class="img-circle" data-toggle="modal" data-target="#prabu-modal">
+            <img src="lib/img/prabu.jpg" class="img-circle" data-toggle="modal" data-target="#prabu-modal">
             <div id="prabu-modal" tabindex="-1" class="modal fade" role="dialog">
                <div class="modal-dialog member-modal" role="document">
                     <div class="modal-content">
@@ -76,7 +78,7 @@
               </div> <!-- /#prabu-modal -->
           </div>
           <div class="team-member">
-            <img src="../img/lance.jpg" class="img-circle" data-toggle="modal" data-target="#lance-modal">
+            <img src="lib/img/lance.jpg" class="img-circle" data-toggle="modal" data-target="#lance-modal">
             <div id="lance-modal" tabindex="-1" class="modal fade" role="dialog">
                <div class="modal-dialog member-modal" role="document">
                     <div class="modal-content">
@@ -89,7 +91,7 @@
               </div> <!-- /#lance-modal -->
           </div>
           <div class="team-member">
-            <img src="../img/namburi.jpg" class="img-circle" data-toggle="modal" data-target="#namburi-modal">
+            <img src="lib/img/namburi.jpg" class="img-circle" data-toggle="modal" data-target="#namburi-modal">
             <div id="namburi-modal" tabindex="-1" class="modal fade" role="dialog">
                <div class="modal-dialog member-modal" role="document">
                     <div class="modal-content">
@@ -102,7 +104,7 @@
               </div> <!-- /#namburi-modal -->
           </div>
           <div class="team-member">
-            <img src="../img/sai.jpg" class="img-circle" data-toggle="modal" data-target="#sai-modal">
+            <img src="lib/img/sai.jpg" class="img-circle" data-toggle="modal" data-target="#sai-modal">
             <div id="sai-modal" tabindex="-1" class="modal fade" role="dialog">
                <div class="modal-dialog member-modal" role="document">
                     <div class="modal-content">
@@ -115,7 +117,7 @@
               </div> <!-- /#sai-modal -->
           </div>
           <div class="team-member">
-            <img src="../img/michael.jpg" class="img-circle" data-toggle="modal" data-target="#michael-modal">
+            <img src="lib/img/michael.jpg" class="img-circle" data-toggle="modal" data-target="#michael-modal">
             <div id="michael-modal" tabindex="-1" class="modal fade" role="dialog">
                <div class="modal-dialog member-modal" role="document">
                     <div class="modal-content">
@@ -129,7 +131,7 @@
               </div> <!-- /#michael-modal -->
           </div>
           <div class="team-member">
-            <img src="../img/akshat.jpg" class="img-circle" data-toggle="modal" data-target="#akshat-modal">
+            <img src="lib/img/akshat.jpg" class="img-circle" data-toggle="modal" data-target="#akshat-modal">
             <div id="akshat-modal" tabindex="-1" class="modal fade" role="dialog">
                <div class="modal-dialog member-modal" role="document">
                     <div class="modal-content">
@@ -157,14 +159,16 @@
 
       <!-- build:js scripts/vendor.js -->
       <!-- bower:js -->
-      <script type="text/javascript" src="/lib/jquery-2.2.0.min.js"></script>
-      <script type="text/javascript" src="/lib/bootstrap/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="/lib/particles/particles.js"></script>
+      <script type="text/javascript" src="/lib/js/particles/particles.js"></script>
       <!-- endbower -->
       <!-- endbuild -->
 
+      <script type="text/javascript" src="/lib/js/jquery/jquery-2.2.0.min.js"></script>
+      <script type="text/javascript" src="/lib/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/lib/js/particles/particles.js"></script>
+
       <!-- build:js scripts/main.js -->
-      <script src="team.js"></script>
+      <script src="app/team/team.js"></script>
       <!-- endbuild -->
     </body>
     </html>
