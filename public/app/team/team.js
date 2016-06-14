@@ -60,26 +60,11 @@ function refreshTeamView() {
 	setTimeout(drawFn, 0);
 }
 
-
+// I temporarily disabled particles to lower the battery life drain.
 $(document).ready(function() {
-	particlesJS.load('particles-js', 'app/team/particles.json');
+	// particlesJS.load('particles-js', 'app/team/particles.json');
 	refreshTeamView();
 });
 
-$('#team-button').click(function() {
-  $(this).closest('button').attr('aria-expanded', function(i, attr) {
-    if (attr == 'true') {
-    	console.log(attr);
-      $(this).removeClass('collapsed');
-      $('#team-navbar').removeClass('in');
-      return attr = 'false';
-    } else {
-    	console.log(attr);
-      $(this).addClass('collapsed');
-      $('#team-navbar').addClass('in');
-      return attr = 'true';
-    }
-  });
-})
 
 $(window).on('resize', refreshTeamView);

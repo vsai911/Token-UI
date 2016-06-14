@@ -180,7 +180,7 @@ small {
     line-height: 18px
 }
 
-/* Header css */
+/* Navbar */
 
 .button,
 button {
@@ -210,19 +210,8 @@ button:hover:before {
     background-color: #4397b5
 }
 
-
-.scroll {
-    white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border-bottom: 2px solid #fff
-}
-
-/* Navbar css */
-
 ul.nav.navbar-nav.navbar-right {
-  padding-top: -10px;
+  padding-top: 12px;
 }
 
 .navbar-default {
@@ -238,6 +227,8 @@ header a,
 header a:hover {
     text-decoration: none
 }
+
+
 
 .logo {
     width: 158px;
@@ -288,4 +279,12 @@ header a:hover {
 .vertical-align-middle {
     display: inline-block;
     vertical-align: middle
+}
+
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border-bottom: 2px solid #fff
 }
