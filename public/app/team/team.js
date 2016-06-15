@@ -12,17 +12,17 @@ function drawPolygon() {
 	var $fields = $(TEAM_MEMBER);
 	container.height(radius * 2 + ($fields.height() / 2) + TEAM_CONTAINER_OFFSET);
 	var width = container.width(),
-		height = container.height();
+	 height = container.height();
 	var angle = 0, step = (2*Math.PI) / $fields.length;
 
 	$fields.each(function() {
-	    var x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/2);
-	    var y = Math.round(height/2 + radius * Math.sin(angle) - $(this).height()/2);
-	    $(this).css({
-	        left: x + 'px',
-	        top: y + 'px'
-	    });
-	    angle += step;
+    var x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/2);
+    var y = Math.round(height/2 + radius * Math.sin(angle) - $(this).height()/2);
+    $(this).css({
+      left: x + 'px',
+      top: y + 'px'
+    });
+    angle += step;
 	});
 }
 
@@ -41,12 +41,12 @@ function drawLine() {
 	}
 
 	$fields.each(function(index) {
-	    var x = containerWidth - ($(this).width() / 2);
-	    var y =  getY(index);
-	    $(this).css({
-	        left: x + 'px',
-	        top: y + 'px'
-	    });
+    var x = containerWidth - ($(this).width() / 2);
+    var y =  getY(index);
+    $(this).css({
+      left: x + 'px',
+      top: y + 'px'
+    });
 	});
 }
 

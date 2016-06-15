@@ -41,17 +41,3 @@ $(function(){
     }
   });
 });
-
-$('#index-button').click(function() {
-  $(this).closest('button').attr('aria-expanded', function(i, attr) {
-    if (attr == 'true') {
-      $(this).removeClass('collapsed');
-      $('#index-navbar').removeClass('in');
-      return attr = 'false';
-    } else {
-      $(this).addClass('collapsed');
-      $('#index-navbar').addClass('in');
-      return attr = 'true';
-    }
-  });
-})
