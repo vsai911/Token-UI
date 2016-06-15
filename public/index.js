@@ -63,7 +63,7 @@ $('#index-button').click(function() {
 })
 
 $(document).ready(function(){
-    $('.location-contact').click(function(){
+    $('.location-contact').on('click', function(){
             // Set the effect type
         var effect = 'slide';
 
@@ -73,6 +73,9 @@ $(document).ready(function(){
         // Set the duration (default: 400 milliseconds)
         var duration = 500;
 
-        $('#contact-form').toggle(effect, options, duration);
+        $('#contact-form').show(effect, options, duration);
+
+        // Fired once now unbind event handler
+        $('.location-contact').off('click');
     });
 })
