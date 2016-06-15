@@ -50,7 +50,7 @@
 
 
 $(document).ready(function(){
-  var clicked = false;
+  var contactClicked = false;
   $('.location-contact').click(function(){
     // Set the effect type
     var effect = 'slide';
@@ -58,13 +58,13 @@ $(document).ready(function(){
     var options = { direction: 'right' };
     // Set the duration (default: 400 milliseconds)
     var duration = 500;
-    if (clicked) {
+    if (contactClicked) {
       $(this).siblings().show();
-      clicked = false;
+      contactClicked = false;
       $(this).removeClass('location-contact-clicked');
     } else {
       $(this).siblings().hide();
-      clicked = true;
+      contactClicked = true;
       $(this).addClass('location-contact-clicked');
     }
 
