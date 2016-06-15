@@ -712,11 +712,6 @@ header a:hover {
   line-height: 80px;
   z-index: 1;
   position: relative; 
-  -webkit-transition: left 0.5s ease;
-     -moz-transition: left 0.5s ease;
-      -ms-transition-duration: left 0.5s ease;
-       -o-transition-duration: left 0.5s ease;
-        transition: left 0.5s ease;
 }
 
 .location-contact:after {
@@ -730,21 +725,11 @@ header a:hover {
   transform-origin: bottom center;
   background-color: #03A8AB;
   z-index: -1;
-  transition: transform 0.3s;
-  -webkit-transition: left 0.5s ease;
-     -moz-transition: left 0.5s ease;
-      -ms-transition-duration: left 0.5s ease;
-       -o-transition-duration: left 0.5s ease;
-        transition: left 0.5s ease;
+  transition: transform 0.5s;
 }
 
 .location-contact:hover::after {
   transform: scaleY(1);
-  -webkit-transition: left 0.5s ease;
-     -moz-transition: left 0.5s ease;
-      -ms-transition-duration: left 0.5s ease;
-       -o-transition-duration: left 0.5s ease;
-        transition: left 0.5s ease;
 }
 /* Making the button centered depending on the width of the screen */
 
