@@ -395,12 +395,7 @@ header a:hover {
     clear: both
 }
 
-.nav-item {
-    padding: 0 15px;
-    border: 0;
-    margin-left:-10px;
-    margin-right:-10px;
-}
+
 
 .nav-item a {
     color: #fff;
@@ -408,6 +403,14 @@ header a:hover {
     text-transform: uppercase
 }
 /* The below CSS gets the hover transition effect. */
+
+.nav-item {
+    padding: 0 15px;
+    border: 0;
+    margin-left:-10px;
+    margin-right:-10px;
+}
+
 .nav-item span {
     -webkit-transition: 0.6s;
     -moz-transition: 0.6s;
