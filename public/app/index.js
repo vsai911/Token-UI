@@ -61,9 +61,11 @@ $(document).ready(function(){
     if (clicked) {
       $(this).siblings().show();
       clicked = false;
+      $(this).removeClass('location-contact-clicked');
     } else {
       $(this).siblings().hide();
       clicked = true;
+      $(this).addClass('location-contact-clicked');
     }
 
     $('#contact-form').toggle(effect, options, duration);
