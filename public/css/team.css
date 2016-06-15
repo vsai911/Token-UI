@@ -34,7 +34,11 @@ body {
 
 @media (max-width: 700px) {
   .member-hint {
-      top: 5%;
+      top: 40px;
+  }
+
+  body {
+    background-size: initial;
   }
 }
 
@@ -44,7 +48,8 @@ body {
   height: 170px; 
   position: absolute;
   background: #000;
-  border-radius: 50%; 
+  border-radius: 50%;
+  display: none;
 }
 
 .team-member > img {

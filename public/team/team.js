@@ -21,7 +21,7 @@ function drawPolygon() {
 	    $(this).css({
 	        left: x + 'px',
 	        top: y + 'px'
-	    });
+	    }).toggle(true);
 	    angle += step;
 	});
 }
@@ -41,12 +41,12 @@ function drawLine() {
 	}
 
 	$fields.each(function(index) {
-	    var x = containerWidth - ($(this).width() / 2);
+	    var x = containerWidth - ($(this).width() / 2) + 15;
 	    var y =  getY(index);
 	    $(this).css({
 	        left: x + 'px',
 	        top: y + 'px'
-	    });
+	    }).toggle(true);
 	});
 }
 
@@ -62,7 +62,7 @@ function refreshTeamView() {
 
 
 $(document).ready(function() {
-	particlesJS.load('particles-js', 'particles.json');
+	// particlesJS.load('particles-js', 'particles.json');
 	refreshTeamView();
 });
 
