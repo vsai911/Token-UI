@@ -50,6 +50,7 @@
 
 
 $(document).ready(function(){
+  var clicked = false;
   $('.location-contact').click(function(){
     // Set the effect type
     var effect = 'slide';
@@ -57,6 +58,13 @@ $(document).ready(function(){
     var options = { direction: 'right' };
     // Set the duration (default: 400 milliseconds)
     var duration = 500;
+    if (clicked) {
+      $(this).siblings().show();
+      clicked = false;
+    } else {
+      $(this).siblings().hide();
+      clicked = true;
+    }
 
     $('#contact-form').toggle(effect, options, duration);
   });
