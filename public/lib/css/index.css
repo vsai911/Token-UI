@@ -709,7 +709,28 @@ header a:hover {
   margin: 40px 40px;
   text-align: center;
   line-height: 80px;
+  z-index: 1;
+  position: relative;
 }
+
+.location-contact:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  background-color: #03A8AB;
+  z-index: -1;
+  transition: transform 0.3s;
+}
+
+.location-contact:hover::after {
+  transform: scaleY(1);
+}
+
 
 .contact-us {
   width: 100%;
