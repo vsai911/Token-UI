@@ -407,8 +407,8 @@ header a:hover {
 .nav-item {
     padding: 0 15px;
     border: 0;
-    margin-left:-10px;
-    margin-right:-10px;
+    margin-left:-12px;
+    margin-right:-12px;
 }
 
 .nav-item span {

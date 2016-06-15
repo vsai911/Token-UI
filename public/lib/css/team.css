@@ -250,10 +250,6 @@ header a:hover {
     clear: both
 }
 
-.nav-item {
-    padding: 0 15px;
-    border: 0
-}
 
 .nav-item a {
     color: #fff;
@@ -264,10 +260,10 @@ header a:hover {
 /* The below CSS gets the hover transition effect. */
 
 .nav-item {
-    padding: 0 15px;
-    border: 0;
-    margin-left:-10px;
-    margin-right:-10px;
+  padding: 0 15px;
+  border: 0;
+  margin-left:-12px;
+  margin-right:-12px;
 }
 
 .nav-item span {
