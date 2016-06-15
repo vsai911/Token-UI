@@ -443,7 +443,7 @@ header a:hover {
     -webkit-transition: .4s,opacity .6s;
     -moz-transition: .4s,opacity .6s;
     -o-transition: .4s,opacity .6s;
-    transition: .4s,opacity .6s;
+    transition: all .4s ease;
 }
 
 
@@ -457,7 +457,7 @@ header a:hover {
     -moz-transform: translate(0,100%);
     -ms-transform: translate(0,100%);
     -o-transform: translate(0,100%);
-    transform: translate(0,100%);
+    transform: translate(0,150%);
 }
 
 
@@ -469,7 +469,7 @@ header a:hover {
     -moz-transform: translate(0,100%);
     -ms-transform: translate(0,100%);
     -o-transform: translate(0,100%);
-    transform: translate(0,100%);
+    transform: translate(0,150%);
 }
 
 .nav-item > a:hover span,
