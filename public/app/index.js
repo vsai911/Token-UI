@@ -4,47 +4,49 @@
  *
  */
 
-(function($) {
+// Parallax doesn't seem to do anything -- please test. Commented out for now.
 
-  $.fn.parallax = function(options) {
+// (function($) {
 
-    var windowHeight = $(window).height();
+//   $.fn.parallax = function(options) {
 
-    // Establish default settings
-    var settings = $.extend({
-        speed        : 0.15
-    }, options);
+//     var windowHeight = $(window).height();
 
-    // Iterate over each object in collection
-    return this.each( function() {
+//     // Establish default settings
+//     var settings = $.extend({
+//         speed        : 0.15
+//     }, options);
 
-    	// Save a reference to the element
-    	var $this = $(this);
+//     // Iterate over each object in collection
+//     return this.each( function() {
 
-    	// Set up Scroll Handler
-    	$(document).scroll(function(){
+//     	// Save a reference to the element
+//     	var $this = $(this);
 
-		    var scrollTop = $(window).scrollTop();
-        var offset = $this.offset().top;
-        var height = $this.outerHeight();
+//     	// Set up Scroll Handler
+//     	$(document).scroll(function(){
 
-      	// Check if above or below viewport
-    		if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-    			return;
-    		}
+// 		    var scrollTop = $(window).scrollTop();
+//         var offset = $this.offset().top;
+//         var height = $this.outerHeight();
 
-  		  var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
-        // Apply the Y Background Position to Set the Parallax Effect
-  			$this.css('background-position', 'center ' + yBgPosition + 'px');
-      });
-    });
-  }
+//       	// Check if above or below viewport
+//     		if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+//     			return;
+//     		}
 
-}(jQuery));
+//   		  var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+//         // Apply the Y Background Position to Set the Parallax Effect
+//   			$this.css('background-position', 'center ' + yBgPosition + 'px');
+//       });
+//     });
+//   }
 
-$('.parallax').parallax({
-	speed :	0.15
-});
+// }(jQuery));
+
+// $('.parallax').parallax({
+// 	speed :	0.15
+// });
 
 
 $(document).ready(function(){
