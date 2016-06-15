@@ -684,43 +684,10 @@ header a:hover {
     }
 }
 /* Footer CSS */
-.footer-content > .scroll > .nav-wrapper {
 
-}
 .footer {
   background-color: #3d525c;
   border: none;
-}
-
-
-
-.footer .footer-content {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em
-}
-
-.footer .footer-content:after {
-  content: " ";
-  display: block;
-  clear: both
-}
-
-/*.footer .scroll {
-  border: 0;
-}
-
-.footer .logo,
-.footer a {
-    opacity: .5
-}*/
-
-@media (max-width:1024px) {
-  .footer-content {
-      padding-top: 30px
-  }
 }
 
 
