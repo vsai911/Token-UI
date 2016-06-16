@@ -1002,7 +1002,9 @@ li.form-list{
   text-align: center;
   line-height: 80px;
   z-index: 1;
-  position: relative; 
+  position: relative;
+  transform: translate(0,0,0);
+  transition: transform 1s ease; 
 }
 
 .location-contact:after {
@@ -1025,44 +1027,68 @@ li.form-list{
 /* Making the button centered depending on the width of the screen */
 
 .location-contact-clicked {
-  left: 0%;
-  -webkit-transition: left 0.5s ease;
-     -moz-transition: left 0.5s ease;
-      -ms-transition-duration: left 0.5s ease;
-       -o-transition-duration: left 0.5s ease;
-        transition: left 0.5s ease;
+  transform: translate(5%, 0);
+  -webkit-transition: transform 1s ease;
+     -moz-transition: transform 1s ease;
+      -ms-transition-duration: transform 1s ease;
+       -o-transition-duration: transform 1s ease;
+        transition: transform 1s ease;
 }
 
-@media (min-width:325px) {
+@media(min-width: 388px) {
   .location-contact-clicked {
-    left: 10%;
-    -webkit-transition: left 0.5s ease;
-       -moz-transition: left 0.5s ease;
-        -ms-transition-duration: left 0.5s ease;
-         -o-transition-duration: left 0.5s ease;
-          transition: left 0.5s ease;
+    transform: translate(25%, 0);
+    -webkit-transition: transform 1s ease;
+     -moz-transition: transform 1s ease;
+      -ms-transition-duration: transform 1s ease;
+       -o-transition-duration: transform 1s ease;
+        transition: transform 1s ease;
   }
 }
 
-@media (min-width:500px) {
+@media(min-width: 595px) {
   .location-contact-clicked {
-    left: 25%;
-    -webkit-transition: left 0.5s ease;
-       -moz-transition: left 0.5s ease;
-        -ms-transition-duration: left 0.5s ease;
-         -o-transition-duration: left 0.5s ease;
-          transition: left 0.5s ease;
+    transform: translate(66%, 0);
+    -webkit-transition: transform 1s ease;
+     -moz-transition: transform 1s ease;
+      -ms-transition-duration: transform 1s ease;
+       -o-transition-duration: transform 1s ease;
+        transition: transform 1s ease;
   }
 }
 
-@media(min-width:716px) {
+
+@media (min-width:640px) {
   .location-contact-clicked {
-    left: 33%;
-    -webkit-transition: left 0.5s ease;
-       -moz-transition: left 0.5s ease;
-        -ms-transition-duration: left 0.5s ease;
-         -o-transition-duration: left 0.5s ease;
-          transition: left 0.5s ease;
+    transform: translate(75%, 0);
+    -webkit-transition: transform 1s ease;
+     -moz-transition: transform 1s ease;
+      -ms-transition-duration: transform 1s ease;
+       -o-transition-duration: transform 1s ease;
+        transition: transform 1s ease;
+  }
+}
+
+@media (min-width:800px) {
+  .location-contact-clicked {
+    transform: translate(112%, 0);
+    -webkit-transition: transform 1s ease;
+     -moz-transition: transform 1s ease;
+      -ms-transition-duration: transform 1s ease;
+       -o-transition-duration: transform 1s ease;
+        transition: transform 1s ease;
+  }
+}
+
+@media(min-width:970px) {
+  .location-contact-clicked {
+/*    left: 33%;*/
+    transform: translate(150%, 0);
+    -webkit-transition: transform 1s ease;
+     -moz-transition: transform 1s ease;
+      -ms-transition-duration: transform 1s ease;
+       -o-transition-duration: transform 1s ease;
+        transition: transform 1s ease;
   }
 }
 
