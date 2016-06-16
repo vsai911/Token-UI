@@ -15,7 +15,7 @@ app.use('/',jsonParser);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/team', function(req,res){
-  res.sendFile(__dirname + '/public/app/team/team.html');
+  res.sendFile(__dirname + '/public/app/team/team_alt.html');
 });
 
 app.get('/', function (req, res){
