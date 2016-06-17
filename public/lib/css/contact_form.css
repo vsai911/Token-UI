@@ -1003,7 +1003,7 @@ li.form-list{
   z-index: 1;
   position: relative;
   transform: translate(0,0,0);
-  transition: transform 1s ease; 
+  transition: transform 0.5s ease; 
 }
 
 .location-contact:after {
@@ -1081,7 +1081,6 @@ li.form-list{
 
 @media(min-width:970px) {
   .location-contact-clicked {
-/*    left: 33%;*/
     transform: translate(150%, 0);
     -webkit-transition: transform 1s ease;
      -moz-transition: transform 1s ease;

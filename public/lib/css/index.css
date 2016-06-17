@@ -810,7 +810,7 @@ header a:hover {
   z-index: 1;
   position: relative;
   transform: translate(0,0,0);
-  transition: transform 1s ease; 
+  transition: transform 0.5s ease; 
 }
 
 .location-contact:after {
@@ -838,7 +838,7 @@ header a:hover {
      -moz-transition: transform 1s ease;
       -ms-transition-duration: transform 1s ease;
        -o-transition-duration: transform 1s ease;
-        transition: transform 1s ease;
+        transition: transform 0.5s ease;
 }
 
 @media(min-width: 388px) {
@@ -848,7 +848,7 @@ header a:hover {
      -moz-transition: transform 1s ease;
       -ms-transition-duration: transform 1s ease;
        -o-transition-duration: transform 1s ease;
-        transition: transform 1s ease;
+        transition: transform 0.5s ease;
   }
 }
 
@@ -859,7 +859,7 @@ header a:hover {
      -moz-transition: transform 1s ease;
       -ms-transition-duration: transform 1s ease;
        -o-transition-duration: transform 1s ease;
-        transition: transform 1s ease;
+        transition: transform 0.5s ease;
   }
 }
 
@@ -871,7 +871,7 @@ header a:hover {
      -moz-transition: transform 1s ease;
       -ms-transition-duration: transform 1s ease;
        -o-transition-duration: transform 1s ease;
-        transition: transform 1s ease;
+        transition: transform 0.5s ease;
   }
 }
 
@@ -888,7 +888,6 @@ header a:hover {
 
 @media(min-width:970px) {
   .location-contact-clicked {
-/*    left: 33%;*/
     transform: translate(150%, 0);
     -webkit-transition: transform 1s ease;
      -moz-transition: transform 1s ease;
