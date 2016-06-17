@@ -476,9 +476,20 @@ header a:hover {
   opacity: 0;
 }
 
-.nav-item > a:hover:before,
-.nav-item > a:active:after {
+.nav-item > a:hover:before {
   opacity: 1;
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.nav-item > a:active:after {
+  opacity: 0;
   -webkit-transform: translate(0,0);
   -moz-transform: translate(0,0);
   -ms-transform: translate(0,0);
@@ -882,7 +893,7 @@ header a:hover {
      -moz-transition: transform 1s ease;
       -ms-transition-duration: transform 1s ease;
        -o-transition-duration: transform 1s ease;
-        transition: transform 1s ease;
+        transition: transform 0.5s ease;
   }
 }
 
@@ -893,7 +904,7 @@ header a:hover {
      -moz-transition: transform 1s ease;
       -ms-transition-duration: transform 1s ease;
        -o-transition-duration: transform 1s ease;
-        transition: transform 1s ease;
+        transition: transform 0.5s ease;
   }
 }
 
