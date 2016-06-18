@@ -51,6 +51,7 @@ $('.parallax').parallax({
 
 $(document).ready(function(){
   var contactClicked = false;
+  var navbarOpen = false;
   $('.location-contact').click(function(){
     // Set the effect type
     var effect = 'slide';
@@ -70,8 +71,17 @@ $(document).ready(function(){
 
     $('#contact-form').toggle(effect, options, duration);
   });
+
+  // This gets the correct CSS when the navbar button is clicked
+  $('.navbar-toggle').click(function(){
+    console.log(this);
+    if(navbarOpen) {    
+      navbarOpen = false;
+      $(this).removeClass('navbar-toggle-open');
+    } else {
+      navbarOpen = true;
+      $(this).addClass('navbar-toggle-open');
+    }
+  })
 })
 
-$('.navbar-toggle').click(function(){
-  console.log(this);
-})

@@ -15,4 +15,17 @@ $(document).ready(function(){
     	 	}
     	});
   });
+
+  // This gets the correct CSS when the navbar button is clicked
+  $('.navbar-toggle').click(function(){
+    var navbarOpen = false;
+    console.log(this);
+    if(navbarOpen) {    
+      navbarOpen = false;
+      $(this).removeClass('navbar-toggle-open');
+    } else {
+      navbarOpen = true;
+      $(this).addClass('navbar-toggle-open');
+    }
+  });
 });

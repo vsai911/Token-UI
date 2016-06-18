@@ -408,14 +408,17 @@ header a:hover {
   margin-top: 15px;
 }
 
-.navbar-toggle.collapsed:focus,
-.navbar-toogle.collapsed:hover {
+.navbar-toggle.collapsed:focus {
   background-color: transparent;
 }
 
 /*.navbar-toggle {
   background-color: #ddd;
 }*/
+
+.navbar-toggle-open {
+  background-color: #ddd;
+}
 
 /* The below CSS gets the hover transition effect. */
 

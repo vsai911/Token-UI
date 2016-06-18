@@ -62,8 +62,21 @@ function refreshTeamView() {
 
 // I temporarily disabled particles to lower the battery life drain.
 $(document).ready(function() {
+  var navbarOpen = false;
 	// particlesJS.load('particles-js', 'app/team/particles.json');
 	refreshTeamView();
+
+  // This gets the correct CSS when the navbar button is clicked
+  $('.navbar-toggle').click(function(){
+    console.log(this);
+    if(navbarOpen) {    
+      navbarOpen = false;
+      $(this).removeClass('navbar-toggle-open');
+    } else {
+      navbarOpen = true;
+      $(this).addClass('navbar-toggle-open');
+    }
+  })
 });
 
 
