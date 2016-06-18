@@ -413,6 +413,10 @@ header a:hover {
   background-color: transparent;
 }
 
+/*.navbar-toggle {
+  background-color: #ddd;
+}*/
+
 /* The below CSS gets the hover transition effect. */
 
 .nav-item {
@@ -729,7 +733,7 @@ header a:hover {
   background-repeat: no-repeat;
   text-align: left;
   background-attachment: fixed;
-  background-image: url(../img/hero-2.png);
+  background-image: url(/lib/img/hero-2_modded.jpg);
   padding-bottom: 30px;
 }
 
