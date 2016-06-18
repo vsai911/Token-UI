@@ -429,21 +429,30 @@ header a:hover {
   line-height: 24px;
   color: #fff;
 }
-.nav-item > a:before,
-.nav-item > a:after {
-    font-family: Montserrat, serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: lightblue;
-    text-transform: uppercase;
-    content: '';
-    position: absolute;
-    text-align: center;
-    opacity: 0;
-    -webkit-transition: .4s,opacity .6s;
-    -moz-transition: .4s,opacity .6s;
-    -o-transition: .4s,opacity .6s;
-    transition: .4s,opacity .6s;
+
+.nav-item > a:hover:before {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.nav-item > a:active:after {
+  opacity: 0;
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
 }
 
 
