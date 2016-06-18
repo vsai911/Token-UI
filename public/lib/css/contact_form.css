@@ -395,20 +395,39 @@ header a:hover {
     clear: both
 }
 
+.navbar-toggle {
+  margin-right: 0px;
+  margin-top: 15px;
+}
 
+.navbar-toggle.collapsed:focus,
+.navbar-toogle.collapsed:hover {
+  background-color: transparent;
+}
 
 .nav-item a {
     color: #fff;
     font-weight: 400;
     text-transform: uppercase
 }
+
+.logo, .nav-item, .vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 15px;
+}
+
+.nav-item {
+  padding: 0 15px;
+  border: 0;
+}
+
+
 /* The below CSS gets the hover transition effect. */
 
 .nav-item {
     padding: 0 15px;
     border: 0;
-    margin-left:-10px;
-    margin-right:-10px;
 }
 
 .nav-item span {
@@ -429,30 +448,21 @@ header a:hover {
   line-height: 24px;
   color: #fff;
 }
-
-.nav-item > a:hover:before {
-  opacity: 1;
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transform: translate(0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transition-delay: .4s;
-  -moz-transition-delay: .4s;
-  -o-transition-delay: .4s;
-  transition-delay: .4s;
-}
-.nav-item > a:active:after {
-  opacity: 0;
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transform: translate(0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transition-delay: .4s;
-  -moz-transition-delay: .4s;
-  -o-transition-delay: .4s;
-  transition-delay: .4s;
+.nav-item > a:before,
+.nav-item > a:after {
+    font-family: Montserrat, serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: lightblue;
+    text-transform: uppercase;
+    content: '';
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
 }
 
 
@@ -518,6 +528,8 @@ header a:hover {
 }
 
 /* End of funky effect. */
+
+
 @media (min-width:641px) {
     .vertical-align-middle {
         float: right
@@ -639,7 +651,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: #1c3040;
-  background-image: url(../img/hero-2_modded.jpg);
+  background-image: url(/lib/img/hero-2_modded.jpg);
   z-index: 100;
   background-position: 50%;
   background-size: cover;
@@ -673,128 +685,6 @@ span.glyphicon.glyphicon-asterisk {
   border-bottom: 2px solid #fff;
 }
 
-.nav-wrapper {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logo, .nav-item, .vertical-align-middle {
-  display: inline-block;
-  vertical-align: middle;
-  padding-top: 15px;
-}
-
-.nav-item {
-  padding: 0 15px;
-  border: 0;
-}
-
-/* The below CSS gets the hover transition effect. */
-
-.nav-item {
-    padding: 0 15px;
-    border: 0;
-}
-
-.nav-item span {
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -o-transition: 0.6s;
-    transition: 0.6s;
-    -webkit-transition-delay: 0.2s;
-    -moz-transition-delay: 0.2s;
-    -o-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-}
-
-.nav-item > a > span {
-  font-family: Montserrat, serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #fff;
-}
-.nav-item > a:before,
-.nav-item > a:after {
-    font-family: Montserrat, serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: lightblue;
-    text-transform: uppercase;
-    content: '';
-    position: absolute;
-    text-align: center;
-    opacity: 0;
-    -webkit-transition: .4s,opacity .6s;
-    -moz-transition: .4s,opacity .6s;
-    -o-transition: .4s,opacity .6s;
-    transition: .4s,opacity .6s;
-}
-
-
-.nav-item > a:before {
-    font-family: Montserrat, serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    content: attr(data-hover);
-    -webkit-transform: translate(0,100%);
-    -moz-transform: translate(0,100%);
-    -ms-transform: translate(0,100%);
-    -o-transform: translate(0,100%);
-    transform: translate(0,100%);
-}
-
-
-.nav-item > a:after {
-    margin-left:-10px;
-    margin-right:-10px;
-    content: attr(data-active);
-    -webkit-transform: translate(0,100%);
-    -moz-transform: translate(0,100%);
-    -ms-transform: translate(0,100%);
-    -o-transform: translate(0,100%);
-    transform: translate(0,100%);
-}
-
-.nav-item > a:hover span,
-.nav-item > a:active span {
-    opacity: 0;
-    -webkit-transform: scale(0.3);
-    -moz-transform: scale(0.3);
-    -ms-transform: scale(0.3);
-    -o-transform: scale(0.3);
-    transform: scale(0.3);
-}
-
-.nav-item > a:hover:before,
-.nav-item > a:active:after {
-    opacity: 1;
-    -webkit-transform: translate(0,0);
-    -moz-transform: translate(0,0);
-    -ms-transform: translate(0,0);
-    -o-transform: translate(0,0);
-    transform: translate(0,0);
-    -webkit-transition-delay: .4s;
-    -moz-transition-delay: .4s;
-    -o-transition-delay: .4s;
-    transition-delay: .4s;
-}
-
-.nav-item > a:active:before {
-    -webkit-transform: translate(0,0);
-    -moz-transform: translate(0,0);
-    -ms-transform: translate(0,0);
-    -o-transform: translate(0,0);
-    transform: translate(0,0);
-    -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    -o-transition-delay: 0s;
-    transition-delay: 0s;
-}
-
-/* End of funky effect. */
 
 .logo {
   width: 158px;
@@ -909,7 +799,6 @@ li.form-list{
     background-repeat: no-repeat;
     text-align: left;
     background-attachment: fixed;
-    background-image: url(../img/hero-2.png);
     padding-bottom: 30px;
 }
 
