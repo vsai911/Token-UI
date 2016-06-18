@@ -756,6 +756,11 @@ footer,
   margin-top: 45em;
 }
 
+footer > header.scroll {
+  background-color: #3d525c;
+  border: none; 
+}
+
 .footer-content > header {
   background-color: #3d525c;
 }
