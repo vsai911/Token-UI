@@ -412,10 +412,6 @@ header a:hover {
   background-color: transparent;
 }
 
-/*.navbar-toggle {
-  background-color: #ddd;
-}*/
-
 .navbar-toggle-open {
   background-color: #ddd;
 }
@@ -452,7 +448,8 @@ header a:hover {
   font-family: Montserrat, serif;
   font-size: 16px;
   line-height: 24px;
-  color: lightblue;
+  /*color: #7CBFD8;*/
+  color: #B1DDEE;
   text-transform: uppercase;
   content: '';
   position: absolute;
@@ -468,25 +465,22 @@ header a:hover {
   font-weight: 700;
   line-height: 24px;
   content: attr(data-hover);
-  -webkit-transform: translate(0,150%);
-  -moz-transform: translate(0,150%);
-  -ms-transform: translate(0,150%);
-  -o-transform: translate(0,150%);
+  -webkit-transform: translateY(150%);
+  -moz-transform: translateY(150%);
+  -ms-transform: translateY(150%);
+  -o-transform: translateY(150%);
   transform: translateY(150%);
-  /*transform: rotate(-180deg);*/
 }
 
 
 .nav-item > a:after {
-    margin-left:-10px;
-    margin-right:-10px;
-    content: attr(data-hover);
-    -webkit-transform: translate(0,150%);
-    -moz-transform: translate(0,150%);
-    -ms-transform: translate(0,150%);
-    -o-transform: translate(0,150%);
-    transform: translateY(150%);
-    /*transform: rotate(-180deg);*/
+  opacity: 0;
+  content: attr(data-hover);
+  -webkit-transform: translateY(150%);
+  -moz-transform: translateY(150%);
+  -ms-transform: translateY(150%);
+  -o-transform: translateY(150%);
+  transform: translateY(150%);
 }
 
 .nav-item > a:hover span,
