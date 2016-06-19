@@ -448,7 +448,6 @@ header a:hover {
   font-family: Montserrat, serif;
   font-size: 16px;
   line-height: 24px;
-  /*color: #7CBFD8;*/
   color: #B1DDEE;
   text-transform: uppercase;
   content: '';
@@ -465,22 +464,22 @@ header a:hover {
   font-weight: 700;
   line-height: 24px;
   content: attr(data-hover);
-  -webkit-transform: translateY(150%);
-  -moz-transform: translateY(150%);
-  -ms-transform: translateY(150%);
-  -o-transform: translateY(150%);
-  transform: translateY(150%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 
 .nav-item > a:after {
   opacity: 0;
   content: attr(data-hover);
-  -webkit-transform: translateY(150%);
-  -moz-transform: translateY(150%);
-  -ms-transform: translateY(150%);
-  -o-transform: translateY(150%);
-  transform: translateY(150%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 .nav-item > a:hover span,
@@ -490,10 +489,10 @@ header a:hover {
 
 .nav-item > a:hover:before {
   opacity: 1;
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transform: translate(0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   -webkit-transition-delay: .4s;
   -moz-transition-delay: .4s;
@@ -502,10 +501,10 @@ header a:hover {
 }
 .nav-item > a:active:after {
   opacity: 0;
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transform: translate(0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   -webkit-transition-delay: .4s;
   -moz-transition-delay: .4s;
@@ -514,10 +513,10 @@ header a:hover {
 }
 
 .nav-item > a:active:before {
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transform: translate(0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;

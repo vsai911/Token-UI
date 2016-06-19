@@ -468,7 +468,7 @@ header {
   font-family: Montserrat, serif;
   font-size: 16px;
   line-height: 24px;
-  color: lightblue;
+  color: #B1DDEE;
   text-transform: uppercase;
   content: '';
   position: absolute;
@@ -484,25 +484,22 @@ header {
   font-weight: 700;
   line-height: 24px;
   content: attr(data-hover);
-  -webkit-transform: translate(0,150%);
-  -moz-transform: translate(0,150%);
-  -ms-transform: translate(0,150%);
-  -o-transform: translate(0,150%);
-  transform: translateY(150%);
-  /*transform: rotate(-180deg);*/
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 
 .nav-item > a:after {
-    margin-left:-10px;
-    margin-right:-10px;
-    content: attr(data-hover);
-    -webkit-transform: translate(0,150%);
-    -moz-transform: translate(0,150%);
-    -ms-transform: translate(0,150%);
-    -o-transform: translate(0,150%);
-    transform: translateY(150%);
-    /*transform: rotate(-180deg);*/
+  opacity: 0;
+  content: attr(data-hover);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 .nav-item > a:hover span,
@@ -512,10 +509,10 @@ header {
 
 .nav-item > a:hover:before {
   opacity: 1;
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transform: translate(0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   -webkit-transition-delay: .4s;
   -moz-transition-delay: .4s;
@@ -524,10 +521,10 @@ header {
 }
 .nav-item > a:active:after {
   opacity: 0;
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transform: translate(0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   -webkit-transition-delay: .4s;
   -moz-transition-delay: .4s;
@@ -536,10 +533,10 @@ header {
 }
 
 .nav-item > a:active:before {
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transform: translate(0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
