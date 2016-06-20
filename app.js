@@ -30,6 +30,14 @@ app.get('/portfolio', function(req,res){
   res.sendFile(__dirname + '/public/app/portfolio/portfolio.html');
 });
 
+app.get('/team/jason', function(req,res){
+  res.sendFile(__dirname + '/public/app/team/members/jason.html');
+});
+
+app.get('/team/lance', function(req,res){
+  res.sendFile(__dirname + '/public/app/team/members/lance.html');
+});
+
 app.post('/contact-submit',function(req,res){
 	var requestBody = (req.body);
 	['varunsai91@gmail.com'].forEach(function(email){
