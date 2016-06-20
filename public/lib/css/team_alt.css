@@ -530,8 +530,12 @@ p {
 
 img {
   border: 1px solid teal;
-  height: 200px;
-  width: 200px;
+  height: 50%;
+  width: 50%;
+  min-height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .row {
@@ -540,10 +544,19 @@ img {
 .team-intro {
   padding-top: 20px;
   border: 1px solid yellow;
-  height: 200px;
-  
+  min-height: 200px;
+  height: 100%;
+  width: 33%;
+ 
+}
+#jason-container {
+  padding-left: 20%;
+}
+#jason-img-container {
+  padding-left: 5.5%;
+  padding-top: 10%;
 }
 
 .img {
-  
+;
 }
