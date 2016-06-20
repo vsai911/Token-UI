@@ -621,22 +621,32 @@ h2 {
   transition: transform 0.5s;
 }
 
-svg {
+#svg-mailto,
+#svg-linkedin {
   padding-left: 35px;
   padding-top: 35px;
   height: 100%;
   width: 100%;
 }
 
+#svg-github {
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 28px;
+}
 
-#linked-in,
-#mailto {
+
+#linkedin,
+#mailto,
+#github {
   height: 100%;
   width: 100%;
 }
 
-a:hover #linked-in,
-a:hover #mailto {
+a:hover #linkedin,
+a:hover #mailto,
+a:hover #github {
   fill: black;
   transition: all 1s ease;
 }
