@@ -62,7 +62,11 @@ function refreshTeamView() {
 
 // I temporarily disabled particles to lower the battery life drain.
 $(document).ready(function() {
+<<<<<<< HEAD:public/app/team/team.js
 	// particlesJS.load('particles-js', 'app/team/particles.json');
+=======
+	// particlesJS.load('particles-js', 'particles.json');
+>>>>>>> 7044f64b9b38e2570b1c90b6a163aad822082c5d:public/team/team.js
 	refreshTeamView();
 });
 
