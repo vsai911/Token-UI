@@ -254,14 +254,6 @@ h1 {
   }
 }
 
-h2 {
-  font-family: Montserrat, serif;
-  font-size: 51px;
-  font-weight: 400;
-  line-height: 76.5px;
-  color: #1c3040
-}
-
 @media (max-width:640px) {
   h2 {
       font-size: 28px;
@@ -522,4 +514,38 @@ header a:hover {
 .vertical-align-middle {
   display: inline-block;
   vertical-align: middle
+}
+
+p {
+  color: white;
+}
+
+
+h2 {
+  font-family: Montserrat, serif;
+  font-size: 51px;
+  font-weight: 400;
+  line-height: 76.5px;
+  color: #ffbd1b;
+}
+
+.img-container {
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  max-width: 200px;
+  border: 1px solid teal;
+  color: teal;
+  margin-top: 25%;
+  margin-left: 3.333%;
+}
+
+img {
+  border: 1px solid teal;
+  height: 50%;
+  width: 50%;
+  min-height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 200px;
 }
