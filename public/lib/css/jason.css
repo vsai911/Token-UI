@@ -572,7 +572,8 @@ h2 {
   left: 6.25%;
 }
 
-.quarter-square {
+.quarter-square,
+.empty-quarter-square {
   float:left;
   width:50%;
   height: 50%;
@@ -605,16 +606,6 @@ h2 {
 
 
 
-.quarter-square:hover { 
-  transition: all 1s ease;
-  fill: black;
-}
-
-.quarter-square:hover > div > svg {
-  fill: black;
-  transition: all 1s ease;
-}
-
 .quarter-square:after {
   content: "";
   position: absolute;
@@ -638,12 +629,14 @@ svg {
 }
 
 
-#linked-in {
+#linked-in,
+#mailto {
   height: 100%;
   width: 100%;
 }
 
-a:hover #linked-in {
+a:hover #linked-in,
+a:hover #mailto {
   fill: black;
   transition: all 1s ease;
 }
