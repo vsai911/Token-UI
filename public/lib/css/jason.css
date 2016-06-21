@@ -266,7 +266,7 @@ h3 {
   font-size: 28px;
   font-weight: 400;
   line-height: 42px;
-  color: #fff
+  color: #fff;
 }
 
 @media (max-width:640px) {
@@ -517,7 +517,11 @@ header a:hover {
 }
 
 p {
-  color: white;
+  font-family: Open Sans, sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #fff;
 }
 
 
@@ -569,8 +573,8 @@ h2 {
 }
 
 .social-media {
+  margin-top: 10px;
   float: right;
-  margin-top: 15%;
   right: 6.25%;
 }
 
@@ -735,5 +739,5 @@ a:hover #github {
   margin-top: 20px;
   /*border-radius: 2em;*/
   /*border: 2px solid #ffbd1b;*/
-  min-height: 300px;
+  /*min-height: 300px;*/
 }
