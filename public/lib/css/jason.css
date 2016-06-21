@@ -542,9 +542,11 @@ h2 {
   color: teal;
   margin-top: 25%;
   margin-left: 3.333%;
+  float: right;
 }
 
 .img {
+  right: 6.25%;
   border-radius: 2em;
   border: 1px solid teal;
   height: 50%;
@@ -568,13 +570,17 @@ h2 {
   height: 200px;
   width: 200px;
   border: 1px solid #fff;
-  float: left;
+  float: right;
   position: relative;
 }
 
 .social-media {
   margin-top: 10px;
   float: right;
+  right: 10.25%;
+}
+
+.img-column {
   right: 6.25%;
 }
 
