@@ -75,10 +75,7 @@ dfn {
   font-style: italic
 }
 
-h1 {
-  font-size: 2em;
-  margin: .67em 0
-}
+
 
 mark {
   background-color: #ff0;
@@ -240,16 +237,35 @@ body {
 
 h1 {
   font-family: Montserrat, serif;
-  font-size: 67px;
+  font-size: 55px;
   font-weight: 700;
   line-height: 100.5px;
-  color: #fff
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
 }
+
+
 
 @media (max-width:640px) {
   h1 {
       font-size: 38px;
       line-height: 57px
+  }
+}
+
+@media (max-width: 374px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 825px) {
+  h1 {
+    width: 100%;
   }
 }
 
@@ -564,24 +580,27 @@ header a:hover {
   padding-right: 15px
 }
 
+.heroone-block-content {
+  margin-top: -4%;
+}
+
 .heroone-block-content > h3 > .button {
   left: 3px;
 }
 
-.heroone-block-content > h3 > ul {
+/*.heroone-block-content > h3 > ul {
   list-style: none;
-}
+}*/
 
-.heroone-block-content > h3 > ul > li {
+/*.heroone-block-content > h3 > ul > li {
   margin-left: -4.55%;
-}
+}*/
 .heroone-block .heroone-block-content:after {
   content: " ";
   display: block;
   clear: both
 }
 
-.heroone-block .heroone-block-content h1,
 .heroone-block .heroone-block-content h3 {
   margin: 0
 }
@@ -594,6 +613,9 @@ header a:hover {
   .heroone-block-content {
     padding-top: 9em;
     padding-bottom: 9em
+  }
+  h1 {
+    width: 66%;
   }
 }
 
