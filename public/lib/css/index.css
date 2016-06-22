@@ -737,7 +737,7 @@ header a:hover {
 @media (min-width:641px) {
   .herothree-block-content {
     padding-top: 4.5em;
-    padding-bottom: 4.5em
+    padding-bottom: 2.5em;
   }
   .member {
     padding-top: 3em;
@@ -762,9 +762,6 @@ header a:hover {
 }
 
 @media (max-width:1024px) {
-  .herothree-block-content {
-    padding-top: 30px
-  }
   .member {
     padding-top: 1.5em;
     padding-bottom: 1.5em
