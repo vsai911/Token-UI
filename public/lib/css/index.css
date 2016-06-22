@@ -564,6 +564,17 @@ header a:hover {
   padding-right: 15px
 }
 
+.heroone-block-content > h3 > .button {
+  left: 3px;
+}
+
+.heroone-block-content > h3 > ul {
+  list-style: none;
+}
+
+.heroone-block-content > h3 > ul > li {
+  margin-left: -4.55%;
+}
 .heroone-block .heroone-block-content:after {
   content: " ";
   display: block;
