@@ -591,6 +591,10 @@ header a:hover {
   margin-top: -4%;
 }
 
+.heroone-block-content > h1 {
+  text-transform: uppercase;
+}
+
 .heroone-block-content > h3 > .button {
   left: 3px;
 }
