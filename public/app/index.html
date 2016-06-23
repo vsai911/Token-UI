@@ -136,11 +136,6 @@
             You may also contact us by clicking on one of the cities below.
           </p>
         </div>
-        <div class="locations row">
-          <div class="location-contact">Vancouver</div>
-          <div class="location-contact">Hong Kong</div>
-          <div class="location-contact">Sydney</div>
-        </div>
         <div class="" id='contact-container'>
           <div class="row" id='contact-container-content'>
             <form role="contact_form">
@@ -155,6 +150,16 @@
                           <input type="text" class="form-control" name="InputName" id="InputName" required>
                       </div>
                   </div>
+                <div class='form-group col-lg-4'>
+                  <div class='dropdown'>
+                    <label for='InputCity'>City *</label>
+                    <select class='input-group' id='InputCity'>
+                      <option>Vancouver</option>
+                      <option>Austrailia</option>
+                      <option>Hong Kong</option>
+                    </select>
+                  </div>
+                </div>
                   <div class="form-group col-lg-4">
                       <label for="InputEmail">Email *</label>
                       <div class="input-group">
@@ -170,11 +175,11 @@
                 </div>
                 <div class="form-group">
                   <label for="InputMessage">Message *</label>
-                  <div class="input-group">
-                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                  <div class="input-group textarea">
+                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="8" required></textarea>
                   </div>
                 </div>
-                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right button">
+                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info button contact-submit-button">
               </div>
             </form>
           </div>

@@ -982,7 +982,6 @@ header a:hover {
 }
 
 #contact-form {
-  display: none;
   /*width: 60%;*/
   margin: 0 auto;
   margin-bottom: 50px;
@@ -1000,9 +999,12 @@ header a:hover {
 
 .input-group {
   width: 100%;
+  max-width: 300px;
 }
 
-.input-group input {
+.input-group input,
+select,
+option {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #fff;
@@ -1011,6 +1013,7 @@ header a:hover {
   -webkit-appearance: none;
   color: #fff;
 }
+
 
 .input-group textarea {
   border-radius: 10px !important;
@@ -1027,5 +1030,9 @@ header a:hover {
 
 #pillars{
   font-size: 20px;
+}
+
+.contact-submit-button {
+  margin-top: 15px;
 }
 
