@@ -1113,6 +1113,10 @@ option {
   color: #fff;
 }
 
+select {
+  -webkit-appearance: none;
+}
+
 
 .input-group textarea {
   border-radius: 10px !important;
@@ -1139,3 +1143,101 @@ option {
   text-align:justify;
 }
 
+/* Used for select changing. */
+
+.dropcontainer {
+  position:relative;
+  font-size: 16px;
+  color: #777;
+  background: transparent;
+} 
+
+.trigger {
+  max-width: 300px;
+  color: #777;
+  padding: 10px;
+  font-size: 16px;
+  width: 50%;
+  background: transparent;
+  display: block;
+  border-bottom: 2px solid #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; 
+  transition: all 0.5s ease;
+  }
+
+.trigger:hover {
+  color: #777;
+  background: transparent;
+  }
+
+.activetrigger {
+  max-width: 300px;
+  color: #777;
+  padding: 10px;
+  font-size: 16px;
+  width: 50%;
+  background: transparent;
+  display: block;
+  border-bottom: 2px solid #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+.activetrigger:hover {
+  background: transparent;
+  text-decoration: underline;
+  color: #777;
+  }
+
+.activetrigger:active {
+  background: transparent;
+  color: #777;
+  }
+
+.dropcontainer ul {
+  font-size: 16px;
+  /*border: 1px solid #fff;*/
+  background: transparent;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  width: 50%;
+  z-index: 100;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+.dropcontainer ul li {
+  padding: 5px;
+  -webkit-transition: all 0.5s ease; 
+  -moz-transition: all 0.5s ease; 
+  -o-transition: all 0.5s ease; 
+  transition: all 0.5s ease;
+}
+
+.dropcontainer ul li:hover {
+  outline: none;
+}
+
+.dropcontainer ul li:first-child {
+  display: none;
+  }
+
+.dropcontainer ul li:last-child {
+  border-bottom: none;
+  }
+
+.dropdownhidden {
+  display: none;
+  }
+
+.dropdownvisible {
+  height: auto;
+  }
