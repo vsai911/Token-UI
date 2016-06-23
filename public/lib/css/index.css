@@ -698,7 +698,7 @@ header a:hover {
 }
 
 .herothree-block {
-  background: #fafafa
+  background: #fafafa;
 }
 
 .herothree-block .herothree-block-content {
@@ -857,6 +857,99 @@ header a:hover {
     padding-bottom: 50px
   }
 }
+
+/* Hero Block Five */
+.herofive-block {
+  background: #fafafa;
+}
+
+.herofive-block .herofive-block-content {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.herofive-block-content > h2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.herofive-block .herofive-block-content h2,
+.herofive-block .herofive-block-content h4 {
+  margin: 0
+}
+
+.herofive-block .herofive-block-content .portfolio .portfolio-content img {
+  height: auto;
+  border: 5px solid rgba(201, 208, 214, .4)
+}
+
+.herofive-block .herofive-block-content .portfolio .portfolio-content p {
+  margin: 0
+}
+
+.herofive-block .herofive-block-content .portfolio .portfolio-content h5 {
+  text-transform: uppercase;
+  margin-bottom: 0
+}
+
+@media (min-width:641px) {
+  .herofive-block-content {
+    padding-top: 4.5em;
+    padding-bottom: 2.5em;
+  }
+  .portfolio {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 23.7288135593%;
+    float: left;
+    margin-right: 1.6949152542%
+  }
+  .portfolio:last-child {
+    width: 23.7288135593%;
+    float: right;
+    margin-right: 0
+  }
+  .portfolio .portfolio-content {
+    padding: 10px;
+    text-align: center
+  }
+  .portfolio img {
+    width: 95%;
+    height: auto
+  }
+}
+
+@media (max-width:1024px) {
+  .portfolio {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em
+  }
+  .portfolio .portfolio-content {
+    text-align: left
+  }
+  .portfolio img {
+    width: 50%;
+    height: auto
+  }
+}
+
+.herofive-block .herofive-block-content .portfolio .portfolio-content img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid rgba(201,208,214,.4);
+}
+
+.herofive-block .herofive-block-content:after {
+  content: " ";
+  display: block;
+  clear: both
+}
+
 /* Footer CSS */
 
 .footer {
@@ -870,7 +963,7 @@ header a:hover {
   padding-top: 15px;
 }
 
-.location-contact {
+/*.location-contact {
   max-height: 80px;
   max-width: 225px;
   height: 80px;
@@ -905,7 +998,7 @@ header a:hover {
 
 .location-contact:hover::after {
   transform: scaleY(1);
-}
+}*/
 /* Making the button centered depending on the width of the screen */
 
 .location-contact-clicked {
