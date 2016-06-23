@@ -860,7 +860,7 @@ header a:hover {
 
 /* Hero Block Five */
 .herofive-block {
-  background: #fafafa;
+  background: #FFFFFF;
 }
 
 .herofive-block .herofive-block-content {
@@ -885,7 +885,7 @@ header a:hover {
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content img {
   height: auto;
-  border: 5px solid rgba(201, 208, 214, .4)
+  border-radius: 0.25em;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content p {
@@ -899,20 +899,17 @@ header a:hover {
 
 @media (min-width:641px) {
   .herofive-block-content {
-    padding-top: 4.5em;
+    padding-top: 2.5em;
     padding-bottom: 2.5em;
   }
   .portfolio {
     padding-top: 3em;
     padding-bottom: 3em;
-    width: 23.7288135593%;
     float: left;
-    margin-right: 1.6949152542%
   }
   .portfolio:last-child {
-    width: 23.7288135593%;
-    float: right;
-    margin-right: 0
+    margin-right: 0;
+    float:left;
   }
   .portfolio .portfolio-content {
     padding: 10px;
@@ -940,14 +937,18 @@ header a:hover {
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content img {
   width: 150px;
-  height: 150px;
-  border: 5px solid rgba(201,208,214,.4);
+  height: 200px;
 }
 
 .herofive-block .herofive-block-content:after {
   content: " ";
   display: block;
   clear: both
+}
+
+.block {
+  width: 75%;
+  margin: 0 auto;
 }
 
 /* Footer CSS */
