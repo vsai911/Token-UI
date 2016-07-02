@@ -901,6 +901,63 @@ header a:hover {
   margin-bottom: 0
 }
 
+.herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-1{
+  height: 300px;
+  border-radius: 0.25em;
+  width:150px;
+  background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
+  background-size:cover;
+  overflow:hidden;
+  margin: 0px 10px;
+}
+
+.herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-2{
+  height: 300px;
+  border-radius: 0.25em;
+  width:150px;
+  background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
+  background-size:cover;
+  overflow:hidden;
+  margin: 0px 10px;
+}
+
+.herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-3{
+  height: 300px;
+  border-radius: 0.25em;
+  width:150px;
+  background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
+  background-size:cover;
+  overflow:hidden;
+  margin: 0px 10px;
+}
+
+.herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-4{
+  height: 300px;
+  border-radius: 0.25em;
+  width:150px;
+  background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
+  background-size:cover;
+  overflow:hidden;
+  margin: 0px 10px;
+}
+
+.herofive-block .herofive-block-content .portfolio .portfolio-content .flyout{
+  background:rgba(0,0,0,.75);
+  text-align:center;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  height: 300px;
+  width:150px;
+    margin: 1px -10px;
+      border-radius: 0.25em;
+
+}
+
+.herofive-block .herofive-block-content .portfolio .portfolio-content .flyout:hover{
+  opacity:1;
+}
+
 @media (min-width:641px) {
   .herofive-block-content {
     padding-top: 2.5em;

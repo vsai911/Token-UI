@@ -83,7 +83,13 @@ $(document).ready(function(){
       navbarOpen = true;
       $(this).addClass('navbar-toggle-open');
     }
-  })
+  });
+
+  // $('.project-hover').on('hover',function(){
+  //   $('.flyout').show();
+  // },function(){
+  //   $('.flyout').hide();
+  // });
 })
 
 // The following changes the dropdown menu.
