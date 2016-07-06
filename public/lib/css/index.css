@@ -869,8 +869,9 @@ header a:hover {
 
 .herofive-block .herofive-block-content {
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  margin:auto;
+  /*margin-left: 20px;*/
+  /*margin-right: 20px;*/
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -904,55 +905,67 @@ header a:hover {
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-1{
   height: 300px;
   border-radius: 0.25em;
-  width:150px;
+  width:200px;
   background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
   background-size:cover;
   overflow:hidden;
-  margin: 0px 10px;
+  margin: 0px;
+  padding:0px;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-2{
   height: 300px;
   border-radius: 0.25em;
-  width:150px;
+  width:200px;
   background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
   background-size:cover;
   overflow:hidden;
-  margin: 0px 10px;
+  margin: 0px;
+  padding:0px;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-3{
   height: 300px;
   border-radius: 0.25em;
-  width:150px;
+  width:200px;
   background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
   background-size:cover;
   overflow:hidden;
-  margin: 0px 10px;
+  margin: 0px;
+  padding:0px;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-4{
   height: 300px;
   border-radius: 0.25em;
-  width:150px;
+  width:200px;
   background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
   background-size:cover;
   overflow:hidden;
-  margin: 0px 10px;
+  margin: 0px;
+  padding:0px;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content .flyout{
-  background:rgba(0,0,0,.75);
+  background:rgba(34,199,36,.90);
   text-align:center;
   opacity:0;
   -webkit-transition: opacity .25s ease;
   -moz-transition: opacity .25s ease;
   height: 300px;
-  width:150px;
-    margin: 1px -10px;
-      border-radius: 0.25em;
-
+  width:200px;
+  margin: 0px;
+  border-radius: 0.25em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
+
+.herofive-block .herofive-block-content .portfolio .portfolio-content .flyout .button{
+  margin-top:60px;
+}
+
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content .flyout:hover{
   opacity:1;
@@ -964,6 +977,7 @@ header a:hover {
     padding-bottom: 2.5em;
   }
   .portfolio {
+    margin:0 20px;
     padding-top: 3em;
     padding-bottom: 3em;
     float: left;
@@ -984,6 +998,7 @@ header a:hover {
 
 @media (max-width:1024px) {
   .portfolio {
+    margin:0 20px;
     padding-top: 1.5em;
     padding-bottom: 1.5em
   }
@@ -1008,8 +1023,9 @@ header a:hover {
 }
 
 .block {
-  width: 75%;
-  margin: 0 auto;
+  display:flex;
+  /*width: 75%;*/
+  margin: 0px;
 }
 
 /* Footer CSS */
