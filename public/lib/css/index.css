@@ -868,11 +868,7 @@ header a:hover {
 }
 
 .herofive-block .herofive-block-content {
-  max-width: 960px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin:0 20px;
-  
+  /*max-width: 960px;*/
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -989,9 +985,9 @@ header a:hover {
     margin:0 20px;
     padding-top: 3em;
     padding-bottom: 3em;
-    width: 23.7288135593%;
+    width: 230px;
     float: left;
-    margin-right: 1.6949152542%;
+    /*margin-right: 1.6949152542%;*/
   }
   .portfolio:last-child {
     margin-right: 0;
@@ -1012,9 +1008,9 @@ header a:hover {
     margin:0 20px;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-    width: 23.7288135593%;
+    width: 230px;
     float: left;
-    margin-right: 1.6949152542%;
+    /*margin-right: 1.6949152542%;*/
   }
   .portfolio .portfolio-content {
     text-align: left
@@ -1033,7 +1029,7 @@ header a:hover {
 .herofive-block .herofive-block-content:after {
   content: " ";
   display: block;
-  clear: both
+  clear: both;
 }
 
 .block {
