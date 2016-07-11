@@ -776,6 +776,13 @@ header a:hover {
 .herothree-block .herothree-block-content .member .member-content .flyout p{
   color:white;
   font-size:12px;
+  padding:0 10px;
+}
+
+.herothree-block .herothree-block-content .flex-gallery{
+  display:flex; 
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
 .herothree-block .herothree-block-content .member .member-content .flyout:hover{
@@ -946,6 +953,12 @@ header a:hover {
 .herofive-block .herofive-block-content h2,
 .herofive-block .herofive-block-content h4 {
   margin: 0
+}
+
+.herofive-block .herofive-block-content .flex-gallery{
+  display:flex; 
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content{
