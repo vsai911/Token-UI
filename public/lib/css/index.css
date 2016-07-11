@@ -1263,6 +1263,12 @@ select {
   text-align:justify;
 }
 
+@media(min-width: 1200px) {
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+      float: none;
+  }
+}
+
 /* Used for select changing. */
 
 .dropcontainer {
@@ -1276,8 +1282,8 @@ select {
   max-width: 300px;
   color: #777;
   padding: 10px;
-  font-size: 16px;
-  width: 50%;
+  font-size: 14px;
+  width: 100%;
   background: transparent;
   display: block;
   border-bottom: 2px solid #fff;
@@ -1299,8 +1305,8 @@ select {
   max-width: 300px;
   color: #777;
   padding: 10px;
-  font-size: 16px;
-  width: 50%;
+  font-size: 1px;
+  width: 100%;
   background: transparent;
   display: block;
   border-bottom: 2px solid #fff;
