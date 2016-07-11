@@ -706,7 +706,7 @@ header a:hover {
 }
 
 .herothree-block .herothree-block-content {
-  max-width: 960px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -723,38 +723,96 @@ header a:hover {
 .herothree-block .herothree-block-content h4 {
   margin: 0
 }
-
-.herothree-block .herothree-block-content .member .member-content img {
-  height: auto;
-  border-radius: 100%;
-  border: 5px solid rgba(201, 208, 214, .4)
+/*transition for the new team-member mockup*/
+.herothree-block .herothree-block-content .member .member-content {
+  height: 300px;
+  border-radius: 0.25em;
+  width:230px;
+  overflow:hidden;
+  margin: 0px;
+  padding:0px;
 }
 
-.herothree-block .herothree-block-content .member .member-content p {
-  margin: 0
+.herothree-block .herothree-block-content .member .member-content#feature-team-1{
+  background:url(/lib/img/sai_modded.jpg);
+  background-size:cover;
+  background-position: center;
 }
 
-.herothree-block .herothree-block-content .member .member-content h5 {
+.herothree-block .herothree-block-content .member .member-content#feature-team-2{
+  background:url(/lib/img/lance_modded.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.herothree-block .herothree-block-content .member .member-content#feature-team-3{
+  background:url(/lib/img/vaibhav.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.herothree-block .herothree-block-content .member .member-content#feature-team-4{
+  background:url(/lib/img/akshat_modded.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.herothree-block .herothree-block-content .member .member-content .flyout{
+  background:#3D525C;
+  text-align:center;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  height: 300px;
+  width:230px;
+  margin: 0px;
+  border-radius: 0.25em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.herothree-block .herothree-block-content .member .member-content .flyout p{
+  color:white;
+  font-size:12px;
+}
+
+.herothree-block .herothree-block-content .member .member-content .flyout:hover{
+  opacity:0.9;
+}
+
+.herothree-block .member h5 {
   text-transform: uppercase;
-  margin-bottom: 0
+  margin-bottom: 0;
+  text-align:center;
 }
+
+.herothree-block .member p {
+  margin:0;
+  text-align:center;
+}
+
+
+
+/*end of transition css*/
 
 @media (min-width:641px) {
   .herothree-block-content {
-    padding-top: 4.5em;
+    padding-top: 2.5em;
     padding-bottom: 2.5em;
   }
   .member {
     padding-top: 3em;
     padding-bottom: 3em;
-    width: 23.7288135593%;
+    width: 230px;
     float: left;
-    margin-right: 1.6949152542%
+    margin-right: 1.6949152542%;
   }
   .member:last-child {
-    width: 23.7288135593%;
-    float: right;
-    margin-right: 0
+    width: 230px;
+    margin-right: 0;
+    float:left;
   }
   .member .member-content {
     padding: 10px;
@@ -769,7 +827,10 @@ header a:hover {
 @media (max-width:1024px) {
   .member {
     padding-top: 1.5em;
-    padding-bottom: 1.5em
+    padding-bottom: 1.5em;
+    width: 230px;
+    float: left;
+    margin-right: 1.6949152542%;
   }
   .member .member-content {
     text-align: left
@@ -891,47 +952,33 @@ header a:hover {
   height: 300px;
   border-radius: 0.25em;
   width:230px;
-  background-size:cover;
   overflow:hidden;
   margin: 0px;
   padding:0px;
 }
 
-.herofive-block .herofive-block-content .portfolio .portfolio-content img {
-  height: auto;
-  border-radius: 0.25em;
-}
-
-.herofive-block .herofive-block-content .portfolio .portfolio-content p {
-  margin: 0
-}
-
-.herofive-block .herofive-block-content .portfolio .portfolio-content h5 {
-  text-transform: uppercase;
-  margin-bottom: 0
-}
-
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-1{
-  background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
+  background:url(/lib/img/giddy-up_modded.jpg);
   background-size:cover;
-
+  background-position: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-2{
-  background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
+  background:url(/lib/img/Lighthouse-PT_modded.jpg);
   background-size:cover;
-
+  background-position: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-3{
-  background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
+  background:url(/lib/img/gigg_modded.jpg);
   background-size:cover;
-
+  background-position: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-4{
-  background:url(http://www.pageplusnc.com/v/vspfiles/photos/iPhone-5-1.jpg);
+  background:url(/lib/img/Konkurito.JPG);
   background-size:cover;
+  background-position: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content .flyout{
@@ -958,6 +1005,7 @@ header a:hover {
   margin:auto;
   margin-top:60px;
   width:150px;
+  text-decoration: none;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content .flyout:hover{
@@ -970,7 +1018,6 @@ header a:hover {
     padding-bottom: 2.5em;
   }
   .portfolio {
-    /*margin:0 20px;*/
     padding-top: 3em;
     padding-bottom: 3em;
     width: 230px;
@@ -978,6 +1025,7 @@ header a:hover {
     margin-right: 1.6949152542%;
   }
   .portfolio:last-child {
+    width: 230px;
     margin-right: 0;
     float:left;
   }
@@ -993,7 +1041,6 @@ header a:hover {
 
 @media (max-width:1024px) {
   .portfolio {
-    /*margin:0 20px;*/
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     width: 230px;
@@ -1009,20 +1056,10 @@ header a:hover {
   }
 }
 
-/*.herofive-block .herofive-block-content .portfolio .portfolio-content img {
-  width: 150px;
-  height: 200px;
-}*/
-
 .herofive-block .herofive-block-content:after {
   content: " ";
   display: block;
   clear: both;
-}
-
-.herofive-block-content > .block {
-  margin: 0 5%;
-  /*margin-right:5%;*/
 }
 
 /* Footer CSS */
