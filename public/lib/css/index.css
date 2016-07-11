@@ -626,9 +626,6 @@ header a:hover {
     padding-top: 9em;
     padding-bottom: 9em
   }
-  h1 {
-    /*width: 66%;*/
-  }
 }
 
 @media (max-width:1024px) {
@@ -724,10 +721,39 @@ header a:hover {
   margin: 0
 }
 
+.herothree-block .herothree-block-content .member .member-content .roll-up {
+  position: absolute;
+  bottom: -29%;
+  color: #1e4354;
+  width: 100%;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+  text-align:center;
+}
+
+.herothree-block .herothree-block-content .member .member-content:hover .roll-up{
+  bottom: 81%;
+  display: block;
+  opacity: 0.6;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.member-image {
+  overflow: hidden;
+  position: relative;
+}
+
 .herothree-block .herothree-block-content .member .member-content img {
-  height: auto;
-  border-radius: 100%;
-  border: 5px solid rgba(201, 208, 214, .4)
+  max-width: 100%;
+  width: 250px;
+  max-height: 100%;
+  height: 243px;
 }
 
 .herothree-block .herothree-block-content .member .member-content p {
@@ -739,7 +765,7 @@ header a:hover {
   margin-bottom: 0
 }
 
-@media (min-width:641px) {
+@media (min-width: 641px) {
   .herothree-block-content {
     padding-top: 4.5em;
     padding-bottom: 2.5em;
@@ -749,13 +775,8 @@ header a:hover {
     padding-bottom: 3em;
     width: 23.7288135593%;
     float: left;
-    margin-right: 1.6949152542%
   }
-  .member:last-child {
-    width: 23.7288135593%;
-    float: right;
-    margin-right: 0
-  }
+
   .member .member-content {
     padding: 10px;
     text-align: center
@@ -984,7 +1005,7 @@ header a:hover {
   z-index: 1;
   position: relative;
   transform: translate(0,0,0);
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 .location-contact:after {
@@ -1126,9 +1147,11 @@ select {
 }
 
 .herothree-block .herothree-block-content .member .member-content img {
-  width: 150px;
-  height: 150px;
-  border: 5px solid rgba(201,208,214,.4);
+  max-width: 100%;
+  width: 250px;
+  max-height: 100%;
+  height: 243px;
+  border-radius: 2%;
 }
 
 #pillars{
@@ -1150,7 +1173,7 @@ select {
   font-size: 16px;
   color: #777;
   background: transparent;
-} 
+}
 
 .trigger {
   max-width: 300px;
@@ -1166,7 +1189,7 @@ select {
   box-sizing: border-box;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease; 
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   }
 
@@ -1216,9 +1239,9 @@ select {
 
 .dropcontainer ul li {
   padding: 5px;
-  -webkit-transition: all 0.5s ease; 
-  -moz-transition: all 0.5s ease; 
-  -o-transition: all 0.5s ease; 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
