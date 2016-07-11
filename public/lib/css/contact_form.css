@@ -149,27 +149,35 @@ ul.nav.navbar-nav.navbar-right {
 
 header a,
 header a:hover {
-    text-decoration: none
+  text-decoration: none
 }
 
 .logo {
-    width: 158px;
-    height: 40px;
-    background: url(../img/logo-light.png);
-    background-size: cover;
-    margin: 15px
+  width: 158px;
+  height: 40px;
+  background: url(../img/logo-light.png);
+  background-size: cover;
+  margin: 15px
 }
 
 .nav-wrapper {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .nav-wrapper:after {
-    content: " ";
-    display: block;
-    clear: both
+  content: " ";
+  display: block;
+  clear: both
+}
+
+
+
+.nav-item a {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase
 }
 
 .navbar-toggle {
@@ -185,18 +193,6 @@ header a:hover {
   background-color: #ddd;
 }
 
-.nav-item a {
-    color: #fff;
-    font-weight: 400;
-    text-transform: uppercase
-}
-
-.logo, .nav-item, .vertical-align-middle {
-  display: inline-block;
-  vertical-align: middle;
-  padding-top: 15px;
-}
-
 /* The below CSS gets the hover transition effect. */
 
 .nav-item {
@@ -206,17 +202,6 @@ header a:hover {
   margin-right:-12px;
 }
 
-.nav-item span {
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-
 .nav-item > a > span {
   font-family: Montserrat, serif;
   font-size: 16px;
@@ -224,88 +209,10 @@ header a:hover {
   line-height: 24px;
   color: #fff;
 }
-.nav-item > a:before,
-.nav-item > a:after {
-  font-family: Montserrat, serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: #B1DDEE;
-  text-transform: uppercase;
-  content: '';
-  position: absolute;
-  text-align: center;
-  opacity: 0;
-  transition: all .2s ease;
+
+.nav-item > a > span:hover {
+  color: lightblue;
 }
-
-
-.nav-item > a:before {
-  font-family: Montserrat, serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  content: attr(data-hover);
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
-}
-
-
-.nav-item > a:after {
-  opacity: 0;
-  content: attr(data-hover);
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
-}
-
-.nav-item > a:hover span,
-.nav-item > a:active span {
-  opacity: 0;
-}
-
-.nav-item > a:hover:before {
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transition-delay: .4s;
-  -moz-transition-delay: .4s;
-  -o-transition-delay: .4s;
-  transition-delay: .4s;
-}
-.nav-item > a:active:after {
-  opacity: 0;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transition-delay: .4s;
-  -moz-transition-delay: .4s;
-  -o-transition-delay: .4s;
-  transition-delay: .4s;
-}
-
-.nav-item > a:active:before {
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  -o-transition-delay: 0s;
-  transition-delay: 0s;
-}
-
-/* End of funky effect. */
 
 @media (min-width:641px) {
     .vertical-align-middle {
