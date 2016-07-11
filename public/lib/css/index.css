@@ -441,6 +441,17 @@ header a:hover {
   margin-right:-12px;
 }
 
+/*.nav-item span {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}*/
+
 .nav-item > a > span {
   font-family: Montserrat, serif;
   font-size: 16px;
@@ -452,6 +463,89 @@ header a:hover {
 .nav-item > a > span:hover {
   color: lightblue;
 }
+/*
+.nav-item > a:before,
+.nav-item > a:after {
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #B1DDEE;
+  text-transform: uppercase;
+  content: '';
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+
+.nav-item > a:before {
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  content: attr(data-hover);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+
+.nav-item > a:after {
+  opacity: 0;
+  content: attr(data-hover);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.nav-item > a:hover span,
+.nav-item > a:active span {
+  opacity: 0;
+}
+
+.nav-item > a:hover:before {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.nav-item > a:active:after {
+  opacity: 0;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+.nav-item > a:active:before {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+*/
+/* End of funky effect. */
 @media (min-width:641px) {
   .vertical-align-middle {
     float: right
@@ -861,6 +955,12 @@ header a:hover {
   margin: 0
 }
 
+.herofive-block .portfolio h5 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align:center;
+}
+
 .herofive-block .herofive-block-content .flex-gallery{
   display:flex; 
   flex-wrap:wrap;
@@ -917,12 +1017,15 @@ header a:hover {
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content .flyout p{
+  margin-top:20px;
   color:white;
+  font-size:12px;
+  padding:0 10px;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content .flyout .button{
   margin:auto;
-  margin-top:60px;
+  margin-top:20px;
   width:150px;
   text-decoration: none;
 }
@@ -1169,12 +1272,6 @@ select {
   text-align:justify;
 }
 
-@media(min-width: 1200px) {
-  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
-      float: none;
-  }
-}
-
 /* Used for select changing. */
 
 .dropcontainer {
@@ -1188,8 +1285,8 @@ select {
   max-width: 300px;
   color: #777;
   padding: 10px;
-  font-size: 14px;
-  width: 100%;
+  font-size: 16px;
+  width: 50%;
   background: transparent;
   display: block;
   border-bottom: 2px solid #fff;
@@ -1211,8 +1308,8 @@ select {
   max-width: 300px;
   color: #777;
   padding: 10px;
-  font-size: 1px;
-  width: 100%;
+  font-size: 16px;
+  width: 50%;
   background: transparent;
   display: block;
   border-bottom: 2px solid #fff;
