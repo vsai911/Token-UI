@@ -686,7 +686,7 @@ footer,
 
 footer > header.scroll {
   background-color: #3d525c;
-  border: none; 
+  border: none;
 }
 
 .footer-content > header {
@@ -763,4 +763,14 @@ footer > header.scroll {
 .project-description{
   margin: 25px;
   text-align: center;
+}
+
+.portfolio-button-group {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-button-group > .button {
+  padding: 6px 6px;
 }
