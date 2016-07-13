@@ -678,12 +678,6 @@ p,a {
 
 /* Footer css */
 
-footer,
-.footer {
-  background-color: #3d525c;
-  margin-top: 45em;
-}
-
 footer > header.scroll {
   background-color: #3d525c;
   border: none;
@@ -693,17 +687,7 @@ footer > header.scroll {
   background-color: #3d525c;
 }
 
-@media (max-width: 1110px) {
-  .footer {
-    margin-top: 68em;
-  }
-}
 
-@media (max-width: 765px) {
-  .footer {
-    margin-top: 116.5em;
-  }
-}
 
 .footer .footer-content {
     max-width: 960px;
@@ -851,7 +835,7 @@ herothree-block .herothree-block-content .member .member-content#feature-team-av
 }
 
 herothree-block .herothree-block-content .member .member-content#feature-team-kevin{
-  background:url(/lib/img/kevin.jpg);
+  background:url(/lib/img/kevin_modded.jpg);
   background-size:cover;
   background-position: center;
 }
