@@ -561,6 +561,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   margin: auto;
+  justify-content: center;
 }
 
 #h1-project{
@@ -833,9 +834,44 @@ footer > header.scroll {
   border-bottom: 2px solid #fff
 }
 
+.project > div {
+  position: relative;
+}
+
 .project-description {
-  margin: 25px;
+  position: absolute;
+  margin: auto;
+  border: 1px solid transparent;
+  border-radius: 5.5px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(46, 88, 108, 0.8);
   text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+.project-description > .button {
+  margin-top: 20%;
+  text-decoration: none;
+}
+
+.project:hover .project-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-description > .project-name {
+  margin-top: 20%;
+  color: white;
+}
+
+.project-description > .project-short-desc {
+  margin-top: 20%;
+  color: white;
 }
 
 .portfolio-button-group {
