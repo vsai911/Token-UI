@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zenkara's Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -42,65 +42,27 @@
       <div id="project-jumbotron" class="project-header">
         <h1 id="h1-project">Our Recent Works</h1>
         <div class="portfolio-button-group text-center">
-          <a href="/contact" class="button active">All</a>
-          <a href="/contact" class="button">Websites</a>
-          <a href="/contact" class="button">Apps</a>
+          <a href="/#" class="button active-category">All</a>
+          <a href="/#" class="button">Websites</a>
+          <a href="/#" class="button">Apps</a>
         </div>
-        <h5 class="project-description"> At Zenkara we work with the latest technologies, to come up with interesting solutions to problems. Showcased below are a few projects created by our valued Team.</h5>
       </div>
       <div class="container-project">
-        <div class="rollover-blocks">
-          <div id="pt" class="grid one-third highlight">
-            <div id="view-pt" class="roll-down">
-              <a href="https://bitbucket.org/LancePTB/lighthouse-pt" class="read-more">VIEW PROJECT</a>
-            </div>
-            <img class="img-project" src="lib/img/Lighthouse-PT_modded.jpg" alt="http://placehold.it/340x340">
-            <div class="roll-up">
-              <h5 class="project-header">P.T.</h5>
-              <p>An app which allows you to interact with end-users and post live podcasts. A Material design themed podcasting prototype for signal.fm using primarily Google-API and Polymer components.</p>
-            </div>
-          </div>
-          <div id="leap" class="grid one-third highlight">
-            <div id="view-leap" class="roll-down">
-              <a href="https://github.com/Tulun/GiddyUp-Leap-Motion-Final-Project" class="read-more">VIEW PROJECT</a>
-            </div>
-            <img class="img-project" src="lib/img/giddy-up_modded.jpg" alt="http://placehold.it/340x340">
-            <div class="roll-up">
-              <h5 class="project-header">Giddy Up!</h5>
-              <p>Leap Motion interface through Google Streetview while implementing markers from Translink, Google Places, Twitter, and Instagram. Bootstrap on the front-end, with Node.js and Hapi server on the back-end.</p>
-            </div>
-          </div>
-          <div id="konkurito" class="grid one-third highlight">
-            <div id="view-konkurito" class="roll-down">
-            <a>PROPRIETARY PROJECT</a>
-            </div>
-            <img class='img-project' src='lib/img/konkurito.jpg' alt="http://placehold.it/340x340">
-            <div class='roll-up'>
-              <h5 class="project-header">Konkurito</h5>
-              <p>Worked with latest technologies (Node.js, Express, MongoDB, Meteor, and d3.js, HTML5, CSS3, Bootstrap) to develop a working prototype of Indoor-mapping and collaborative-architectural software.</p>
-            </div>
-          </div>
-          <div id="gigg" class="grid one-third highlight">
-            <div id="view-gigg" class="roll-down">
-              <a href="https://gigg.tv/" class="read-more">VIEW PROJECT</a>
-            </div>
-            <img class="img-project" src='lib/img/gigg_modded.jpg' alt="http://placehold.it/340x340">
-            <div class="roll-up">
-              <h5 class="project-header">Gigg</h5>
-              <p>Live upload and streaming web app done with ReactJS. Integrated Redux to adopt Reducer/Action Composition, reduce state pollution and increase component independency.</p>
-            </div>
-          </div>
-          <div id="peerwise" class="grid one-third highlight">
-            <div id="view-peerwise" class="roll-down">
-              <a href="https://github.com/akshat12/peerwise-flashcard" class="read-more">VIEW PROJECT</a>
-            </div>
-            <img class="img-project" src='lib/img/import.jpg' alt="http://placehold.it/340x340">
-            <div class="roll-up">
-              <h5 class="project-header">Peerwise</h5>
-              <p>A flashcard based application to import questions from PeerWise and display them as flashcards. PHP, SQLITE, Javascript, HTML5, CSS3.</p>
-            </div>
-          </div>
-        </div> <!-- End of first row of blocks -->
+        <div id="pt" class="col-md-3 project">
+          <img class="img-project" src="lib/img/Lighthouse-PT_modded.jpg" alt="http://placehold.it/340x340">
+        </div>
+        <div id="leap" class="col-md-3 project">
+          <img class="img-project" src="lib/img/giddy-up_modded.jpg" alt="http://placehold.it/340x340">
+        </div>
+        <div id="konkurito" class="col-md-3 project">
+          <img class='img-project' src='lib/img/konkurito.jpg' alt="http://placehold.it/340x340">
+        </div>
+        <div id="gigg" class="col-md-3 project">
+          <img class="img-project" src='lib/img/gigg_modded.jpg' alt="http://placehold.it/340x340">
+        </div>
+        <div id="peerwise" class="col-md-3 project">
+          <img class="img-project" src='lib/img/import.jpg' alt="http://placehold.it/340x340">
+        </div>
       </div> <!-- End of Project Div -->
     </div> <!-- End of Heroblock -->
     <footer class="footer">
