@@ -799,7 +799,7 @@ footer > header.scroll {
 }
 
 .herothree-block .herothree-block-content .member .member-content#feature-team-3{
-  background:url(/lib/img/vaibhav.jpg);
+  background:url(/lib/img/vaibhav.png);
   background-size:cover;
   background-position: center;
 }
@@ -816,25 +816,25 @@ footer > header.scroll {
   background-position: center;
 }
 
-herothree-block .herothree-block-content .member .member-content#feature-team-jason{
+.herothree-block .herothree-block-content .member .member-content#feature-team-jason{
   background:url(/lib/img/jason.jpg);
   background-size:cover;
   background-position: center;
 }
 
-herothree-block .herothree-block-content .member .member-content#feature-team-prabu{
+.herothree-block .herothree-block-content .member .member-content#feature-team-prabu{
   background:url(/lib/img/prabu_modded.jpg);
   background-size:cover;
   background-position: center;
 }
 
-herothree-block .herothree-block-content .member .member-content#feature-team-avi{
+.herothree-block .herothree-block-content .member .member-content#feature-team-avi{
   background:url(/lib/img/avi_modded.jpg);
   background-size:cover;
   background-position: center;
 }
 
-herothree-block .herothree-block-content .member .member-content#feature-team-kevin{
+.herothree-block .herothree-block-content .member .member-content#feature-team-kevin{
   background:url(/lib/img/kevin_modded.jpg);
   background-size:cover;
   background-position: center;
@@ -863,7 +863,7 @@ herothree-block .herothree-block-content .member .member-content#feature-team-ke
 }
 
 .herothree-block .herothree-block-content .flex-gallery{
-  display:flex; 
+  display:flex;
   flex-wrap:wrap;
   justify-content: center;
 }
@@ -930,4 +930,3 @@ herothree-block .herothree-block-content .member .member-content#feature-team-ke
     height: auto
   }
 }
-

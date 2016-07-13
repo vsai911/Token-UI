@@ -696,8 +696,7 @@ header a:hover {
 }
 
 .icon-index {
-  margin-top: 8px;
-  font-size: 40px;
+  margin-top: 4px;
   padding-bottom: 22px;
 }
 
@@ -746,7 +745,7 @@ header a:hover {
 }
 
 .herothree-block .herothree-block-content .member .member-content#feature-team-3{
-  background:url(/lib/img/vaibhav.jpg);
+  background:url(/lib/img/vaibhav.png);
   background-size:cover;
   background-position: center;
 }
@@ -780,7 +779,7 @@ header a:hover {
 }
 
 .herothree-block .herothree-block-content .flex-gallery{
-  display:flex; 
+  display:flex;
   flex-wrap:wrap;
   justify-content: center;
 }
@@ -962,7 +961,7 @@ header a:hover {
 }
 
 .herofive-block .herofive-block-content .flex-gallery{
-  display:flex; 
+  display:flex;
   flex-wrap:wrap;
   justify-content: center;
 }
@@ -1113,7 +1112,7 @@ header a:hover {
   z-index: 1;
   position: relative;
   transform: translate(0,0,0);
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 .location-contact:after {
@@ -1279,7 +1278,7 @@ select {
   font-size: 16px;
   color: #777;
   background: transparent;
-} 
+}
 
 .trigger {
   max-width: 300px;
@@ -1295,7 +1294,7 @@ select {
   box-sizing: border-box;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease; 
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   }
 
@@ -1345,9 +1344,9 @@ select {
 
 .dropcontainer ul li {
   padding: 5px;
-  -webkit-transition: all 0.5s ease; 
-  -moz-transition: all 0.5s ease; 
-  -o-transition: all 0.5s ease; 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
