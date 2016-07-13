@@ -44,10 +44,15 @@ $(function(){
 $(document).ready(function() {
 
   var $categoryButtons = $('.portfolio-button-group > .button')
+  var $projects = $('.project');
   $categoryButtons.on('click', function(evt) {
     evt.preventDefault();
+    var $el = $(this);
     $categoryButtons.removeClass('active-category');
-    $(this).addClass('active-category');
+    $el.addClass('active-category');
+    var category = $el.data('category');
+    $projects.removeClass('hidden');
+    $projects.not('[data-category*="' + category + '"]').addClass('hidden');
   });
   var navbarOpen = false;
   // This gets the correct CSS when the navbar button is clicked
