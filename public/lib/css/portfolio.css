@@ -756,7 +756,6 @@ p,a {
 footer,
 .footer {
   background-color: #3d525c;
-  margin-top: 45em;
 }
 
 footer > header.scroll {
@@ -766,18 +765,6 @@ footer > header.scroll {
 
 .footer-content > header {
   background-color: #3d525c;
-}
-
-@media (max-width: 1110px) {
-  .footer {
-    margin-top: 68em;
-  }
-}
-
-@media (max-width: 765px) {
-  .footer {
-    margin-top: 116.5em;
-  }
 }
 
 .footer .footer-content {
