@@ -380,6 +380,7 @@ ul.nav.navbar-nav.navbar-right {
 .navbar-default {
   background-color: transparent;
   border: none;
+  margin-bottom: 0px;
 }
 
 .collapse.in {
@@ -984,7 +985,7 @@ header a:hover {
   z-index: 1;
   position: relative;
   transform: translate(0,0,0);
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 .location-contact:after {
@@ -1150,7 +1151,7 @@ select {
   font-size: 16px;
   color: #777;
   background: transparent;
-} 
+}
 
 .trigger {
   max-width: 300px;
@@ -1166,7 +1167,7 @@ select {
   box-sizing: border-box;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease; 
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   }
 
@@ -1216,9 +1217,9 @@ select {
 
 .dropcontainer ul li {
   padding: 5px;
-  -webkit-transition: all 0.5s ease; 
-  -moz-transition: all 0.5s ease; 
-  -o-transition: all 0.5s ease; 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
