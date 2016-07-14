@@ -892,3 +892,7 @@ footer > header.scroll {
   border-radius: 5.5px;
   object-fit: cover;
  }
+
+ .img-project.fit {
+  object-fit: initial;
+ }
