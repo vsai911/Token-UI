@@ -141,6 +141,7 @@ ul.nav.navbar-nav.navbar-right {
 .navbar-default {
   background-color: transparent;
   border: none;
+  margin-bottom: 0px;
 }
 
 .collapse.in {
@@ -672,7 +673,7 @@ li.form-list{
   z-index: 1;
   position: relative;
   transform: translate(0,0,0);
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 .location-contact:after {
