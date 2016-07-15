@@ -54,7 +54,6 @@ var sendmail = emailJS.server.connect({
 
 function sendEmailTo (email_id,client_name,client_email,message,req,res){
     var message = {
-
         from: "Zenkara <teamdreamstream4@gmail.com>",
         to: "User <" + email_id + ">",
         subject: client_name + " wants to chat with us!",

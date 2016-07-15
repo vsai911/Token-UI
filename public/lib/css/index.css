@@ -977,25 +977,25 @@ header a:hover {
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-1{
-  background:url(/lib/img/giddy-up_modded.jpg);
+  background:url(/lib/img/portfolio/giddy-up.png);
   background-size:cover;
   background-position: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-2{
-  background:url(/lib/img/Lighthouse-PT_modded.jpg);
+  background:url(/lib/img/portfolio/lighthouse-pt.png);
   background-size:cover;
   background-position: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-3{
-  background:url(/lib/img/gigg_modded.jpg);
+  background:url(/lib/img/portfolio/gigg.png);
   background-size:cover;
   background-position: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-4{
-  background:url(/lib/img/konkurito_modded.jpg);
+  background:url(/lib/img/portfolio/konkurito.png);
   background-size:cover;
   background-position: center;
 }
@@ -1097,42 +1097,6 @@ header a:hover {
   padding-top: 15px;
 }
 
-/*.location-contact {
-  max-height: 80px;
-  max-width: 225px;
-  height: 80px;
-  width: 225px;
-  border: 1px solid #fff;
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
-  float: left;
-  margin: 40px 40px;
-  text-align: center;
-  line-height: 80px;
-  z-index: 1;
-  position: relative;
-  transform: translate(0,0,0);
-  transition: transform 0.5s ease;
-}
-
-.location-contact:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scaleY(0);
-  transform-origin: bottom center;
-  background-color: #03A8AB;
-  z-index: -1;
-  transition: transform 0.5s;
-}
-
-.location-contact:hover::after {
-  transform: scaleY(1);
-}*/
 /* Making the button centered depending on the width of the screen */
 
 .location-contact-clicked {
@@ -1246,7 +1210,11 @@ select {
   -webkit-appearance: none;
 }
 
-
+@media(min-width: 1200px) {
+  .input-group.textarea {
+    max-width: 1030px;
+  }
+}
 .input-group textarea {
   border-radius: 10px !important;
   background-color: transparent;
@@ -1275,18 +1243,20 @@ select {
 /* Used for select changing. */
 
 .dropcontainer {
-  position:relative;
+  position: relative;
+  min-width: 150px;
   font-size: 16px;
   color: #777;
   background: transparent;
 }
 
 .trigger {
+  margin-top: -12px;
   max-width: 300px;
   color: #777;
   padding: 10px;
-  font-size: 16px;
-  width: 50%;
+  font-size: 14px;
+  width: 100%;
   background: transparent;
   display: block;
   border-bottom: 2px solid #fff;
@@ -1305,11 +1275,12 @@ select {
   }
 
 .activetrigger {
+  margin-top: -12px;
   max-width: 300px;
   color: #777;
   padding: 10px;
-  font-size: 16px;
-  width: 50%;
+  font-size: 14px;
+  width: 100%;
   background: transparent;
   display: block;
   border-bottom: 2px solid #fff;
@@ -1330,13 +1301,13 @@ select {
   }
 
 .dropcontainer ul {
-  font-size: 16px;
+  font-size: 14px;
   /*border: 1px solid #fff;*/
   background: transparent;
   list-style-type: none;
   padding: 10px;
   margin: 0;
-  width: 50%;
+  width: 100%;
   z-index: 100;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
