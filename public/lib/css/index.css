@@ -904,6 +904,12 @@ header a:hover {
   left: -10px
 }
 
+@media(min-width: 1200px) {
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+      float: none;
+  }
+}
+
 @media (min-width:641px) {
   .left {
     float: left;
@@ -1265,7 +1271,7 @@ select {
   box-sizing: border-box;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; 
   transition: all 0.5s ease;
   }
 
@@ -1279,7 +1285,7 @@ select {
   max-width: 300px;
   color: #777;
   padding: 10px;
-  font-size: 14px;
+  font-size: 1px;
   width: 100%;
   background: transparent;
   display: block;
