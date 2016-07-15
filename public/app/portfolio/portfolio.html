@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenkara's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/lib/css/portfolio.css">
+    <!-- Minified version of above. Comment this out when changing css. -->
+    <!-- <link rel='stylesheet' href='/lib/css/portfolio.min.css'> -->
+  </head>
+  <body>
+    <header class='scroll'>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class='nav-wrapper'>
+            <div class="navbar-header">
+              <a href="/"><div class="logo"></div></a>
+              <button type="button" class="navbar-toggle collapsed" id='index-button' data-toggle="collapse" data-target="#index-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id='index-navbar'>
+              <ul class='nav navbar-nav navbar-right'>
+                  <li class="nav-item"><a href="/" data-hover='Home' data-active='Home'><span>Home</span></a>
+                  <li class="nav-item"><a href="/team" data-hover='Our Team' data-active='Our Team'><span>Our Team</span></a>
+                  <li class='nav-item'><a href='/portfolio' data-hover='Portfolio' data-active='Portfolio'><span>Portfolio</span></a>
+                  <li class="nav-item"><a href="/contact" data-hover='Contact' data-active='Contact'><span>Contact</span></a>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    <div id="portfolio" class="heroone-block">
+      <div id="project-jumbotron" class="project-header">
+        <h1 id="h1-project">Our Recent Works</h1>
+        <div class="portfolio-button-group text-center">
+          <a href="/#" class="button active-category" data-category="all">All</a>
+          <a href="/#" class="button" data-category="websites">Websites</a>
+          <a href="/#" class="button" data-category="apps">Apps</a>
+        </div>
+      </div>
+      <div class="container-project">
+        <div id="pt" class="col-md-3 project" data-category="all apps">
+          <div>
+            <img class="img-project" src="lib/img/portfolio/lighthouse-pt.png" alt="http://placehold.it/340x340">
+            <div class="project-description">
+              <h4 class="project-name">Lighthouse PT</h4>
+              <p class="project-short-desc">Some project description</p>
+              <a href="#" class="button">View</a>
+            </div>
+          </div>
+        </div>
+        <div id="leap" class="col-md-3 project" data-category="all apps">
+          <div>
+            <img class="img-project" src="lib/img/portfolio/giddy-up.png" alt="http://placehold.it/340x340">
+            <div class="project-description">
+              <h4 class="project-name">Giddy Up</h4>
+              <p class="project-short-desc">Some project description</p>
+              <a href="#" class="button">View</a>
+            </div>
+          </div>
+        </div>
+        <div id="konkurito" class="col-md-3 project" data-category="all websites">
+          <div>
+              <img class="img-project" src='lib/img/portfolio/konkurito.png' alt="http://placehold.it/340x340">
+              <div class="project-description">
+                <h4 class="project-name">Konkurito</h4>
+                <p class="project-short-desc">Some project</p>
+                <a href="#" class="button">View</a>
+              </div>
+          </div>
+        </div>
+        <div id="gigg" class="col-md-3 project" data-category="all apps">
+          <div>
+            <img class="img-project" src='lib/img/portfolio/gigg.png' alt="http://placehold.it/340x340">
+            <div class="project-description">
+              <h4 class="project-name">Gigg</h4>
+              <p class="project-short-desc">Some project description</p>
+              <a href="#" class="button">View</a>
+            </div>
+          </div>
+        </div>
+        <div id="peerwise" class="col-md-3 project" data-category="all websites">
+          <div>
+            <img class="img-project fit" src='lib/img/portfolio/peerwise.png' alt="http://placehold.it/340x340">
+            <div class="project-description">
+              <h4 class="project-name">PeerWise Flashcard</h4>
+              <p class="project-short-desc">Some project description</p>
+              <a href="#" class="button">View</a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of Project Div -->
+    </div> <!-- End of Heroblock -->
+    <footer class="footer">
+      <header class="scroll">
+        <nav class='navbar navbar-default'>
+          <div class='container-fluid'>
+            <div class="nav-wrapper">
+              <div class='navbar-header'>
+                <a href="/index.html"><div class="logo"></div></a>
+              </div>
+              <div class='container-fluid'>
+                <ul class='nav navbar-nav navbar-right'>
+                  <li class="nav-item"><a href="/" data-hover='Home' data-active='Home'><span>Home</span></a>
+                  <li class="nav-item"><a href="/team" data-hover='Our Team' data-active='Our Team'><span>Our Team</span></a>
+                  <li class='nav-item'><a href='/portfolio' data-hover='Portfolio' data-active='Portfolio'><span>Portfolio</span></a>
+                  <li class="nav-item"><a href="/contact" data-hover='Contact' data-active='Contact'><span>Contact</span></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script type="text/javascript" src="/lib/js/jquery/jquery-2.2.0.min.js"></script>
+
+    <script src="app/portfolio/portfolio.js"></script>
+    <!-- Bootstrap js requires jQuery. -->
+    <script type="text/javascript" src="/lib/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

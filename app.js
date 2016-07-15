@@ -15,19 +15,19 @@ app.use('/',jsonParser);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/team', function(req,res){
-  res.sendFile(__dirname + '/public/team/team.html');
+  res.sendFile(__dirname + '/public/app/team/team.html');
 });
 
 app.get('/', function (req, res){
-  res.send('root');
+  res.sendFile(__dirname + '/public/app/index.html');
 });
 
 app.get('/contact', function(req,res){
-  res.sendFile(__dirname + '/public/contact_form/contact_form.html');
+  res.sendFile(__dirname + '/public/app/contact_form/contact_form.html');
 });
 
 app.get('/portfolio', function(req,res){
-  res.sendFile(__dirname + '/public/portfolio/portfolio.html');
+  res.sendFile(__dirname + '/public/app/portfolio/portfolio.html');
 });
 
 app.post('/contact-submit',function(req,res){
