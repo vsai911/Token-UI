@@ -16,15 +16,6 @@ function drawPolygon() {
 	var angle = 0, step = (2*Math.PI) / $fields.length;
 
 	$fields.each(function() {
-<<<<<<< HEAD:public/team/team.js
-	    var x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/2);
-	    var y = Math.round(height/2 + radius * Math.sin(angle) - $(this).height()/2);
-	    $(this).css({
-	        left: x + 'px',
-	        top: y + 'px'
-	    }).toggle(true);
-	    angle += step;
-=======
     var x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/2);
     var y = Math.round(height/2 + radius * Math.sin(angle) - $(this).height()/2);
     $(this).css({
@@ -32,7 +23,6 @@ function drawPolygon() {
       top: y + 'px'
     });
     angle += step;
->>>>>>> f4debde748ad43d280edbf15cd54b42620af4e7e:public/app/team/team.js
 	});
 }
 
@@ -51,21 +41,12 @@ function drawLine() {
 	}
 
 	$fields.each(function(index) {
-<<<<<<< HEAD:public/team/team.js
-	    var x = containerWidth - ($(this).width() / 2) + 15;
-	    var y =  getY(index);
-	    $(this).css({
-	        left: x + 'px',
-	        top: y + 'px'
-	    }).toggle(true);
-=======
     var x = containerWidth - ($(this).width() / 2);
     var y =  getY(index);
     $(this).css({
       left: x + 'px',
       top: y + 'px'
     });
->>>>>>> f4debde748ad43d280edbf15cd54b42620af4e7e:public/app/team/team.js
 	});
 }
 
