@@ -1210,8 +1210,10 @@ select {
   -webkit-appearance: none;
 }
 
-.input-group.textarea {
-  max-width: 1030px;
+@media(min-width: 1200px) {
+  .input-group.textarea {
+    max-width: 1030px;
+  }
 }
 .input-group textarea {
   border-radius: 10px !important;
