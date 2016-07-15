@@ -62,8 +62,12 @@ function refreshTeamView() {
 
 // I temporarily disabled particles to lower the battery life drain.
 $(document).ready(function() {
+<<<<<<< HEAD:public/team/team.js
+	// particlesJS.load('particles-js', 'particles.json');
+=======
   var navbarOpen = false;
 	// particlesJS.load('particles-js', 'app/team/particles.json');
+>>>>>>> f4debde748ad43d280edbf15cd54b42620af4e7e:public/app/team/team.js
 	refreshTeamView();
 
   // This gets the correct CSS when the navbar button is clicked
