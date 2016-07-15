@@ -983,25 +983,25 @@ header a:hover {
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-1{
-  background:url(/lib/img/giddy-up_modded.jpg);
+  background:url(/lib/img/portfolio/giddy-up.png);
   background-size:cover;
   background-position: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-2{
-  background:url(/lib/img/Lighthouse-PT_modded.jpg);
+  background:url(/lib/img/portfolio/lighthouse-pt.png);
   background-size:cover;
   background-position: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-3{
-  background:url(/lib/img/gigg_modded.jpg);
+  background:url(/lib/img/portfolio/gigg.png);
   background-size:cover;
   background-position: center;
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-4{
-  background:url(/lib/img/konkurito_modded.jpg);
+  background:url(/lib/img/portfolio/konkurito.png);
   background-size:cover;
   background-position: center;
 }
@@ -1271,7 +1271,7 @@ select {
   box-sizing: border-box;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease; 
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   }
 
