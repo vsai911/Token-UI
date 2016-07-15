@@ -767,12 +767,13 @@ footer > header.scroll {
 
 .project-description > .project-name {
   color: white;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
 }
 
 .project-description > .project-short-desc {
   color: white;
-  font-size: 14px;
+  font-size: 12px;
+  margin: 0 10px;
 }
 
 .portfolio-button-group {
@@ -797,8 +798,8 @@ footer > header.scroll {
 
 .container-project > .project {
   margin-bottom: 30px;
-  min-width: 230px;
-  max-width: 230px;
+  min-width: 260px;
+  max-width: 260px;
 }
 
 .img-project {
