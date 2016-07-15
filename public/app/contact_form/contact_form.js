@@ -10,7 +10,6 @@ $(document).ready(function(){
     	 	success : function(){
     	 		$('#InputName').val("");
     	 		$('#InputEmail').val("");
-          // '#InputEmailSecond').val("");
     	 		$('#InputMessage').val("");
     	 	}
     	});

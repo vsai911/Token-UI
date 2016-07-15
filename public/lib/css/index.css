@@ -1255,7 +1255,7 @@ select {
   max-width: 300px;
   color: #777;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   width: 100%;
   background: transparent;
   display: block;
@@ -1279,7 +1279,7 @@ select {
   max-width: 300px;
   color: #777;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   width: 100%;
   background: transparent;
   display: block;
@@ -1301,7 +1301,7 @@ select {
   }
 
 .dropcontainer ul {
-  font-size: 16px;
+  font-size: 14px;
   /*border: 1px solid #fff;*/
   background: transparent;
   list-style-type: none;
