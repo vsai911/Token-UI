@@ -797,6 +797,8 @@ footer > header.scroll {
 
 .container-project > .project {
   margin-bottom: 30px;
+  min-width: 230px;
+  max-width: 230px;
 }
 
 .img-project {
