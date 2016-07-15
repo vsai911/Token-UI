@@ -756,7 +756,7 @@ footer > header.scroll {
 }
 
 .project-description > .button {
-  margin-top: 20%;
+  margin-top: 20px;
   text-decoration: none;
 }
 
@@ -766,13 +766,13 @@ footer > header.scroll {
 }
 
 .project-description > .project-name {
-  margin-top: 20%;
   color: white;
+  margin-top: 30px;
 }
 
 .project-description > .project-short-desc {
-  margin-top: 20%;
   color: white;
+  font-size: 14px;
 }
 
 .portfolio-button-group {
