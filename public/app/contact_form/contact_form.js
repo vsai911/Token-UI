@@ -1,18 +1,23 @@
 $(document).ready(function(){
-  $("form").submit(function(event){
-    /* stop form from submitting normally */
-      event.preventDefault();
-      $.ajax({
-        type : 'POST',
-        url : '/contact-submit',
-        data: JSON.stringify({ name : $('#InputName').val(), email: $('#InputEmailFirst').val(), message: $('#InputMessage').val() }),
+  $("#contact_form").submit(function(event){
+  	/* stop form from submitting normally */
+    	event.preventDefault();
+    	$.ajax({
+    	 	type : 'POST',
+    	 	url : '/contact-submit',
+    	 	data: JSON.stringify({ name : $('#InputName').val(), email: $('#InputEmailSecond').val(), message: $('#InputMessage').val() }),
         contentType: 'application/json',
-        success : function(){
-          $('#InputName').val("");
-          $('#InputEmail').val("");
-          $('#InputMessage').val("");
+    	 	success : function(){
+          console.log('clear up');
+    	 		$('#InputName').val("");
+    	 		$('#InputEmailFirst').val("");
+          $('#InputEmailSecond').val("");
+    	 		$('#InputMessage').val("");
+    	 	},
+        error: function(error) {
+          console.log('submitting error', error)
         }
-      });
+    	});
   });
 
   // This gets the correct CSS when the navbar button is clicked
