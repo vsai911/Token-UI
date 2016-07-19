@@ -807,7 +807,34 @@ select {
 }
 
 
+/* Fixing the contact form width for responsiveness */
 
+@media(min-width: 600px) {
+  .input-group,
+  a.trigger,
+  a.activetrigger {
+    max-width: 400px;
+  }
+}
+
+@media(min-width: 800px) {
+  .input-group,
+  a.trigger,
+  a.activetrigger {
+    max-width: 500px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .input-group.textarea {
+    max-width: 1030px;
+  }
+  .input-group,
+  a.trigger,
+  a.activetrigger {
+    max-width: 300px;
+  }
+}
 
 /* Used for select changing. */
 
@@ -837,10 +864,6 @@ select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease; 
-  transition: all 0.5s ease;
   }
 
 .trigger:hover {
