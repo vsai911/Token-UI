@@ -819,7 +819,6 @@ header a:hover {
   }
   .member:last-child {
     width: 230px;
-    margin-right: 0;
     float:left;
   }
   .member .member-content {
