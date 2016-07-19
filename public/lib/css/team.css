@@ -880,6 +880,7 @@ footer > header.scroll {
 }
 
 .herothree-block .herothree-block-content .member .member-content .flyout:hover{
+  visibility: visible;
   opacity:0.9;
 }
 
