@@ -13,18 +13,20 @@ $(document).ready(function(){
           $('#InputEmailSecond').val("");
     	 		$('#InputMessage').val("");
           $('.alert-success').removeClass("hide");
-            setTimeout(function(){
-              $('.alert-success').addClass("hide");
-            }, 2000);
     	 	},
         error: function(error) {
           console.log('submitting error', error)
           $('.alert-danger').removeClass("hide");
-          setTimeout(function(){
-            $('.alert-danger').addClass("hide");
-          }, 2000);
         }
     	});
+  });
+
+  $('#alert-success-close').on('click',function(event){
+      $('.alert-success').addClass("hide");
+  });
+
+  $('#alert-danger-close').on('click',function(event){
+      $('.alert-danger').addClass("hide");
   });
 
   // This gets the correct CSS when the navbar button is clicked
