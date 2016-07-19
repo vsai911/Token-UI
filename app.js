@@ -35,7 +35,7 @@ app.post('/contact-submit',function(req,res){
 
 
 	// ['veebuv@gmail.com','vnamburi92@gmail.com'].forEach(function(email){
-		sendEmailTo('veebuv@gmail.com',requestBody.name,requestBody.email,requestBody.message,req,res)
+		sendEmailTo('zenkara.global@gmail.com',requestBody.name,requestBody.email,requestBody.message,req,res)
 	// })
 
   res.json({formSubmissionSuccess: true});
@@ -57,7 +57,7 @@ var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 function sendEmailTo (email_id,client_name,client_email,message,req,res){
     var message = {
         from: "Zenkara <customer@zenkara.mailgun.org>",
-        to: 'varunsai91@gmail.com',
+        to: 'zenkara.global@gmail.com',
         subject: client_name + " wants to chat with us!",
         text: "They can be reached on: " + client_email + " and they have a message : \n" + message
     };
