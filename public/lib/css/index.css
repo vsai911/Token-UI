@@ -738,6 +738,12 @@ header a:hover {
   }
 }
 
+@media(min-width: 1000px) {
+  .member:last-child {
+    margin: 0;
+  }
+}
+
 @media (max-width:1024px) {
   .member {
     padding-top: 1.5em;
@@ -964,6 +970,12 @@ header a:hover {
   .portfolio img {
     width: 95%;
     height: auto
+  }
+}
+
+@media(min-width: 1000px) {
+  .portfolio:last-child {
+    margin: 0;
   }
 }
 
