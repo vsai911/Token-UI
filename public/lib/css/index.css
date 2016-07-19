@@ -996,8 +996,8 @@ header a:hover {
 }
 
 .herofive-block .herofive-block-content .portfolio .portfolio-content#feature-project-4{
-  background:url(/lib/img/portfolio/konkurito.png);
-  background-size:cover;
+  background:url(/lib/img/portfolio/peerwise.png);
+  background-size:contain;
   background-position: center;
 }
 
@@ -1349,5 +1349,5 @@ select {
 
 .alert-success{
   color: #777;
-  
+
 }
