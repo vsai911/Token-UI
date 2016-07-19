@@ -1342,3 +1342,12 @@ select {
 .dropdownvisible {
   height: auto;
   }
+
+.hide{
+  display:none;
+}
+
+.alert-success{
+  color: #777;
+  
+}

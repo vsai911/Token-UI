@@ -12,9 +12,18 @@ $(document).ready(function(){
     	 		$('#InputEmailFirst').val("");
           $('#InputEmailSecond').val("");
     	 		$('#InputMessage').val("");
+          $('.alert-success').removeClass("hide");
+            setTimeout(function(){
+              $('.alert-success').addClass("hide");
+            }, 2000);
     	 	},
         error: function(error) {
           console.log('submitting error', error)
+          $('.alert-danger').removeClass("hide");
+          setTimeout(function(){
+            $('.alert-danger').addClass("hide");
+          }, 2000);
+
         }
     	});
   });
