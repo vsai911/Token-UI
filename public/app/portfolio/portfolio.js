@@ -24,14 +24,7 @@ $(function(){
       $('#view-gigg').slideUp('fast','linear');
     }
   });
-  $('#konkurito').on({
-    mouseenter: function () {
-      $('#view-konkurito').slideDown('fast','linear');
-    },
-    mouseleave: function () {
-      $('#view-konkurito').slideUp('fast','linear');
-    }
-  });
+
   $('#peerwise').on({
     mouseenter: function () {
       $('#view-peerwise').slideDown('fast','linear');
