@@ -1351,6 +1351,18 @@ select {
   color: #777;
 }
 
+.alert-success, .alert-danger{
+  max-width:300px;
+  width: 100%;
+}
+
+@media(min-width: 1200px) {
+  .alert-success, .alert-danger {
+    max-width: 1030px;
+  }
+}
+
+
 #alert-success-close, #alert-danger-close{
   cursor:pointer;
   float:right;
