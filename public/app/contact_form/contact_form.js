@@ -13,15 +13,15 @@ $(document).ready(function(){
           $('#InputEmailSecond').val("");
     	 		$('#InputMessage').val("");
           $('.alert-success').removeClass("hide");
-            setTimeout(function(){
-              $('.alert-success').fadeOut();
-            }, 4000);
+          setTimeout(function(){
+            $('.alert-success').fadeOut(1000, "linear");
+          }, 4000);
     	 	},
         error: function(error) {
           console.log('submitting error', error)
           $('.alert-danger').removeClass("hide");
           setTimeout(function(){
-            $('.alert-danger').fadeOut();
+            $('.alert-danger').fadeOut(1000, "linear");
           }, 4000);
         }
     	});
