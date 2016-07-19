@@ -8,7 +8,6 @@ $(document).ready(function(){
     	 	data: JSON.stringify({ name : $('#InputName').val(), email: $('#InputEmailSecond').val(), message: $('#InputMessage').val() }),
         contentType: 'application/json',
     	 	success : function(){
-          console.log('clear up');
     	 		$('#InputName').val("");
     	 		$('#InputEmailFirst').val("");
           $('#InputEmailSecond').val("");
