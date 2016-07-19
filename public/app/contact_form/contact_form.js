@@ -23,7 +23,6 @@ $(document).ready(function(){
           setTimeout(function(){
             $('.alert-danger').addClass("hide");
           }, 2000);
-
         }
     	});
   });
