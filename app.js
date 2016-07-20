@@ -64,5 +64,6 @@ function sendEmailTo (email_id,client_name,client_email,message,req,res){
 
     mailgun.messages().send(message, function (error, body) {
       console.log('error', body);
+      console.log('test');
     });
 }
