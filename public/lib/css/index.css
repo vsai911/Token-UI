@@ -442,17 +442,6 @@ header a:hover {
   margin-right:-12px;
 }
 
-/*.nav-item span {
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}*/
-
 .nav-item > a > span {
   font-family: Montserrat, serif;
   font-size: 16px;
@@ -464,89 +453,7 @@ header a:hover {
 .nav-item > a > span:hover {
   color: lightblue;
 }
-/*
-.nav-item > a:before,
-.nav-item > a:after {
-  font-family: Montserrat, serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: #B1DDEE;
-  text-transform: uppercase;
-  content: '';
-  position: absolute;
-  text-align: center;
-  opacity: 0;
-  transition: all .2s ease;
-}
 
-
-.nav-item > a:before {
-  font-family: Montserrat, serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  content: attr(data-hover);
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
-}
-
-
-.nav-item > a:after {
-  opacity: 0;
-  content: attr(data-hover);
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
-}
-
-.nav-item > a:hover span,
-.nav-item > a:active span {
-  opacity: 0;
-}
-
-.nav-item > a:hover:before {
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transition-delay: .4s;
-  -moz-transition-delay: .4s;
-  -o-transition-delay: .4s;
-  transition-delay: .4s;
-}
-.nav-item > a:active:after {
-  opacity: 0;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transition-delay: .4s;
-  -moz-transition-delay: .4s;
-  -o-transition-delay: .4s;
-  transition-delay: .4s;
-}
-
-.nav-item > a:active:before {
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  -o-transition-delay: 0s;
-  transition-delay: 0s;
-}
-*/
-/* End of funky effect. */
 @media (min-width:641px) {
   .vertical-align-middle {
     float: right
@@ -628,7 +535,7 @@ header a:hover {
     padding-bottom: 9em
   }
   h1 {
-    /*width: 66%;*/
+    font-size: 42.33px;
   }
 }
 
@@ -819,7 +726,6 @@ header a:hover {
   }
   .member:last-child {
     width: 230px;
-    margin-right: 0;
     float:left;
   }
   .member .member-content {
@@ -829,6 +735,12 @@ header a:hover {
   .member img {
     width: 95%;
     height: auto
+  }
+}
+
+@media(min-width: 1000px) {
+  .member:last-child {
+    margin: 0;
   }
 }
 
@@ -1049,7 +961,6 @@ header a:hover {
   }
   .portfolio:last-child {
     width: 230px;
-    margin-right: 0;
     float:left;
   }
   .portfolio .portfolio-content {
@@ -1059,6 +970,12 @@ header a:hover {
   .portfolio img {
     width: 95%;
     height: auto
+  }
+}
+
+@media(min-width: 1000px) {
+  .portfolio:last-child {
+    margin: 0;
   }
 }
 
@@ -1165,6 +1082,7 @@ header a:hover {
   }
 }
 
+
 .contact-us {
   width: 100%;
   padding-bottom: 0;
@@ -1211,9 +1129,32 @@ select {
   -webkit-appearance: none;
 }
 
+/* Fixing the contact form width for responsiveness */
+
+@media(min-width: 600px) {
+  .input-group,
+  a.trigger,
+  a.activetrigger {
+    max-width: 400px;
+  }
+}
+
+@media(min-width: 800px) {
+  .input-group,
+  a.trigger,
+  a.activetrigger {
+    max-width: 500px;
+  }
+}
+
 @media(min-width: 1200px) {
   .input-group.textarea {
     max-width: 1030px;
+  }
+  .input-group,
+  a.trigger,
+  a.activetrigger {
+    max-width: 300px;
   }
 }
 .input-group textarea {
@@ -1264,10 +1205,6 @@ select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   }
 
 .trigger:hover {
